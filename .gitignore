@@ -23,4 +23,6 @@
 *.gpkg
 *sample
 *.xcf
-
+*.jpg
+.jpeg
+.~lock.#
