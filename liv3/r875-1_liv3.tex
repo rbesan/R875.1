@@ -1,14 +1,27 @@
 \documentclass[12pt, a4paper]{article}
 
 % dpendencies
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
+
+\usepackage[backend=biber, style=authoryear, date=year]{biblatex}
+\setlength{\bibitemsep}{1em} % ajoute un espace entre les refs
+\addbibresource{R875-1.bib}
+\AtEveryBibitem{%
+  \clearfield{isbn}%
+  \clearfield{issn}%
+  \clearfield{urlyear}%
+  \clearfield{urlmonth}%
+  \clearfield{urlday}%
+  \iffieldundef{doi}{}{\clearfield{url}}%
+  \clearfield{doi}%
+}
+
+\renewbibmacro{in:}{}
+\usepackage{fontspec}
 \usepackage[french]{babel}
 \usepackage{geometry}
 \usepackage[table,xcdraw]{xcolor}
 \usepackage{tikz}
 \usepackage{setspace}
-\usepackage{natbib}
 \usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage{booktabs}
@@ -69,10 +82,17 @@ Juillet 2025
 
 \pagenumbering{arabic}
 
+\part{Passages fauniques potentiels avant travaux}
+
+\include{sections/intro}
+
+
+\include{sections/method}
+
+\part{Critères de connectivité écologique – Région métropolitaine de Montréal}
 
 
 % Refs
-%\bibliographystyle{apalike}
-%\bibliography{references}
-
+%\nocite{*}
+\printbibliography[heading=bibintoc,title=Références]
 \end{document}
