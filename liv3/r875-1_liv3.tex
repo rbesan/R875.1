@@ -1,4 +1,5 @@
 \documentclass[12pt, a4paper]{article}
+\usepackage[a4paper, margin = 2.54cm]{geometry}
 
 % dpendencies
 
@@ -18,6 +19,7 @@
 \renewbibmacro{in:}{}
 \usepackage{fontspec}
 \usepackage[french]{babel}
+\frenchsetup{StandardItemLabels=true} 
 \usepackage{geometry}
 \usepackage[table,xcdraw]{xcolor}
 \usepackage{tikz}
@@ -27,8 +29,9 @@
 \usepackage{booktabs}
 \usepackage{amsmath}
 \usepackage{float}
-\geometry{margin=2.5cm}
-
+\usepackage[textwidth=2cm]{todonotes}
+\usepackage{soul}
+\usepackage{xcolor}
 
 \title{\Large\textbf{Évaluation des critères permettant d'améliorer\\
 l'efficacité des passages fauniques adaptés aux\\
@@ -87,9 +90,12 @@ Juillet 2025
 \include{sections/intro}
 
 
-\include{sections/method}
+\include{sections/method_I}
 
 \part{Critères de connectivité écologique – Région métropolitaine de Montréal}
+
+\include{sections/method_II}
+
 
 
 % Refs
