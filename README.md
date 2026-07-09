@@ -7,7 +7,7 @@
 ---
 
 ## Structure du projet
-
+```
 Monteregie/
 ├── archives
 ├── code
@@ -22,7 +22,7 @@ Monteregie/
 │   ├── carto
 │   └── graphique
 └── README.md
-
+```
 ---
 
 ## Dépendances

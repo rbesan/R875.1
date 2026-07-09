@@ -55,7 +55,7 @@ R217
     R217_2
 
 
-## 2025 - 8 fichiers (longueuil) + 16 fichiers (projet R875.1)
+## 2025 - 8 dossiers d'audiomoths (longueuil) + 16 dossiers audiomoths (projet R875.1)
 
 LONGUEUIL
     E1
