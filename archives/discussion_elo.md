@@ -54,7 +54,7 @@ Dans le cas de figure où il est impossible de traverser à pied, alors les obse
 
 #### Déroulement d'un inventaire en GoPro
 
-Pour l'inventaire des carcasses avec GoPro (2025 et 2026), l'effort sur le tronçon consistait à faire les deux voies au complet.
+Pour l'inventaire des carcasses avec GoPro (2025 et 2026), l'effort sur le tronçon consistait à faire les deux voies au complet. Est-ce le 
 
 #### Gestion des waypoints
 
@@ -116,17 +116,19 @@ Il manque les waypoints. Ils sont potentiellement dans les carnets, mais pas dis
 
 L'état de la carcasse est rarement spécifié. Il n'y a pas eu de clarification de quand ou comment noter les classes pour l'état en amont, d'où les difficultés sur le terrain.
 
-Pas d'informations sur l'emplacement des carcasses en 2025 (pris parfois dans le carnet), mais ok pour 2026.
+Il n'y a pas d'informations sur l'emplacement sur le tronçon (accotement, zone enherbée ou voie de circulation) des carcasses en 2025 (parfois inscrit dans le carnet mais pas de façon systématique), mais ok pour 2026.
 
 La direction (voie) n'est pas dans la table, mais il est possible d'avoir l'information quand cela s'applique.
 
 #### Feuille `Obs_GoPro`
 
-**Colonne `Heure_debut`** = localisation en minutage de la carcasse, avec un format en minutes:secondes.
+**Colonne `Minutage_obs`** = localisation en minutage de la carcasse, avec un format en minutes:secondes.
 
 **Colonne `Heure_obs`** = heure en format heures:minutes.
 
 La table n'est pas complètement remplie. Certaines cellules sont des 0 et d'autres sont vides. Il y a un travail de vérification à faire par Éloïse sur les données de 2025.
+
+Pour l'extraction il faudra utiliser un package python (voir dépôt python 
 
 ### 2.3 `PERSISTANCE_RMM_2025_a_trier.xlsx`
 
@@ -135,6 +137,10 @@ La table n'est pas complètement remplie. Certaines cellules sont des 0 et d'aut
 Dans les colonnes `Prédateur` et `NomFichierPhoto`, il y a plusieurs mentions `IND`.
 
 `IND` = prédation sans photo.
+
+**Colonne `TempsPredation`** l'estimation n'est pas bonne car la date n'est pas prise en compte dans le calcul. 
+
++ (31:31) =
 
 ### 2.4 `Points_GPS_a_trier.xlsx`
 

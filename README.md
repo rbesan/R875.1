@@ -8,7 +8,7 @@
 
 ## Structure du projet
 ```
-Monteregie/
+R875.1/
 ├── archives
 ├── code
 │   ├── bash
