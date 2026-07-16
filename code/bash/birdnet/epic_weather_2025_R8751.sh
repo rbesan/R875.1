@@ -47,7 +47,7 @@ python -m birdnet_analyzer.analyze \
     -c "$mod9" \
     --rtype csv \
     --min_conf 0.75 \
-    -t "$SLURM_CPUS_PER_TASK" ## force birdnet à travailler avec le nombre de coeurs spécifié au début dans l'argument SLURM
+    -t "$SLURM_CPUS_PER_TASK" ## forcer pour le respect du nombre de coeurs
 done
 
 conda deactivate

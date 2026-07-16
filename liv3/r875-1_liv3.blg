@@ -1,9 +1,64 @@
-[0] Config.pm:306> INFO - This is Biber 2.18
-[0] Config.pm:309> INFO - Logfile is 'r875-1_liv3.blg'
-[33] biber:340> INFO - === ven jui  3, 2026, 16:55:38
-[40] Biber.pm:418> INFO - Reading 'r875-1_liv3.bcf'
-[65] Biber.pm:978> INFO - Found 0 citekeys in bib section 0
-[70] bbl.pm:654> INFO - Writing 'r875-1_liv3.bbl' with encoding 'UTF-8'
-[70] bbl.pm:757> INFO - Output to r875-1_liv3.bbl
-[71] Biber.pm:130> WARN - The file 'r875-1_liv3.bcf' does not contain any citations!
-[71] Biber.pm:132> INFO - WARNINGS: 1
+This is BibTeX, Version 0.99d (TeX Live 2022/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: r875-1_liv3.aux
+A level-1 auxiliary file: sections/avis.aux
+A level-1 auxiliary file: sections/comite.aux
+A level-1 auxiliary file: sections/specialistes.aux
+A level-1 auxiliary file: sections/mandat.aux
+A level-1 auxiliary file: sections/intro.aux
+A level-1 auxiliary file: sections/method_I.aux
+A level-1 auxiliary file: sections/method_II.aux
+The style file: ecologyNewFR.bst
+Database file #1: R875-1.bib
+Repeated entry---line 216 of file R875-1.bib
+ : @techreport{fayard2024
+ :                       ,
+I'm skipping whatever remains of this entry
+Warning--empty journal in ahmed2022
+Warning--empty year in fayard2022; set to ????
+Warning--empty institution in MELCCFP2023b
+Warning--empty journal in rytwinski2016
+Warning--empty institution in snc2023
+Warning--empty journal in stuart2004
+You've used 43 entries,
+            2716 wiz_defined-function locations,
+            888 strings with 15865 characters,
+and the built_in function-call counts, 22759 in all, are:
+= -- 2116
+> -- 1620
+< -- 26
++ -- 546
+- -- 488
+* -- 2014
+:= -- 4329
+add.period$ -- 179
+call.type$ -- 43
+change.case$ -- 344
+chr.to.int$ -- 42
+cite$ -- 49
+duplicate$ -- 753
+empty$ -- 1217
+format.name$ -- 555
+if$ -- 4373
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 36
+newline$ -- 222
+num.names$ -- 176
+pop$ -- 272
+preamble$ -- 1
+purify$ -- 333
+quote$ -- 0
+skip$ -- 533
+stack$ -- 0
+substring$ -- 1217
+swap$ -- 111
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 384
+warning$ -- 6
+while$ -- 192
+width$ -- 0
+write$ -- 575
+(There was 1 error message)

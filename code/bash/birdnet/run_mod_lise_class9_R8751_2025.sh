@@ -8,7 +8,7 @@
 in_sounds="/media/md0/MTQ-A10/AUDIOMOTHS/2025" ## chemin pour les données brutes
 ## Output de birdnet
 out_weather="/home/robes15/Documents/R8751/output/birdNET/2025/weather" ## csv filtre météo (mod9)
-out_mod9="/home/robes15/Documents/R8751/output/birdNET/2025/anura_mod9" ## csv birdnet pour les anoures (modèle de base)
+out_mod9="/home/robes15/Documents/R8751/output/birdNET/2025/anura_mod9" ## csv birdnet avec les anoures non reconnus par le modèle de base
 ## Dossier de liens
 links="/home/robes15/Documents/R8751/output/birdNET/2025/links"
 ## Modèle 9
@@ -29,7 +29,7 @@ if [ "$station" = "LONGUEUIL" ]; then
 continue
 fi
 rm -rf "$links/$station"
-mkdir -p "$links/$station" "$out_anura/$station"
+mkdir -p "$links/$station" "$out_mod9/$station"
 
 ## Boucle interne pour exclure les fichiers corrompus et faire le filtre 
 for wav in "$path_station"*.[wW][aA][vV]
@@ -44,10 +44,10 @@ done
 python -m birdnet_analyzer.analyze \
 "$links/$station" \
 -o "$out_mod9/$station" \
--c "$
+-c "$mod9" \
 --rtype csv \
 --min_conf 0.75 \
--t 4
+-t "$SLURM_CPUS_PER_TASK"
 
 done
 

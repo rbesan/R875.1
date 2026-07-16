@@ -46,7 +46,7 @@ python -m birdnet_analyzer.analyze \
 -o "$out_anura/$station" \
 --rtype csv \
 --min_conf 0.75 \
--t 4
+-t "$SLURM_CPUS_PER_TASK"
 
 done
 

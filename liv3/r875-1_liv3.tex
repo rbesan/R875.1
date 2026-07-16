@@ -1,28 +1,14 @@
 \documentclass[12pt, a4paper]{article}
-\usepackage[a4paper, margin = 2.54cm]{geometry}
+\usepackage[letterpaper, margin = 2.54cm]{geometry}
 
 % dpendencies
 
-\usepackage[backend=biber, style=authoryear, date=year]{biblatex}
-\setlength{\bibitemsep}{1em} % ajoute un espace entre les refs
-\addbibresource{R875-1.bib}
-\AtEveryBibitem{%
-  \clearfield{isbn}%
-  \clearfield{issn}%
-  \clearfield{urlyear}%
-  \clearfield{urlmonth}%
-  \clearfield{urlday}%
-  \iffieldundef{doi}{}{\clearfield{url}}%
-  \clearfield{doi}%
-}
-
-\renewbibmacro{in:}{}
-\usepackage{fontspec}
+\usepackage[round]{natbib}
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc}
 \usepackage[french]{babel}
-\frenchsetup{StandardItemLabels=true} 
 \usepackage{geometry}
 \usepackage[table,xcdraw]{xcolor}
-\usepackage{tikz}
 \usepackage{setspace}
 \usepackage{hyperref}
 \usepackage{graphicx}
@@ -99,6 +85,9 @@ Juillet 2025
 
 
 % Refs
-%\nocite{*}
-\printbibliography[heading=bibintoc,title=Références]
+\nocite{*}
+\bibliographystyle{ecologyNewFR}
+\bibliography{R875-1}  
+
+
 \end{document}

@@ -1,20 +1,318 @@
-% $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.2 $
-% Do not modify the above lines!
-%
-% This is an auxiliary file used by the 'biblatex' package.
-% This file may safely be deleted. It will be recreated by
-% biber as required.
-%
-\begingroup
-\makeatletter
-\@ifundefined{ver@biblatex.sty}
-  {\@latex@error
-     {Missing 'biblatex' package}
-     {The bibliography requires the 'biblatex' package.}
-      \aftergroup\endinput}
-  {}
-\endgroup
+\begin{thebibliography}{43}
 
-\endinput
+\bibitem[Ahmed et Ahmed(2022)]{ahmed2022}
+Ahmed, I.~U. et M.~M. Ahmed. 2022.
+\newblock Investigating the {Safety} {Effectiveness} of {Wildlife}–{Vehicle}
+  {Crash} {Countermeasures} using a {Bayesian} {Approach} with a {Comparison}
+  between {Carcass} {Removal} {Data} and {Traditional} {Crash} {Data} - {Irfan}
+  {U}. {Ahmed}, {Mohamed} {M}. {Ahmed}, 2022 .
 
+\bibitem[Aota et~al.(2021)Aota, Ashizawa, Mori, Toda, et Chiba]{aota2021}
+Aota, T., K.~Ashizawa, H.~Mori, M.~Toda, et S.~Chiba. 2021.
+\newblock Detection of {Anolis} carolinensis using drone images and a deep
+  neural network: an effective tool for controlling invasive species.
+\newblock Biological Invasions 23:1321--1327.
+
+\bibitem[Barrientos et~al.(2021)Barrientos, Ascensão, D’Amico, Grilo, et
+  Pereira]{barrientos2021}
+Barrientos, R., F.~Ascensão, M.~D’Amico, C.~Grilo, et H.~M. Pereira. 2021.
+\newblock The lost road: {Do} transportation networks imperil wildlife
+  population persistence?
+\newblock Perspectives in Ecology and Conservation 19:411--416.
+
+\bibitem[Bevan et~al.(2018)Bevan, Whiting, Tucker, Guinea, Raith, et
+  Douglas]{bevan2018}
+Bevan, E., S.~Whiting, T.~Tucker, M.~Guinea, A.~Raith, et R.~Douglas. 2018.
+\newblock Measuring behavioral responses of sea turtles, saltwater crocodiles,
+  and crested terns to drone disturbance to define ethical operating
+  thresholds.
+\newblock PLOS ONE 13:e0194460.
+
+\bibitem[Blaustein et~al.(2010)Blaustein, Walls, Bancroft, Lawler, Searle, et
+  Gervasi]{blaustein2010}
+Blaustein, A.~R., S.~C. Walls, B.~A. Bancroft, J.~J. Lawler, C.~L. Searle, et
+  S.~S. Gervasi. 2010.
+\newblock Direct and {Indirect} {Effects} of {Climate} {Change} on {Amphibian}
+  {Populations}.
+\newblock Diversity 2:281--313.
+
+\bibitem[Bogolin et~al.(2021)Bogolin, Davis, Kline, et Rahman]{bogolin2021}
+Bogolin, A.~P., D.~R. Davis, R.~J. Kline, et A.~F. Rahman. 2021.
+\newblock A drone-based survey for large, basking freshwater turtle species.
+\newblock PLOS ONE 16:e0257720.
+
+\bibitem[Boyer(1965)]{boyer1965}
+Boyer, D.~R. 1965.
+\newblock Ecology of the {Basking} {Habit} in {Turtles}.
+\newblock Ecology 46:99--118.
+\newblock \_eprint:
+  https://esajournals.onlinelibrary.wiley.com/doi/pdf/10.2307/1935262.
+
+\bibitem[Conan et~al.(2023)Conan, Le~Brishoual, Garnier, Fleitz, Dehaut,
+  Enstipp, Jumeau, et Handrich]{conanEfficacyPermanentWildlife2023}
+Conan, A., M.~Le~Brishoual, L.~Garnier, J.~Fleitz, N.~Dehaut, M.~Enstipp,
+  J.~Jumeau, et Y.~Handrich. 2023.
+\newblock Efficacy of permanent wildlife fences as barriers to amphibian
+  movement.
+\newblock Frontiers in Ecology and Evolution 11.
+
+\bibitem[{COSEPAC}(2008)]{cosepac2008}
+{COSEPAC}. 2008.
+\newblock Mise à jour. Évaluation et {Rapport} de situation du {COSEPAC} sur
+  la {Rainette} faux-grillon de l'ouest ({Pseudacris} triseriata), population
+  carolinienne, population des {Grands} {Lacs} et {Saint}-{Laurent} et du
+  {Bouclier} canadien, au {Canada}.
+\newblock non disponible, Comité sur la situation des espèces en péril au
+  Canada, Ottawa.
+\newblock Last Modified: 2017-09-29.
+
+\bibitem[Cunnington et~al.(2014)Cunnington, Garrah, Eberhardt, et
+  Fahrig]{cunnington2026}
+Cunnington, G.~M., E.~Garrah, E.~Eberhardt, et L.~Fahrig. 2014.
+\newblock Culverts alone do not reduce road mortality in anurans: Écoscience:
+  {Vol} 21, {No} 1.
+\newblock Écoscience 21:69--78.
+
+\bibitem[Daguet et Lelièvre(2019)]{daguet2019}
+Daguet, C. et M.~Lelièvre. 2019.
+\newblock Identification et protection des corridors naturels de part et
+  d’autre de l’autoroute 10 ({Estrie} et {Montérégie} {Est}) et
+  amélioration de sa perméabilité faunique : premiers résultats.
+\newblock Le Naturaliste canadien 143:32--39.
+
+\bibitem[Fayard et Mazerolle(????)]{fayard2022}
+Fayard, A. et M.~J. Mazerolle. ????
+\newblock État des populations naturelles de rainette faux-grillon boréale
+  ({Pseudacris} maculata) et stratégies de réintroduction en milieu
+  aménagé.
+\newblock Mémoire de maîtrise, Université Laval.
+
+\bibitem[Fayard et Mazerolle(2024)]{fayard2024}
+Fayard, A. et M.~J. Mazerolle. 2024.
+\newblock Évalutation des critères permettant d'améliorer l'efficacité des
+  passages fauniques adaptés aux amphibiens et reptiles ({R875}.1).
+\newblock Rapport technique Rapport d'avancement 1, Ministère des transports
+  et de la mobilité durable.
+
+\bibitem[Forman et Alexander(1998)]{forman1998}
+Forman, R. T.~T. et L.~E. Alexander. 1998.
+\newblock Roads and their major ecological effects.
+\newblock Annual Review of Ecology and Systematics 29:207--231.
+
+\bibitem[Forman et~al.(2002)Forman, Sperling, Bissonette, Clevenger, Cutshall,
+  Dale, Fahrig, France, Goldman, Heanue, Jones, Swanson, Turrentine, et
+  Winter]{forman2002}
+Forman, R. T.~T., D.~Sperling, J.~A. Bissonette, A.~P. Clevenger, C.~D.
+  Cutshall, V.~H. Dale, L.~Fahrig, R.~France, C.~R. Goldman, K.~Heanue,
+  J.~Jones, F.~J. Swanson, T.~Turrentine, et T.~C. Winter. 2002.
+\newblock Road ecology: science and solutions.
+\newblock Island Press, Washington, DC.
+
+\bibitem[Gibbons et~al.(2000)Gibbons, Scott, Ryan, Buhlmann, Tuberville, Metts,
+  Greene, Mills, Leiden, Poppy, et Winne]{gibbons2000}
+Gibbons, J.~W., D.~E. Scott, T.~J. Ryan, K.~A. Buhlmann, T.~D. Tuberville,
+  B.~S. Metts, J.~L. Greene, T.~Mills, Y.~Leiden, S.~Poppy, et C.~T. Winne.
+  2000.
+\newblock The {Global} {Decline} of {Reptiles}, {Déjà} {Vu} {Amphibians}:
+  {Reptile} species are declining on a global scale. {Six} significant threats
+  to reptile populations are habitat loss and degradation, introduced invasive
+  species, environmental pollution, disease, unsustainable use, and global
+  climate change.
+\newblock BioScience 50:653--666.
+
+\bibitem[Gibbs(2000)]{gibbs2000}
+Gibbs, J.~P. 2000.
+\newblock Wetland {Loss} and {Biodiversity} {Conservation}.
+\newblock Conservation Biology 14:314--317.
+\newblock \_eprint:
+  https://conbio.onlinelibrary.wiley.com/doi/pdf/10.1046/j.1523-1739.2000.98608.x.
+
+\bibitem[Glista et~al.(2009)Glista, DeVault, et DeWoody]{glista2009}
+Glista, D.~J., T.~L. DeVault, et J.~A. DeWoody. 2009.
+\newblock A review of mitigation measures for reducing wildlife mortality on
+  roadways.
+\newblock Landscape and Urban Planning 91:1--7.
+
+\bibitem[González-Gallina et~al.(2013)González-Gallina, Benítez-Badillo,
+  Rojas-Soto, et Hidalgo-Mihart]{gonzalezgallina2013}
+González-Gallina, A., G.~Benítez-Badillo, O.~R. Rojas-Soto, et M.~G.
+  Hidalgo-Mihart. 2013.
+\newblock The small, the forgotten and the dead: highway impact on vertebrates
+  and its implications for mitigation strategies.
+\newblock Biodiversity and Conservation 22:325--342.
+
+\bibitem[Gunson(2019)]{gunson2019}
+Gunson, K. 2019.
+\newblock Comparaison du passage de tortues et de serpents dans des ponceaux de
+  drainage le long de deux autoroutes en {Amérique} du {Nord}.
+\newblock Le Naturaliste canadien 143:81--84.
+
+\bibitem[Hardy et~al.(2003)Hardy, Clevenger, Huijser, Neale, Irwin, Garret, et
+  McDermott]{hardy2003}
+Hardy, A., A.~P. Clevenger, M.~Huijser, G.~Neale, C.~L. Irwin, P.~Garret, et
+  K.~P. McDermott. 2003.
+\newblock An overview of methods and approaches for evaluating the
+  effectiveness of wildlife crossing structures: emphasizing the science in
+  applied science.
+\newblock Dans \emph{Proceedings of the 2003 {International} {Conference} on
+  {Ecology} and {Transportation}}, pages 319--330, Raleigh, NC. Center for
+  Transportation and the Environment, North Carolina State University.
+
+\bibitem[Healy(2019)]{healy2019}
+Healy, A. 2019.
+\newblock Élargissement de l’autoroute 69 : la route sous le premier
+  écopont de l’{Ontario}.
+\newblock Le Naturaliste canadien 143:62--68.
+
+\bibitem[Hill et~al.(2019)Hill, Prince, Snaddon, Doncaster, et
+  Rogers]{hill2019}
+Hill, A.~P., P.~Prince, J.~L. Snaddon, C.~P. Doncaster, et A.~Rogers. 2019.
+\newblock {AudioMoth}: {A} low-cost acoustic device for monitoring biodiversity
+  and the environment.
+\newblock HardwareX 6:e00073.
+
+\bibitem[Jaeger et~al.(2019)Jaeger, Spanowicz, Bowman, et
+  Clevenger]{jaeger2019}
+Jaeger, J., A.~Spanowicz, J.~Bowman, et A.~Clevenger. 2019.
+\newblock Clôtures et passages fauniques pour les petits et moyens mammifères
+  le long de la route 175 au {Québec} : quelle est leur efficacité ?
+\newblock Le Naturaliste canadien 143:69--80.
+
+\bibitem[Jones et~al.(2022)Jones, Marshall, Smith, Crane, Silva, Artchawakom,
+  Suwanwaree, Waengsothorn, Wüster, Goode, et Strine]{jones2022}
+Jones, M.~D., B.~M. Marshall, S.~N. Smith, M.~Crane, I.~Silva, T.~Artchawakom,
+  P.~Suwanwaree, S.~Waengsothorn, W.~Wüster, M.~Goode, et C.~T. Strine. 2022.
+\newblock How do {King} {Cobras} move across a major highway? {Unintentional}
+  wildlife crossing structures may facilitate movement.
+\newblock Ecology and Evolution 12:e8691.
+\newblock \_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/ece3.8691.
+
+\bibitem[Langen et~al.(2009)Langen, Ogden, et Schwarting]{langen2009}
+Langen, T.~A., K.~M. Ogden, et L.~L. Schwarting. 2009.
+\newblock Predicting {Hot} {Spots} of {Herpetofauna} {Road} {Mortality} {Along}
+  {Highway} {Networks}.
+\newblock The Journal of Wildlife Management 73:104--114.
+\newblock \_eprint:
+  https://wildlife.onlinelibrary.wiley.com/doi/pdf/10.2193/2008-017.
+
+\bibitem[Lefevre et Brooks(1995)]{lefevre1995}
+Lefevre, K. et R.~J. Brooks. 1995.
+\newblock Effects of sex and body size on basking behavior in a northern
+  population of the painted turtle, chrysemys picta.
+\newblock Herpetologica 51:217--224.
+
+\bibitem[Lesbarrères et Fahrig(2012)]{lesbarrere2012}
+Lesbarrères, D. et L.~Fahrig. 2012.
+\newblock Measures to reduce population fragmentation by roads: what has worked
+  and how do we know?
+\newblock Trends in Ecology \& Evolution 27:374--380.
+
+\bibitem[Martinig et Bélanger-Smith(2016)]{martinig2016}
+Martinig, A.~R. et K.~Bélanger-Smith. 2016.
+\newblock Factors influencing the discovery and use of wildlife passages for
+  small fauna.
+\newblock Journal of Applied Ecology 53:825--836.
+\newblock \_eprint:
+  https://besjournals.onlinelibrary.wiley.com/doi/pdf/10.1111/1365-2664.12616.
+
+\bibitem[Matthews et~al.(2013)Matthews, Funk, et Ghalambor]{matthews2013}
+Matthews, J.~H., W.~C. Funk, et C.~K. Ghalambor. 2013.
+\newblock Demographic approaches to assessing climate change impact: an
+  application to pond-breeding frogs and shifting hydropatterns.
+\newblock Dans J.~F. Brodie, E.~Post, et D.~F. Doak, éditeurs, \emph{Wildlife
+  conservation in a changing climate}, pages 58--85. University of Chicago
+  Press, Chicago, Illinois.
+
+\bibitem[Mazerolle(2004)]{mazerolle2004}
+Mazerolle, M.~J. 2004.
+\newblock Amphibian road mortality in response to nightly variations in traffic
+  intensity.
+\newblock Herpetologica 60:45--53.
+
+\bibitem[Mazerolle et~al.(2005)Mazerolle, Huot, et Gravel]{mazerolle2005}
+Mazerolle, M.~J., M.~Huot, et M.~Gravel. 2005.
+\newblock Behavior of amphibians on the road in response to car traffic.
+\newblock Herpetologica 61:380--388.
+
+\bibitem[{Ministère de l’Environnement, de la Lutte contre les Changements
+  Climatiques, de la Faune et des Parcs}(2023{a})]{MELCCFP2023a}
+{Ministère de l’Environnement, de la Lutte contre les Changements
+  Climatiques, de la Faune et des Parcs}. 2023{a}.
+\newblock Analyse des menaces et évaluation de la viabilité des occurrences
+  de la rainette faux-grillon de l’{Ouest} ({Pseudacris} triseriata) au
+  {Québec} — {Rapport} d’analyse réalisé dans le cadre de l’approche
+  intégrée de rétablissement ({AIR}).
+\newblock Rapport technique, Gouvernement du Québec, Québec.
+
+\bibitem[{Ministère de l’Environnement, de la Lutte contre les Changements
+  Climatiques, de la Faune et des Parcs}(2023{b})]{MELCCFP2023b}
+{Ministère de l’Environnement, de la Lutte contre les Changements
+  Climatiques, de la Faune et des Parcs}. 2023{b}.
+\newblock Protocole standardisé pour les inventaires de couleuvres et la
+  recherche d’hibernacles au {Québec}.
+\newblock Rapport technique.
+
+\bibitem[{Ministère des forêts, de la faune et des parcs}(2021)]{MFFP2021}
+{Ministère des forêts, de la faune et des parcs}. 2021.
+\newblock Protocole standardisé de détection et d’identification des
+  tortues d’eau douce à l’aide de drones au {Québec}.
+\newblock Rapport technique, Gouvernement du Québec, Québec, Canada.
+
+\bibitem[Obbard et Brooks(1981)]{obbard1981}
+Obbard, M.~E. et R.~J. Brooks. 1981.
+\newblock A {Radio}-{Telemetry} and {Mark}-{Recapture} {Study} of {Activity} in
+  the {Common} {Snapping} {Turtle}, {Chelydra} serpentina.
+\newblock Copeia 1981:630--637.
+
+\bibitem[Retamal~Diaz et Mazerolle(2020)]{retamal2020}
+Retamal~Diaz, F. et M.~J. Mazerolle. 2020.
+\newblock Impact des infrastructures sous la route sur les populations
+  d'amphibiens.
+\newblock Thèse de doctorat, Université Laval, Québec,Canada.
+
+\bibitem[Rytwinski et~al.(2016)Rytwinski, Soanes, Jaeger, Fahrig, Findlay,
+  Houlahan, Van~der Ree, et Van~der Grift]{rytwinski2016}
+Rytwinski, T., K.~Soanes, J.~A.~G. Jaeger, L.~Fahrig, C.~S. Findlay,
+  J.~Houlahan, R.~Van~der Ree, et E.~A. Van~der Grift. 2016.
+\newblock How {Effective} {Is} {Road} {Mitigation} at {Reducing} {Road}-{Kill}?
+  {A} {Meta}-{Analysis} {\textbar} {PLOS} {One} .
+
+\bibitem[Seburn et McCurdy-Adams(2019)]{seburn2019}
+Seburn, D.~C. et H.~McCurdy-Adams. 2019.
+\newblock Do turtle warning signs reduce roadkill?
+\newblock The Canadian Field-Naturalist 133:216--220.
+
+\bibitem[Seiler et Bhardwaj(2020)]{seiler2020}
+Seiler, A. et M.~Bhardwaj. 2020.
+\newblock Wildlife and {Traffic}: {An} {Inevitable} but {Not} {Unsolvable}
+  {Problem}?
+\newblock Dans F.~M. Angelici et L.~Rossi, éditeurs, \emph{Problematic
+  {Wildlife} {II}: {New} {Conservation} and {Management} {Challenges} in the
+  {Human}-{Wildlife} {Interactions}}, pages 171--190. Springer International
+  Publishing, Cham.
+
+\bibitem[{SNC-Lavali}(2023)]{snc2023}
+{SNC-Lavali}. 2023.
+\newblock Rapport d’inventaire herpétofaunique - {Travaux}
+  d’élargissement et ajout d’une voie réservée sur l’autoroute 10 en
+  {Montérégie}.
+\newblock Rapport technique.
+
+\bibitem[Soanes et~al.(2018)Soanes, Taylor, Sunnucks, Vesk, Cesarini, et
+  van~der Ree]{soanes2018}
+Soanes, K., A.~C. Taylor, P.~Sunnucks, P.~A. Vesk, S.~Cesarini, et R.~van~der
+  Ree. 2018.
+\newblock Evaluating the success of wildlife crossing structures using genetic
+  approaches and an experimental design: {Lessons} from a gliding mammal.
+\newblock Journal of Applied Ecology 55:129--138.
+\newblock \_eprint:
+  https://besjournals.onlinelibrary.wiley.com/doi/pdf/10.1111/1365-2664.12966.
+
+\bibitem[Stuart et~al.(2004)Stuart, Chanson, Cox, Young, Rodrigues, Fischman,
+  et Waller]{stuart2004}
+Stuart, S.~N., J.~S. Chanson, N.~A. Cox, B.~E. Young, A.~S.~L. Rodrigues, D.~L.
+  Fischman, et R.~W. Waller. 2004.
+\newblock Status and {Trends} of {Amphibian} {Declines} and {Extinctions}
+  {Worldwide} 306:1783--1786.
+
+\end{thebibliography}
