@@ -30,7 +30,7 @@ R875.1/
 | Logiciel | Version |
 |----------|---------|
 | R | ≥ 4.5.2 |
-| BirdNET | à définir |
+| BirdNET | v1.5.1 (commit 4482cef, 2025-02-17) |
 
 **Packages R :** `dplyr`, `ggplot2`, `ggvegan`, `lubridate`, `parallel`, `readr`, `tzdb`, `vegan`, `vroom`
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --job-name=mod9_2025
+#SBATCH --job-name=anura2025
 #SBATCH --time=06:00:00
 #SBATCH --cpus-per-task=4
 
@@ -8,11 +8,11 @@
 in_sounds="/media/md0/MTQ-A10/AUDIOMOTHS/2025" ## chemin pour les données brutes
 ## Output de birdnet
 out_weather="/home/robes15/Documents/R8751/output/birdNET/2025/weather" ## csv filtre météo (mod9)
-out_mod9="/home/robes15/Documents/R8751/output/birdNET/2025/anura_mod9" ## csv birdnet pour les anoures (modèle de base)
+out_anura="/home/robes15/Documents/R8751/output/birdNET/2025/anura" ## csv birdnet pour les anoures (modèle de base)
 ## Dossier de liens
 links="/home/robes15/Documents/R8751/output/birdNET/2025/links"
-## Modèle 9
-mod9="/home/robes15/Documents/birdNET_custom/mod_lise_class9.tflite"
+## Liste d'espèces
+list="/home/robes15/Documents/R8751/input/species_list.txt"
 
 
 ## Lancement de conda
@@ -43,8 +43,7 @@ done
 
 python -m birdnet_analyzer.analyze \
 "$links/$station" \
--o "$out_mod9/$station" \
--c "$
+-o "$out_anura/$station" \
 --rtype csv \
 --min_conf 0.75 \
 -t 4
@@ -54,6 +53,9 @@ done
 conda deactivate
 
 echo "Terminé."
+
+
+
 
 
 
