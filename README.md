@@ -32,7 +32,7 @@ R875.1/
 | R | ≥ 4.5.2 |
 | BirdNET | v1.5.1 (commit 4482cef, 2025-02-17) |
 
-**Packages R :** `dplyr`, `ggplot2`, `ggvegan`, `lubridate`, `parallel`, `readr`, `tzdb`, `vegan`, `vroom`
+**Packages R :** Mettre à jour
 
 ---
 
@@ -40,20 +40,18 @@ R875.1/
 
 | Fichier | Fonction    |
 |---------|-------------|
-| 
+|`csv_check_mod9_2025.R`| Génère une table csv pour faciliter la validation des clips de 3s issus du script |
 
 ---
 
 ### Code Bash
 | Fichier | Fonction    |
 |---------|-------------|
-| `run_birdnet.sh` | Analyse avec le modèle de base de BirdNET |
-| `extract_birdnet.sh` | Script d'extraction des clips des fichiers accoustiques pour validation (birdnet de base) |
-| `run_mod_lise_class9.sh` | Script pour analyser des fichiers accoustiques avec le modèle 'mod_lise_class9' |
-| `extract_mod_lise_class9.sh` | Script d'extraction des clips des fichiers accoustiques pour validation ('mod_lise_class9') |
-| `epic_weather.sh` | Script d'analyse des fichiers accoustiques avec 'mod_lise_class9' pour identifier les sites avec au moins un clip WEATHER  |
-| `rename_wav.sh` | À voir si le script est encore utile |
-| `connection.sh` / `connection_rob.sh` | Script avec plusieurs options de connexions SSH au serveur distant |
+| `run_birdnet_2025_R8751.sh` | Analyse avec le modèle de base de BirdNET |
+| `extract_mod_lise_class9_2025_R8751.sh` | Extraction des clips de 3s pour étape de validation de birdNET  |
+| `run_mod_lise_class9_R8751_2025.sh` | Script pour analyser des fichiers accoustiques avec le modèle 'mod_lise_class9' |
+| `epic_weather_2025_R8751.sh` | Script d'analyse des fichiers accoustiques avec 'mod_lise_class9' pour identifier les sites avec au moins un clip WEATHER  |
+
 
 ---
 
