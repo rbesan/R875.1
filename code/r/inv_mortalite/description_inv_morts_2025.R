@@ -1,3 +1,5 @@
+#install.packages("xtable")
+library("xtable")
 
 # Objectif : analyse descriptive des inventaires de mortalité
 
@@ -35,4 +37,28 @@ mort25_clean1 <- mort25[, !(names(mort25)) %in% c("commentaire",
                        "X.13")]
 
 # On enlève les 3 lignes d'exemple
-mort25_clean2 <- mort25_clean1[mort25_clean1$Troncons_ID !=c("A10_N", "A10_S"),]
+mort25_clean2 <- mort25_clean1[!(mort25_clean1$Troncons_ID %in% c("A10_N", "A10_S")), ]
+mort25_clean3 <- mort25_clean2[mort25_clean2$Date_inv != "", ]
+
+
+# Converstion format numérique et dates
+mort25_clean3$Obs <- as.numeric(mort25_clean3$Obs)
+mort25_clean3$date <- as.Date(mort25_clean3$Date_inv, format = "%d/%m/%Y")
+
+
+# Suppression du premier inventaire GoPro sur 41 et 42
+mort25_clean4 <- subset(mort25_clean3, !(Troncons_ID %in% c(41, 42) & Date_inv == "03/06/2025"))
+
+visites <- tapply(mort25_clean4$date, mort25_clean4$Troncons_ID, function(x) length(unique(x)))
+n_method <- tapply(mort25_clean4$Technique, mort25_clean4$Troncons_ID, length)
+type_method <- tapply(mort25_clean4$Technique, 
+                      mort25_clean4$Troncons_ID, 
+                      function(x) paste(sort(unique(x)), 
+                                        collapse = "+"))
+table_inv <- data.frame(
+  troncon_id = names(visites),
+  visites = as.integer(visites),
+  type_method = type_method)
+
+table_inv <- table_inv[order(as.numeric(table_inv$troncon_id), decreasing = FALSE),]
+

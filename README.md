@@ -54,19 +54,15 @@ R875.1/
 
 
 ---
-### Notes bases de données
+### Notes manipulation des bases de données
 
 #### Observations de carcasses
 
-| Date | Fichier concerné | Modification | Raison |
+| Date de suppression | Fichier concerné | Modification | Raison |
 |---|---|---|---|
-| 2025-06-03 | `inv_mort_2025.csv` | Suppression de l'inventaire GoPro (tronçon 42) | Heures suspectes (09:37 à 09:38, durée d'une minute) ; inventaire non appuyé par d'autres méthodes alors que le tronçon compte déjà 2 autres inventaires GoPro. |
+| 2026-07-22 | `inv_mort_2025.csv` | Suppression de l'inventaire GoPro du 2025-06-03 sur le tronçon 42 | Heures suspectes (09:37 à 09:38) ; inventaire non appuyé par d'autres méthodes alors que le tronçon compte déjà 2 autres inventaires GoPro. |
 
-### Notes bases de données
+| 2026-07-22 | `inv_mort_2025.csv` | Suppression de l'inventaire GoPro du 2025-06-03 sur le tronçon 41 | Heures suspectes (09:39 à 09:40) ; inventaire non appuyé par d'autres méthodes alors que le tronçon compte déjà 2 autres inventaires GoPro. |
 
-#### Observations de carcasses — `inv_mort_2025.csv`
 
-**2025-06-15** — Suppression de l'inventaire GoPro du 2026-06-03 sur le tronçon 42.
-Raison : heures suspectes (09:37 à 09:38) et inventaire réalisé sans autres méthodes,
-alors que le tronçon comptabilise déjà 2 autres inventaires GoPro.
 
