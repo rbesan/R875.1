@@ -7,11 +7,11 @@
 ## Données brutes
 in_sounds="/media/md0/MTQ-A10/AUDIOMOTHS/2025" ## chemin pour les données brutes
 ## Dossier de liens
-links="/home/robes15/Documents/R8751/output/birdNET/2025/links"
+links="/home/robes15/Documents/R8751/output/birdnet/2025/links"
 ## Output de birdnet
-out_weather="/home/robes15/Documents/R8751/output/birdNET/2025/weather" ## chemin de dépôt des csv pour la première analyse
+out_weather="/home/robes15/Documents/R8751/output/birdnet/2025/weather" ## chemin de dépôt des csv pour la première analyse
 ## Modèle personnalisé
-mod9="/home/robes15/Documents/birdNET_custom/mod_lise_class9.tflite" ## chemin pour le modèle entrainé
+mod9="/home/robes15/Documents/birdnet_custom/mod_lise_class9.tflite" ## chemin pour le modèle entrainé
 
 
 

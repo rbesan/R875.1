@@ -1,14 +1,14 @@
 #!/bin/bash
 #SBATCH --job-name=clips_mod9_2025
-#SBATCH --time=02:00:00
+#SBATCH --time=05:00:00
 #SBATCH --cpus-per-task=4
 
 ## Données brutes
 in_sounds="/media/md0/MTQ-A10/AUDIOMOTHS/2025"
 ## csv issus du script run_mod_lise_class9_R8751_2025.sh
-in_csv="/home/robes15/Documents/R8751/output/birdNET/2025/anura_mod9"
+in_csv="/home/robes15/Documents/R8751/output/birdnet/2025/anura_mod9"
 ## Sortie des clips
-out_clips="/home/robes15/Documents/R8751/output/birdNET/2025/clips_anura_mod9"
+out_clips="/home/robes15/Documents/R8751/output/birdnet/2025/clips_anura_mod9"
 
 source /opt/conda/etc/profile.d/conda.sh
 conda activate birdnetNew

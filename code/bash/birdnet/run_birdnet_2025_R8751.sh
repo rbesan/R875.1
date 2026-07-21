@@ -7,10 +7,10 @@
 ## Données brutes
 in_sounds="/media/md0/MTQ-A10/AUDIOMOTHS/2025" ## chemin pour les données brutes
 ## Output de birdnet
-out_weather="/home/robes15/Documents/R8751/output/birdNET/2025/weather" ## csv filtre météo (mod9)
-out_anura="/home/robes15/Documents/R8751/output/birdNET/2025/anura" ## csv birdnet pour les anoures (modèle de base)
+out_weather="/home/robes15/Documents/R8751/output/birdnet/2025/weather" ## csv filtre météo (mod9)
+out_anura="/home/robes15/Documents/R8751/output/birdnet/2025/anura" ## csv birdnet pour les anoures (modèle de base)
 ## Dossier de liens
-links="/home/robes15/Documents/R8751/output/birdNET/2025/links"
+links="/home/robes15/Documents/R8751/output/birdnet/2025/links"
 ## Liste d'espèces
 list="/home/robes15/Documents/R8751/input/species_list.txt"
 
