@@ -10,7 +10,7 @@ A level-1 auxiliary file: sections/method_I.aux
 A level-1 auxiliary file: sections/method_II.aux
 The style file: ecologyNewFR.bst
 Database file #1: R875-1.bib
-Repeated entry---line 216 of file R875-1.bib
+Repeated entry---line 223 of file R875-1.bib
  : @techreport{fayard2024
  :                       ,
 I'm skipping whatever remains of this entry
@@ -20,45 +20,45 @@ Warning--empty institution in MELCCFP2023b
 Warning--empty journal in rytwinski2016
 Warning--empty institution in snc2023
 Warning--empty journal in stuart2004
-You've used 43 entries,
+You've used 44 entries,
             2716 wiz_defined-function locations,
-            888 strings with 15865 characters,
-and the built_in function-call counts, 22759 in all, are:
-= -- 2116
-> -- 1620
+            893 strings with 16019 characters,
+and the built_in function-call counts, 23173 in all, are:
+= -- 2152
+> -- 1651
 < -- 26
-+ -- 546
-- -- 488
-* -- 2014
-:= -- 4329
-add.period$ -- 179
-call.type$ -- 43
-change.case$ -- 344
-chr.to.int$ -- 42
-cite$ -- 49
-duplicate$ -- 753
-empty$ -- 1217
-format.name$ -- 555
-if$ -- 4373
++ -- 556
+- -- 497
+* -- 2049
+:= -- 4410
+add.period$ -- 183
+call.type$ -- 44
+change.case$ -- 351
+chr.to.int$ -- 43
+cite$ -- 50
+duplicate$ -- 769
+empty$ -- 1239
+format.name$ -- 565
+if$ -- 4450
 int.to.chr$ -- 2
 int.to.str$ -- 1
 missing$ -- 36
-newline$ -- 222
-num.names$ -- 176
-pop$ -- 272
+newline$ -- 227
+num.names$ -- 180
+pop$ -- 279
 preamble$ -- 1
-purify$ -- 333
+purify$ -- 340
 quote$ -- 0
-skip$ -- 533
+skip$ -- 545
 stack$ -- 0
-substring$ -- 1217
-swap$ -- 111
+substring$ -- 1228
+swap$ -- 114
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 384
+type$ -- 393
 warning$ -- 6
-while$ -- 192
+while$ -- 195
 width$ -- 0
-write$ -- 575
+write$ -- 587
 (There was 1 error message)

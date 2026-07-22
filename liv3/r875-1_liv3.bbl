@@ -1,4 +1,4 @@
-\begin{thebibliography}{43}
+\begin{thebibliography}{44}
 
 \bibitem[Ahmed et Ahmed(2022)]{ahmed2022}
 Ahmed, I.~U. et M.~M. Ahmed. 2022.
@@ -12,6 +12,12 @@ Aota, T., K.~Ashizawa, H.~Mori, M.~Toda, et S.~Chiba. 2021.
 \newblock Detection of {Anolis} carolinensis using drone images and a deep
   neural network: an effective tool for controlling invasive species.
 \newblock Biological Invasions 23:1321--1327.
+
+\bibitem[Araya-Salas et~al.(2025)Araya-Salas, Elizondo-Calvo, et
+  Rico-Guevara]{arya-salas2025suwo}
+Araya-Salas, M., J.~Elizondo-Calvo, et A.~Rico-Guevara. 2025.
+\newblock suwo: Access Nature Media Repositories.
+\newblock R package version 0.1.0.
 
 \bibitem[Barrientos et~al.(2021)Barrientos, Ascensão, D’Amico, Grilo, et
   Pereira]{barrientos2021}

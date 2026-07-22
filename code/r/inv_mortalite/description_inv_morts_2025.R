@@ -10,6 +10,13 @@ mort25 <- read.csv("inv_mort_2025.csv",
          sep = ";",
          fileEncoding = "Latin1")
 
+
+cat <- read.csv("troncons_cat_2026.csv", 
+                   header = TRUE,
+                   sep = ",",
+                   fileEncoding = "Latin1")
+
+
 # retrait des colonnes qui ne servent à rien
 
 mort25_clean1 <- mort25[, !(names(mort25)) %in% c("commentaire", 
@@ -55,10 +62,21 @@ type_method <- tapply(mort25_clean4$Technique,
                       mort25_clean4$Troncons_ID, 
                       function(x) paste(sort(unique(x)), 
                                         collapse = "+"))
+
+
 table_inv <- data.frame(
   troncon_id = names(visites),
   visites = as.integer(visites),
   type_method = type_method)
 
-table_inv <- table_inv[order(as.numeric(table_inv$troncon_id), decreasing = FALSE),]
+table_merge <- merge(table_inv, cat, all = FALSE)
+
+
+table_final <-table_merge[order(as.numeric(table_merge$troncon_id), decreasing = FALSE),]
+
+length(table_final$troncon_id)
+
+# Tableau latex
+
+print(xtable(table_inv), include.rownames = FALSE)
 
