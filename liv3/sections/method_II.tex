@@ -83,12 +83,155 @@ L'heure et la date de pose de la caméra, l'heure et la date de retrait, les coo
 
 \subsubsection{Enregistrements accoustiques}
 
+Nous avons également installé 18 enregistreurs acoustiques automatisés fin avril
+2025 aux milieux humides proches des tronçons, présentant des habitats favorables
+à l’occupation des anoures. Ces enregistreurs ont été retirés à la mi-août 2025. Les
+enregistreurs acoustiques nous permettent de suivre les périodes de reproduction des
+anoures aux sites où l’accès est plus difficile pour le suivi visuel (longue distance à
+faire à pied, stationnement interdit en bordure d’autoroute).
+
 
 % Section birdnet issu du rapport sur l'A85
 
-Bien que le modèle BirdNET soit déjà entraîné à reconnaître plusieurs espèces d’anoures présentes au Québec, deux espèces ne sont pas prises en charge par l’algorithme : la grenouille du Nord et la grenouille léopard. Afin d’assurer une détection exhaustive des anoures, nous avons donc utilisé une version personnalisée de BirdNET que nous avons entraînée pour ces deux taxons. Cet entraînement reposait sur un corpus de 2 142 extraits acoustiques d’une durée de trois secondes chacun, préalablement sélectionnés et validés à la main. Les données provenaient de plateformes de science participative, notamment Xeno-canto, iNaturalist et Macaulay Library et extraites à l’aide du package R suwo \citep{arya-salas2025suwo}.
+Bien que le modèle BirdNET soit déjà entraîné à reconnaître plusieurs espèces d’anoures présentes au Québec, deux espèces ne sont pas prises en charge par l’algorithme : la grenouille du Nord et la grenouille léopard. Afin d’assurer une détection exhaustive des anoures, nous avons donc utilisé une version personnalisée de BirdNET que nous avons entraînée pour ces deux taxons. Cet entraînement reposait sur un corpus de 2 142 extraits acoustiques d’une durée de trois secondes chacun, préalablement sélectionnés et validés à la main. Les données provenaient de plateformes de science participative, notamment Xeno-canto, iNaturalist et Macaulay Library et extraites à l’aide du package R suwo \citep{arya-salas2025suwo}. Nous avons complété ce corpus d'entraînement avec des enregistrements issus de travaux antérieurs du laboratoire de biologie de la conservation quantitative du professeur Mazerolle. Une attention particulière a été portée à l’équilibrage du jeu d’entraînement afin de limiter les biais et le surapprentissage associés à certaines catégories de sons. Les 2 142 extraits étaient répartis en neuf classes distinctes (tableau~\ref{tab:tab_clips}).
+
+\begin{table}[H]
+\centering
+\caption{Composition du corpus d'entraînement du modèle de classification personnalisé BirdNET. Chaque clip a une durée de 3 secondes. Les clips ont été extraits à partir de fichiers audios issus des bases de données de sciences participatives (Xeno-canto, iNaturalist et Macaulay) et de la collection sonore du laboratoire du professeur Mazerolle.}
+\label{tab:tab_clips}
+\begin{tabular}{lrl}
+  \hline
+Classe & Nombre de clips (3s) & Description  \\ 
+  \hline
+ANTHRO & 124 & Bruits d'origine anthopique (moteurs et véhicules) \\
+BIRDS & 247 &  Vocalisation d'oiseaux \\
+CLAMITANS & 250 &  Lithobates clamitans (Grenouille verte) \\
+CRUCIFER & 250 &  Pseudacris crucifer (Rainette crucifère) \\
+PIPIENS & 242 &  Lithobates pipiens (Grenouille léopard) \\
+SEPTENTRIONALIS & 284 & Lithobates septentrionalis (Grenouille du Nord) \\
+SILENCE & 245 &  Clips sans signal biologique \\
+VERSICOLOR & 250 &  Hyla versicolor (Rainette versicolore) \\
+WEATHER & 250 &  Bruits météorologiques (vent et pluie) \\
+     \hline
+\end{tabular}
+\end{table}
+
+Nous avons évalué les performances du modèle personnalisé à partir d'un ensemble indépendant de 386 clips audio de 3 secondes, représentant environ 20 \% du corpus d'entraînement. Cet ensemble comprenait des clips de grenouille du Nord et de grenouille léopard, ainsi que des clips négatifs (bruits environnementaux sans grenouille du Nord ou grenouille léopard) afin de tester la capacité du modèle à discriminer les deux espèces cibles du bruit de fond. Cette approche suit une règle courante en apprentissage automatique qui consiste à réserver environ 20 \% des données à la validation du modèle. Afin de garantir l’indépendance de l’évaluation, nous avons veillé à ce que ces clips soient issus de fichiers qui n’avaient pas servi à entraîner BirdNET en amont. Toutefois, cette validation sur un jeu de données délimité ne reflète pas pleinement le comportement réel du modèle en situation réelle, où ce dernier est exposé à un volume de données considérablement plus important, à une plus grande variabilité acoustique et à des sons pour lesquels il n'a pas été entraîné, augmentant ainsi le risque de faux positifs.
+
+\begin{table}[H]
+\centering
+\caption{Matrice de confusion du modèle personnalisé pour la grenouille léopard à un seuil de 0.25. Les vraies présences désignent les clips contenant une vocalisation de l'espèce cible ; les vraies absences désignent les clips n'en contenant pas.}
+\label{tab:tab_confusion_pipiens}
+\begin{tabular}{lrr}
+  \hline
+ & Détection de BirdNET & Non-détection de BirdNET \\
+  \hline
+Vraie absence  &  0 & 62 \\
+Vraie présence & 72 &  3 \\
+  \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Métriques de performance du modèle personnalisé pour la grenouille léopard à un seuil de confiance de 0,25. Le seuil de confiance est un indice calculé par BirdNET (pas une probabilité) compris entre 0 et 1. TP : vrais positifs ; FP : faux positifs ; FN : faux négatifs ; TN : vrais négatifs ; Exactitude = (TP + TN) / (TP + TN + FP + FN) ; Précision = TP / (TP + FP) ; Rappel = TP / (TP + FN) ; F1 = 2 × (Précision × Rappel) / (Précision + Rappel).}
+\label{tab:tab_metrics_pipiens_025}
+\begin{tabular}{rrrrrrrrr}
+  \hline
+Seuil & TP & FP & FN & TN & Exactitude & Précision & Rappel & F1 \\
+  \hline
+0.25 & 72 & 0 & 3 & 62 & 0.978 & 1 & 0.96 & 0.98 \\
+  \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Matrice de confusion du modèle personnalisé pour la grenouille léopard à un seuil de 0.75. Les vraies présences désignent les clips contenant une vocalisation de l'espèce cible ; les vraies absences désignent les clips n'en contenant pas.}
+\label{tab:tab_confusion_pipiens_075}
+\begin{tabular}{lrr}
+  \hline
+ & Détection de BirdNET & Non-détection de BirdNET \\
+  \hline
+Vraie absence  &  0 & 62 \\
+Vraie présence & 45 & 30 \\
+  \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Métriques de performance du modèle personnalisé pour la grenouille léopard à un seuil de confiance de 0,75. Le seuil de confiance est un indice calculé par BirdNET (pas une probabilité) compris entre 0 et 1. TP : vrais positifs ; FP : faux positifs ; FN : faux négatifs ; TN : vrais négatifs ; Exactitude = (TP + TN) / (TP + TN + FP + FN) ; Précision = TP / (TP + FP) ; Rappel = TP / (TP + FN) ; F1 = 2 × (Précision × Rappel) / (Précision + Rappel).}
+\label{tab:tab_metrics_pipiens_075}
+\begin{tabular}{rrrrrrrrr}
+  \hline
+Seuil & TP & FP & FN & TN & Exactitude & Précision & Rappel & F1 \\
+  \hline
+0.75 & 45 & 0 & 30 & 62 & 0.781 & 1 & 0.6 & 0.75 \\
+  \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Matrice de confusion du modèle personnalisé pour la grenouille du Nord à un seuil de 0.25. Les vraies présences désignent les clips contenant une vocalisation de l'espèce cible ; les vraies absences désignent les clips n'en contenant pas.}
+\label{tab:tab_confusion_septentrionalis_025}
+\begin{tabular}{lrr}
+  \hline
+ & Détection de BirdNET & Non-détection de BirdNET \\
+  \hline
+Vraie absence  &  9 & 57 \\
+Vraie présence & 91 & 14 \\
+  \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Métriques de performance du modèle personnalisé pour la grenouille du Nord à un seuil de confiance de 0,25. Le seuil de confiance est un indice calculé par BirdNET (pas une probabilité) compris entre 0 et 1. TP : vrais positifs ; FP : faux positifs ; FN : faux négatifs ; TN : vrais négatifs ; Exactitude = (TP + TN) / (TP + TN + FP + FN) ; Précision = TP / (TP + FP) ; Rappel = TP / (TP + FN) ; F1 = 2 × (Précision × Rappel) / (Précision + Rappel).}
+\label{tab:tab_metrics_septentrionalis_025}
+\begin{tabular}{rrrrrrrrr}
+  \hline
+Seuil & TP & FP & FN & TN & Exactitude & Précision & Rappel & F1 \\
+  \hline
+0.25 & 91 & 9 & 14 & 57 & 0.865 & 0.91 & 0.867 & 0.888 \\
+  \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Matrice de confusion du modèle personnalisé pour la grenouille du Nord à un seuil de 0.75. Les vraies présences désignent les clips contenant une vocalisation de l'espèce cible ; les vraies absences désignent les clips n'en contenant pas.}
+\label{tab:tab_confusion_septentrionalis_075}
+\begin{tabular}{lrr}
+  \hline
+ & Détection de BirdNET & Non-détection de BirdNET \\
+  \hline
+Vraie absence  &  1 & 65 \\
+Vraie présence & 58 & 47 \\
+  \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Métriques de performance du modèle personnalisé pour la grenouille du Nord à un seuil de confiance de 0,75. Le seuil de confiance est un indice calculé par BirdNET (pas une probabilité) compris entre 0 et 1. TP : vrais positifs ; FP : faux positifs ; FN : faux négatifs ; TN : vrais négatifs ; Exactitude = (TP + TN) / (TP + TN + FP + FN) ; Précision = TP / (TP + FP) ; Rappel = TP / (TP + FN) ; F1 = 2 × (Précision × Rappel) / (Précision + Rappel).}
+\label{tab:tab_metrics_septentrionalis_075}
+\begin{tabular}{rrrrrrrrr}
+  \hline
+Seuil & TP & FP & FN & TN & Exactitude & Précision & Rappel & F1 \\
+  \hline
+0.75 & 58 & 1 & 47 & 65 & 0.719 & 0.983 & 0.552 & 0.707 \\
+  \hline
+\end{tabular}
+\end{table}
+
+Malgré la présence de faux positifs (Tableau~\ref{tab:tab_confusion_pipiens}; Tableau~\ref{tab:tab_metrics_pipiens_025}; Tableau~\ref{tab:tab_confusion_pipiens_075}; Tableau~\ref{tab:tab_metrics_pipiens_075}; Tableau~\ref{tab:tab_confusion_septentrionalis_025}; Tableau~\ref{tab:tab_metrics_septentrionalis_025}; Tableau~\ref{tab:tab_confusion_septentrionalis_075}; Tableau~\ref{tab:tab_metrics_septentrionalis_075}), particulièrement pour la grenouille Nord (Tableau~\ref{tab:tab_confusion_septentrionalis_025}; Tableau~\ref{tab:tab_metrics_septentrionalis_025}; Tableau~\ref{tab:tab_confusion_septentrionalis_075}; Tableau~\ref{tab:tab_metrics_septentrionalis_075}), le modèle a démontré des performances satisfaisantes pour les deux espèces cibles, avec une exactitude (proportion de prédictions vraies sur l’ensemble des prédictions) supérieure à 0,70 pour les deux seuils testés. Ces résultats indiquent que le modèle peut être utilisé comme outil de présélection des détections, réduisant substantiellement le temps de validation par rapport à l'écoute intégrale des enregistrements (à condition que les détections retenues fassent l'objet d'une validation manuelle). Les faux positifs observés s'expliquent en partie par la similarité entre les vocalisations de L. septentrionalis et celles d'autres espèces, notamment L. sylvaticus. La constitution d'un corpus d'entraînement plus étoffé, incluant des enregistrements printaniers et estivaux de 2026, permettront d’améliorer les performances du modèle.
+Avant l’analyse des fichiers audios, nous avons exclu les enregistrements affectés par des conditions météorologiques défavorables (vents forts et précipitations intenses) afin de préserver la qualité des données. Pour ce faire, nous avons utilisé notre modèle personnalisé préalablement entraîné pour la grenouille du Nord et la grenouille léopard, capable de détecter la présence de vent et de pluie à partir du signal acoustique (Tableau \ref{tab:tab_clips}). Ce modèle a été appliqué à l’ensemble des enregistrements. Ainsi, tout fichier contenant au moins un clip de 3 secondes classé comme WEATHER (Tableau \ref{tab:tab_clips}) avec un score de confiance supérieur ou égal à 0,75 a été retiré de l’analyse en raison des mauvaises conditions d’enregistrement. 
 
 \subsubsection{Recherche par drones}
+
+
 
 
 
