@@ -62,6 +62,7 @@ R875.1/
 |---|---|---|---|
 | 2026-07-22 | `inv_mort_2025.csv` | Suppression de l'inventaire GoPro du 2025-06-03 sur le tronçon 42 | Heures suspectes (09:37 à 09:38) ; inventaire non appuyé par d'autres méthodes alors que le tronçon compte déjà 2 autres inventaires GoPro. |
 | 2026-07-22 | `inv_mort_2025.csv` | Suppression de l'inventaire GoPro du 2025-06-03 sur le tronçon 41 | Heures suspectes (09:39 à 09:40) ; inventaire non appuyé par d'autres méthodes alors que le tronçon compte déjà 2 autres inventaires GoPro. |
+| 2026-07-23 | `persistance25.csv` | La valeur (31:31) dans la colonne TempsPredation signifie 31 h 31 (24 h 00 + 7 h 31) car la caméra est restée plus que 24 h 00 | la valeur affichée (31 h) et le format avec les () ne cadre pas avec la variable annoncée |
 
 
 
