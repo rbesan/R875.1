@@ -1,5 +1,10 @@
 # Lignes de code utiles 
 
+# Connexion serveur labo
+
+ssh -X robes15@132.203.41.191
+
+
 ## Voir arborescence complète de dossiers/ fichiers : 
 
 tree -L 
@@ -32,3 +37,11 @@ done
 ##sbatch test.bash
 ## 5 - output (exemple)
 ##less slurm-364.out
+
+# copier coller vers le serveur
+scp csv_check_mod9_2025.R  robes15@132.203.41.191:/home/robes15/Documents/R8751/code/r/birdnet 
+
+# copier coller depuis le serveur vers le local
+scp validation_mod9.csv robes1@10.244.50.22:/home/robes1/CONTRAT_ULAVAL/R8751/output/csv_validation_birdnet
+
+
