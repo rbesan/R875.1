@@ -6,59 +6,49 @@ A level-1 auxiliary file: sections/comite.aux
 A level-1 auxiliary file: sections/specialistes.aux
 A level-1 auxiliary file: sections/mandat.aux
 A level-1 auxiliary file: sections/intro.aux
-A level-1 auxiliary file: sections/method_I.aux
 A level-1 auxiliary file: sections/method_II.aux
 The style file: ecologyNewFR.bst
 Database file #1: R875-1.bib
-Repeated entry---line 223 of file R875-1.bib
- : @techreport{fayard2024
- :                       ,
-I'm skipping whatever remains of this entry
-Warning--empty journal in ahmed2022
 Warning--empty year in fayard2022; set to ????
-Warning--empty institution in MELCCFP2023b
-Warning--empty journal in rytwinski2016
-Warning--empty institution in snc2023
-Warning--empty journal in stuart2004
-You've used 44 entries,
+You've used 3 entries,
             2716 wiz_defined-function locations,
-            893 strings with 16019 characters,
-and the built_in function-call counts, 23173 in all, are:
-= -- 2152
-> -- 1651
-< -- 26
-+ -- 556
-- -- 497
-* -- 2049
-:= -- 4410
-add.period$ -- 183
-call.type$ -- 44
-change.case$ -- 351
-chr.to.int$ -- 43
-cite$ -- 50
-duplicate$ -- 769
-empty$ -- 1239
-format.name$ -- 565
-if$ -- 4450
-int.to.chr$ -- 2
+            624 strings with 5174 characters,
+and the built_in function-call counts, 1327 in all, are:
+= -- 118
+> -- 91
+< -- 1
++ -- 30
+- -- 27
+* -- 111
+:= -- 268
+add.period$ -- 12
+call.type$ -- 3
+change.case$ -- 21
+chr.to.int$ -- 3
+cite$ -- 4
+duplicate$ -- 48
+empty$ -- 71
+format.name$ -- 30
+if$ -- 246
+int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 36
-newline$ -- 227
-num.names$ -- 180
-pop$ -- 279
+missing$ -- 1
+newline$ -- 18
+num.names$ -- 12
+pop$ -- 21
 preamble$ -- 1
-purify$ -- 340
+purify$ -- 21
 quote$ -- 0
-skip$ -- 545
+skip$ -- 33
 stack$ -- 0
-substring$ -- 1228
-swap$ -- 114
-text.length$ -- 4
+substring$ -- 51
+swap$ -- 5
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 393
-warning$ -- 6
-while$ -- 195
+type$ -- 27
+warning$ -- 1
+while$ -- 10
 width$ -- 0
-write$ -- 587
-(There was 1 error message)
+write$ -- 40
+(There was 1 warning)
