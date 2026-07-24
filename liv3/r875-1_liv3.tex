@@ -1,7 +1,7 @@
 \documentclass[12pt, a4paper]{article}
 \usepackage[letterpaper, margin = 2.54cm]{geometry}
 
-% dpendencies
+% dependencies
 
 \usepackage[round]{natbib}
 \usepackage[utf8]{inputenc} 
@@ -21,9 +21,13 @@
 \usepackage{booktabs}
 \usepackage{amsmath}
 \usepackage{float}
-\usepackage[textwidth=2cm]{todonotes}
-\usepackage{soul}
+%\usepackage[textwidth=2cm]{todonotes}
+%\usepackage{soul}
 \usepackage{xcolor}
+
+% change to nicer bullets
+\renewcommand{\FrenchLabelItem}{\textbullet}
+
 
 \title{\Large\textbf{Évaluation des critères permettant d'améliorer\\
 l'efficacité des passages fauniques adaptés aux\\
@@ -32,10 +36,10 @@ Projet R875.1}\\[2em]
 \Large Rapport d'avancement 3}
 
 \author{
-Aurore Fayard, M.Sc\\
-Professionnelle de recherche\\[1em]
 Robin Besançon, M. Sc.\\
 Professionnel de recherche\\[1em]
+Aurore Fayard, M.Sc\\
+Professionnelle de recherche\\[1em]
 Marc J. Mazerolle, Ph.D\\
 Chercheur principal}
 
@@ -46,12 +50,44 @@ Juillet 2025
 }
 
 
+
+
+%%%%%%%%%% the following macros are necessary to track changes in document
+%%%%%%%%%%%%%%%%BEGIN code added to track changes%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+
+\usepackage{soulutf8}
+\usepackage[normalem]{ulem}
+%adding comments in margins
+\usepackage[textwidth=2cm, colorinlistoftodos]{todonotes}
+
+% just adding text in blue
+\newcommand{\add}{\textcolor{blue}}
+
+% adding and underlining text - MJM in blue
+\newcommand{\addM}{\textcolor{blue}{\bgroup}\markoverwith{\textcolor{blue}{\rule[-0.5ex]{2pt}{0.4pt}}}\ULon}
+
+% deleting text and underlining - MJM in red
+\newcommand\delM{\textcolor{red}{\bgroup}\markoverwith{\textcolor{red}{\rule[0.5ex]{2pt}{0.4pt}}}\ULon}
+
+% deleting text - MJM in red
+\newcommand\underM{\textcolor{red}{\bgroup}\markoverwith{\textcolor{red}{\rule[-0.5ex]{2pt}{0.4pt}}}\ULon}
+
+
+%modify color, add counter, author name, and size - MJM in blue
+\newcounter{todocounter}
+\newcommand{\comM}[2][]
+{\stepcounter{todocounter}\todo[color=orange, size=\footnotesize, author=MJM, #1]{\thetodocounter: #2}}
+
+%%%%%%%%%%%%%%%%END code added to track changes%%%%%%%%%%%%%%%%%%%modify color
+
+
 \begin{document}
 
 \maketitle
 \vfill
 \noindent
-\includegraphics[width=4cm]{logos/logo_ulaval.png}\hfill\includegraphics[width=4cm]{logos/logo_mtm.png}
+\includegraphics[width=4cm]{logos/logo_ulaval.pdf}\hfill\includegraphics[width=4cm]{logos/logo_mtmd.png}
 
 \pagenumbering{gobble} 
 
@@ -93,5 +129,8 @@ Juillet 2025
 \bibliographystyle{ecologyNewFR}
 \bibliography{R875-1}  
 
+
+% print all comments at the end
+\listoftodos
 
 \end{document}
