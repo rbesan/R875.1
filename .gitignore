@@ -9,8 +9,8 @@
 .Rproj.user/
 .RData
 *~
-*.pdf
-*.png
+#*.pdf
+#*.png
 *.aux
 *.lof
 *.log
@@ -23,6 +23,6 @@
 *.gpkg
 *sample
 *.xcf
-*.jpg
-*.jpeg
+#*.jpg
+#*.jpeg
 .~lock.*#
