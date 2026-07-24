@@ -80,3 +80,6 @@ length(table_final$troncon_id)
 
 print(xtable(table_inv), include.rownames = FALSE)
 
+write.table(table_final, "sites_R8751.csv", sep =",",quote = FALSE, row.names = FALSE)
+
+
