@@ -77,7 +77,7 @@ L'heure et la date de pose de la caméra, l'heure et la date de retrait, les coo
 
 \subsubsection{Pièges photographiques}
 
-
+\addM{Des pièges photographiques (GardePro) ont été installés en mai 2025 à chacun des 30 tronçons sélectionnés. Un appareil a été disposé à proximité d'un ponceau dans chaque tronçon.}
 
 
 
@@ -85,15 +85,15 @@ L'heure et la date de pose de la caméra, l'heure et la date de retrait, les coo
 
 Nous avons également installé 18 enregistreurs acoustiques automatisés fin avril
 2025 aux milieux humides proches des tronçons, présentant des habitats favorables
-à l’occupation des anoures. Ces enregistreurs ont été retirés à la mi-août 2025. Les
+à l’occupation des anoures (\addM{AudioMoths;} \citealt{hill2019}). Ces enregistreurs ont été retirés à la mi-août 2025. Les
 enregistreurs acoustiques nous permettent de suivre les périodes de reproduction des
 anoures aux sites où l’accès est plus difficile pour le suivi visuel (longue distance à
 faire à pied, stationnement interdit en bordure d’autoroute).
 
 
 % Section birdnet issu du rapport sur l'A85
-
-Bien que le modèle BirdNET soit déjà entraîné à reconnaître plusieurs espèces d’anoures présentes au Québec, deux espèces ne sont pas prises en charge par l’algorithme : la grenouille du Nord et la grenouille léopard. Afin d’assurer une détection exhaustive des anoures, nous avons donc utilisé une version personnalisée de BirdNET que nous avons entraînée pour ces deux taxons. Cet entraînement reposait sur un corpus de 2 142 extraits acoustiques d’une durée de trois secondes chacun, préalablement sélectionnés et validés à la main. Les données provenaient de plateformes de science participative, notamment Xeno-canto, iNaturalist et Macaulay Library et extraites à l’aide du package R suwo \citep{arya-salas2025suwo}. Nous avons complété ce corpus d'entraînement avec des enregistrements issus de travaux antérieurs du laboratoire de biologie de la conservation quantitative du professeur Mazerolle. Une attention particulière a été portée à l’équilibrage du jeu d’entraînement afin de limiter les biais et le surapprentissage associés à certaines catégories de sons. Les 2 142 extraits étaient répartis en neuf classes distinctes (tableau~\ref{tab:tab_clips}).
+Bien\comM{Besoin de 1--2 phrase pour la mise en contexte pour expliquer c'est quoi BirdNET.}
+ que le modèle BirdNET soit déjà entraîné à reconnaître plusieurs espèces d’anoures présentes au Québec, deux espèces ne sont pas prises en charge par l’algorithme : la grenouille du Nord et la grenouille léopard. Afin d’assurer une détection exhaustive des anoures, nous avons donc utilisé une version personnalisée de BirdNET que nous avons entraînée pour ces deux taxons. Cet entraînement reposait sur un corpus de 2 142 extraits acoustiques d’une durée de trois secondes chacun, préalablement sélectionnés et validés à la main. Les données provenaient de plateformes de science participative, notamment Xeno-canto, iNaturalist et Macaulay Library et extraites à l’aide du package R suwo \citep{arya-salas2025suwo}. Nous avons complété ce corpus d'entraînement avec des enregistrements issus de travaux antérieurs du laboratoire de biologie de la conservation quantitative du professeur Mazerolle. Une attention particulière a été portée à l’équilibrage du jeu d’entraînement afin de limiter les biais et le surapprentissage associés à certaines catégories de sons. Les 2 142 extraits étaient répartis en neuf classes distinctes (tableau~\ref{tab:tab_clips}).
 
 \begin{table}[H]
 \centering
