@@ -9,46 +9,44 @@ A level-1 auxiliary file: sections/intro.aux
 A level-1 auxiliary file: sections/method_II.aux
 The style file: ecologyNewFR.bst
 Database file #1: R875-1.bib
-Warning--empty year in fayard2022; set to ????
-You've used 3 entries,
+You've used 8 entries,
             2716 wiz_defined-function locations,
-            624 strings with 5174 characters,
-and the built_in function-call counts, 1327 in all, are:
-= -- 118
-> -- 91
-< -- 1
-+ -- 30
-- -- 27
-* -- 111
-:= -- 268
-add.period$ -- 12
-call.type$ -- 3
-change.case$ -- 21
-chr.to.int$ -- 3
-cite$ -- 4
-duplicate$ -- 48
-empty$ -- 71
-format.name$ -- 30
-if$ -- 246
+            654 strings with 6110 characters,
+and the built_in function-call counts, 3995 in all, are:
+= -- 354
+> -- 300
+< -- 2
++ -- 100
+- -- 90
+* -- 358
+:= -- 779
+add.period$ -- 31
+call.type$ -- 8
+change.case$ -- 62
+chr.to.int$ -- 8
+cite$ -- 8
+duplicate$ -- 132
+empty$ -- 210
+format.name$ -- 100
+if$ -- 755
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 18
-num.names$ -- 12
-pop$ -- 21
+missing$ -- 5
+newline$ -- 42
+num.names$ -- 32
+pop$ -- 52
 preamble$ -- 1
-purify$ -- 21
+purify$ -- 62
 quote$ -- 0
-skip$ -- 33
+skip$ -- 94
 stack$ -- 0
-substring$ -- 51
-swap$ -- 5
+substring$ -- 187
+swap$ -- 17
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 27
-warning$ -- 1
-while$ -- 10
+type$ -- 72
+warning$ -- 0
+while$ -- 30
 width$ -- 0
-write$ -- 40
-(There was 1 warning)
+write$ -- 102

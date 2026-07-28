@@ -1,4 +1,4 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{8}
 
 \bibitem[Araya-Salas et~al.(2025)Araya-Salas, Elizondo-Calvo, et
   Rico-Guevara]{arya-salas2025suwo}
@@ -6,10 +6,10 @@ Araya-Salas, M., J.~Elizondo-Calvo, et A.~Rico-Guevara. 2025.
 \newblock suwo: Access Nature Media Repositories.
 \newblock R package version 0.1.0.
 
-\bibitem[Fayard(????)]{fayard2022}
-Fayard, A. ????
+\bibitem[Fayard(2022)]{fayard2022}
+Fayard, A. 2022.
 \newblock État des populations naturelles de rainette faux-grillon boréale
-  ({Pseudacris} maculata) et stratégies de réintroduction en milieu
+  (\emph{{Pseudacris} maculata}) et stratégies de réintroduction en milieu
   aménagé.
 \newblock Mémoire de maîtrise, Université Laval.
 
@@ -19,5 +19,36 @@ Hill, A.~P., P.~Prince, J.~L. Snaddon, C.~P. Doncaster, et A.~Rogers. 2019.
 \newblock {AudioMoth}: {A} low-cost acoustic device for monitoring biodiversity
   and the environment.
 \newblock HardwareX 6:e00073.
+
+\bibitem[Hopkins et~al.(2024)Hopkins, Santos-Elizondo, et
+  Villablanca]{hopkins2024}
+Hopkins, J., G.~M. Santos-Elizondo, et F.~Villablanca. 2024.
+\newblock Detecting and monitoring rodents using camera traps and machine
+  learning versus live trapping for occupancy modeling.
+\newblock Frontiers in Ecology and Evolution 12:1359201.
+
+\bibitem[Jocher et Qiu(2024)]{jocher2024}
+Jocher, G. et J.~Qiu. 2024.
+\newblock Ultralytics YOLO11, version 11.0.0.
+
+\bibitem[Kahl et~al.(2021)Kahl, Wood, Eibl, et Klinck]{kahl2021}
+Kahl, S., C.~M. Wood, M.~Eibl, et H.~Klinck. 2021.
+\newblock BirdNET: a deep learning solution for avian diversity monitoring.
+\newblock Ecological Informatics 61:101236.
+
+\bibitem[Norouzzadeh et~al.(2021)Norouzzadeh, Morris, Beery, Joshi, Jojic, et
+  Clune]{norouzzadeh2021}
+Norouzzadeh, M.~S., D.~Morris, S.~Beery, N.~Joshi, N.~Jojic, et J.~Clune. 2021.
+\newblock A deep active learning system for species identification and counting
+  in camera trap images.
+\newblock Methods in Ecology and Evolution 12:150--161.
+
+\bibitem[Stark et~al.(2023)Stark, Stefan, Wurm, Spanier, Taubenböck, et
+  Knight]{stark2023}
+Stark, T., V.~Stefan, M.~Wurm, R.~Spanier, H.~Taubenböck, et T.~M. Knight.
+  2023.
+\newblock YOLO object detection models can locate and classify broad groups of
+  flower-visiting arthropods in images.
+\newblock Scientific Reports 13:16364.
 
 \end{thebibliography}
