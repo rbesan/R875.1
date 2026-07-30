@@ -6,47 +6,49 @@ A level-1 auxiliary file: sections/comite.aux
 A level-1 auxiliary file: sections/specialistes.aux
 A level-1 auxiliary file: sections/mandat.aux
 A level-1 auxiliary file: sections/intro.aux
+A level-1 auxiliary file: sections/method_I.aux
 A level-1 auxiliary file: sections/method_II.aux
+A level-1 auxiliary file: sections/result_II.aux
 The style file: ecologyNewFR.bst
 Database file #1: R875-1.bib
-You've used 8 entries,
+You've used 19 entries,
             2716 wiz_defined-function locations,
-            654 strings with 6110 characters,
-and the built_in function-call counts, 3995 in all, are:
-= -- 354
-> -- 300
-< -- 2
-+ -- 100
-- -- 90
-* -- 358
-:= -- 779
-add.period$ -- 31
-call.type$ -- 8
-change.case$ -- 62
-chr.to.int$ -- 8
-cite$ -- 8
-duplicate$ -- 132
-empty$ -- 210
-format.name$ -- 100
-if$ -- 755
+            726 strings with 8482 characters,
+and the built_in function-call counts, 8970 in all, are:
+= -- 840
+> -- 580
+< -- 11
++ -- 196
+- -- 171
+* -- 759
+:= -- 1738
+add.period$ -- 76
+call.type$ -- 19
+change.case$ -- 135
+chr.to.int$ -- 19
+cite$ -- 19
+duplicate$ -- 316
+empty$ -- 513
+format.name$ -- 200
+if$ -- 1717
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 5
-newline$ -- 42
-num.names$ -- 32
-pop$ -- 52
+missing$ -- 13
+newline$ -- 98
+num.names$ -- 77
+pop$ -- 106
 preamble$ -- 1
-purify$ -- 62
+purify$ -- 133
 quote$ -- 0
-skip$ -- 94
+skip$ -- 224
 stack$ -- 0
-substring$ -- 187
-swap$ -- 17
-text.length$ -- 0
+substring$ -- 479
+swap$ -- 36
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 72
+type$ -- 168
 warning$ -- 0
-while$ -- 30
+while$ -- 75
 width$ -- 0
-write$ -- 102
+write$ -- 248
