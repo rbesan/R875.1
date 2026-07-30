@@ -44,4 +44,8 @@ scp csv_check_mod9_2025.R  robes15@132.203.41.191:/home/robes15/Documents/R8751/
 # copier coller depuis le serveur vers le local
 scp validation_mod9.csv robes1@10.244.50.22:/home/robes1/CONTRAT_ULAVAL/R8751/output/csv_validation_birdnet
 
+# Pour lire les wav facilement
+sshfs robes15@FFGG-1009580:/media/md0/MTQ-A10/AUDIOMOTHS/
+
+
 

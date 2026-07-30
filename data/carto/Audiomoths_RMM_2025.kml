@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="gpsaudiomoths2025" id="gpsaudiomoths2025">
+	<SimpleField name="fid" type="float"></SimpleField>
+	<SimpleField name="ele" type="float"></SimpleField>
+	<SimpleField name="time" type="string"></SimpleField>
+</Schema>
+<Folder><name>gpsaudiomoths2025</name>
+  <Placemark>
+	<name>AUDIO-T28</name>
+	<ExtendedData><SchemaData schemaUrl="#gpsaudiomoths2025">
+		<SimpleData name="fid">2</SimpleData>
+		<SimpleData name="ele">42.865196</SimpleData>
+		<SimpleData name="time">2025/04/23 12:59:37+00</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.847817,45.297889,42.865196</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>AUDIO-T01</name>
+	<ExtendedData><SchemaData schemaUrl="#gpsaudiomoths2025">
+		<SimpleData name="fid">4</SimpleData>
+		<SimpleData name="ele">47.89444</SimpleData>
+		<SimpleData name="time">2025/04/23 14:39:04+00</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.772958,45.338674,47.89444</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>AUDIO-A10-N1</name>
+	<ExtendedData><SchemaData schemaUrl="#gpsaudiomoths2025">
+		<SimpleData name="fid">7</SimpleData>
+		<SimpleData name="ele">17.26178</SimpleData>
+		<SimpleData name="time">2025/04/23 18:32:59+00</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.407259,45.428594,17.26178</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>AUDIO-A10-N3</name>
+	<ExtendedData><SchemaData schemaUrl="#gpsaudiomoths2025">
+		<SimpleData name="fid">8</SimpleData>
+		<SimpleData name="ele">22.514959</SimpleData>
+		<SimpleData name="time">2025/04/23 19:25:22+00</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.382645,45.410863,22.514959</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>AUDIO-T57</name>
+	<ExtendedData><SchemaData schemaUrl="#gpsaudiomoths2025">
+		<SimpleData name="fid">33</SimpleData>
+		<SimpleData name="ele">9.414668</SimpleData>
+		<SimpleData name="time">2025/04/28 13:12:34+00</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.516424,45.73052,9.414668</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>AUDIO-T20</name>
+	<ExtendedData><SchemaData schemaUrl="#gpsaudiomoths2025">
+		<SimpleData name="fid">37</SimpleData>
+		<SimpleData name="ele">14.052022</SimpleData>
+		<SimpleData name="time">2025/04/28 14:26:48+00</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.505591,45.720427,14.052022</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>AUDIO-T48</name>
+	<ExtendedData><SchemaData schemaUrl="#gpsaudiomoths2025">
+		<SimpleData name="fid">43</SimpleData>
+		<SimpleData name="ele">34.131672</SimpleData>
+		<SimpleData name="time">2025/04/28 17:29:09+00</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.378653,45.608792,34.131672</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>AUDIO-A10-N2</name>
+	<ExtendedData><SchemaData schemaUrl="#gpsaudiomoths2025">
+		<SimpleData name="fid">47</SimpleData>
+		<SimpleData name="ele">25.482119</SimpleData>
+		<SimpleData name="time">2025/04/29 13:12:42+00</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.395139,45.42083,25.482119</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>AUDIO-A10-S1</name>
+	<ExtendedData><SchemaData schemaUrl="#gpsaudiomoths2025">
+		<SimpleData name="fid">48</SimpleData>
+		<SimpleData name="ele">22.2537</SimpleData>
+		<SimpleData name="time">2025/04/29 14:43:04+00</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.399007,45.421402,22.2537</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>AUDIO-A10-S2</name>
+	<ExtendedData><SchemaData schemaUrl="#gpsaudiomoths2025">
+		<SimpleData name="fid">49</SimpleData>
+		<SimpleData name="ele">21.600552</SimpleData>
+		<SimpleData name="time">2025/04/29 15:13:26+00</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.389493,45.413999,21.600552</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>AUDIO-A10-S3</name>
+	<ExtendedData><SchemaData schemaUrl="#gpsaudiomoths2025">
+		<SimpleData name="fid">50</SimpleData>
+		<SimpleData name="ele">28.048059</SimpleData>
+		<SimpleData name="time">2025/04/29 15:40:05+00</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.382213,45.408995,28.048059</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>AUDIO-2-T49</name>
+	<ExtendedData><SchemaData schemaUrl="#gpsaudiomoths2025">
+		<SimpleData name="fid">53</SimpleData>
+		<SimpleData name="ele">24.856962</SimpleData>
+		<SimpleData name="time">2025/04/29 16:37:30+00</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.45128,45.400241,24.856962</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>AUDIO-1-T49</name>
+	<ExtendedData><SchemaData schemaUrl="#gpsaudiomoths2025">
+		<SimpleData name="fid">54</SimpleData>
+		<SimpleData name="ele">17.579023</SimpleData>
+		<SimpleData name="time">2025/04/29 16:44:39+00</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.449297,45.398266,17.579023</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>AUDIO-1-T47</name>
+	<ExtendedData><SchemaData schemaUrl="#gpsaudiomoths2025">
+		<SimpleData name="fid">55</SimpleData>
+		<SimpleData name="ele">26.583141</SimpleData>
+		<SimpleData name="time">2025/04/29 17:03:21+00</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.466073,45.393326,26.583141</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>AUDIO-2-T47</name>
+	<ExtendedData><SchemaData schemaUrl="#gpsaudiomoths2025">
+		<SimpleData name="fid">56</SimpleData>
+		<SimpleData name="ele">31.500416</SimpleData>
+		<SimpleData name="time">2025/04/29 17:15:29+00</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.465276,45.3945,31.500416</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>AUDIO-3-T4</name>
+	<ExtendedData><SchemaData schemaUrl="#gpsaudiomoths2025">
+		<SimpleData name="fid">57</SimpleData>
+		<SimpleData name="ele">31.808329</SimpleData>
+		<SimpleData name="time">2025/04/29 17:27:06+00</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.46489,45.395823,31.808329</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>AUDIO-T52</name>
+	<ExtendedData><SchemaData schemaUrl="#gpsaudiomoths2025">
+		<SimpleData name="fid">67</SimpleData>
+		<SimpleData name="ele">37.005524</SimpleData>
+		<SimpleData name="time">2025/04/30 16:12:12+00</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.617034,45.379367,37.005524</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>AUDIO-T65</name>
+	<ExtendedData><SchemaData schemaUrl="#gpsaudiomoths2025">
+		<SimpleData name="fid">68</SimpleData>
+		<SimpleData name="time">2025/05/01 16:10:00+00</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-73.4837799214363,45.2935220144517,0</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>
