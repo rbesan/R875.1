@@ -111,19 +111,21 @@ occ_clips <- barplot(barplot3$clips, names.arg = barplot3$species, horiz = TRUE,
 text(barplot3$clips, occ_clips, labels = ifelse(barplot3$clips == 0, "", barplot3$clips), pos = 4, cex = 1, )
 
 
-pheno <- unique(table_birdnet_2025[table_birdnet_2025$detect == 1, c("site", "date", "time", "species")])
+pheno <- unique(table_birdnet_2025[table_birdnet_2025$val == 1, c("site", "date", "time", "species")])
 pheno$date <- as.Date(pheno$date)
 
-pheno <- pheno[pheno$date >= as.Date("2025-04-01") & pheno$date <= as.Date("2025-09-30"), ]
+#pheno <- pheno[pheno$date >= as.Date("2025-04-01") & pheno$date <= as.Date("2025-09-30"), ]
 
+levels(pheno$species)
 
 # Figure de densité de probabilité
 couleurs <- c(
-  "P. crucifer"        = "#e63946",  # rouge vif
-  "L. sylvaticus"      = "#f4a261",  # orange
-  "L. clamitans"       = "#2d6a4f",  # vert foncé
-  "A. americanus"      = "#1d3557",  # bleu marine
-  "L. septentrionalis" = "#9b5de5"   # violet
+  "P. crucifer"   = "#D55E00",  # vermillon
+  "L. sylvaticus" = "#E69F00",  # orange
+  "L. clamitans"  = "#009E73",  # vert bleuté
+  "A. americanus" = "#0072B2",  # bleu
+  "H. versicolor" = "#CC79A7",  # violet rosé
+  "P. maculata"   = "#56B4E9"   # bleu ciel
 )
 
 ggplot(pheno, aes(x = date, fill = species, color = species)) +
