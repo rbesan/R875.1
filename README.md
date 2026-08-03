@@ -37,16 +37,6 @@ R8751/
 └── README.md
 
 ```
----
-
-## Dépendances
-
-| Logiciel | Version |
-|----------|---------|
-| R | ≥ 4.5.2 |
-| BirdNET | v1.5.1 (commit 4482cef, 2025-02-17) |
-
-**Packages R :** Mettre à jour
 
 ---
 
@@ -66,6 +56,16 @@ R8751/
 | `run_mod_lise_class9_R8751_2025.sh` | Script pour analyser des fichiers accoustiques avec le modèle 'mod_lise_class9' |
 | `epic_weather_2025_R8751.sh` | Script d'analyse des fichiers accoustiques avec 'mod_lise_class9' pour identifier les sites avec au moins un clip WEATHER  |
 
+---
+
+## Dépendances
+
+| Logiciel | Version |
+|----------|---------|
+| R | ≥ 4.5.2 |
+| BirdNET | v1.5.1 (commit 4482cef, 2025-02-17) |
+
+**Packages R :** Mettre à jour
 
 ---
 ### Notes manipulation des bases de données
@@ -92,6 +92,7 @@ R8751/
 | Date Robin | Site | Date observation | Taxon | Problème |
 |---|---|---|---|---|
 | 2026-08-03 | MH-T65 | 2025-07-28 | Anura | Donnée manquante ou perdue |
+| 2026-08-03 | MH-T65 | 2025-06-05 | ANAM | Chant entendu uniquement |
 | 2026-08-03 | MH-T65 | 2025-07-28 | LICL | On ne comprend pas s'il y a des individus détectés au chant ou au visuel dans l'effectif |
 | 2026-08-03 | MH-T20 | 2025-06-19 | NA | Site sans visite (tempête)|
 | 2026-08-03 | MH-T41-1| 2025-06-12 | NA | Site sans visite pour cause de végétation |

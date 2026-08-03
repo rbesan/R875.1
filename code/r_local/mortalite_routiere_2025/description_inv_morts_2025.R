@@ -3,7 +3,7 @@ library("xtable")
 
 # Objectif : analyse descriptive des inventaires de mortalité
 
-setwd("/home/robes1/CONTRAT_ULAVAL/R8751/data/raw")
+setwd("/home/robes1/CONTRAT_ULAVAL/R8751/data/raw/mortalite_routiere_2025")
 
 mort25 <- read.csv("inv_mort_2025.csv", 
          header = TRUE,
