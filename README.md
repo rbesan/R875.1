@@ -8,20 +8,34 @@
 
 ## Organisation des fichiers
 ```
-R875.1/
+R8751/
 ├── archives
 ├── code
-│   ├── bash
-│   └── r
+│   ├── bash_serveur
+│   │   ├── birdnet
+│   │   └── pratique
+│   ├── r_local
+│   │   ├── birdnet
+│   │   ├── inv_mortalite
+│   │   ├── maps
+│   │   └── plaques25
+│   └── r_serveur
+│       └── birdnet
 ├── contracts
 ├── data
 │   ├── carto
 │   └── raw
 ├── liv3
+│   ├── ecologyNewFR.bst
+│   ├── figs_monteregie_liv3
+│   ├── logos
+│   └── sections
 ├── output
 │   ├── carto
+│   ├── csv_validation_birdnet
 │   └── graphique
 └── README.md
+
 ```
 ---
 
