@@ -78,7 +78,6 @@ R875.1/
 
 | Date Robin | Site | Date observation | Taxon | Problème |
 |---|---|---|---|---|
-| 
 | 2026-08-03 | MH-T65 | 2025-07-28 | Anura | Donnée manquante ou perdue |
 | 2026-08-03 | MH-T65 | 2025-07-28 | LICL | On ne comprend pas s'il y a des individus détectés au chant ou au visuel dans l'effectif |
 | 2026-08-03 | MH-T20 | 2025-06-19 | NA | Site sans visite (tempête)|
