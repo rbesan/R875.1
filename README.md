@@ -86,6 +86,10 @@ R8751/
 |  2026-07-30 | T20  | 2025-08-12 |  11 | `20250812_180000.WAV` | 107| Audiomoth récupéré le 12 mais actif jusqu'au 14 août |
 |  2026-07-30 | T49\_1 |2025-08-01 |  - | - | - | Eloise avait marqué une autre date mais c'est bien 2025-08-01 |
 |  2026-07-30 | T57  | 2025-08-12 |  11 | `20250812_180000.WAV` | 107 | Audiomoth récupéré le 12 mais actif jusqu'au 14 août|
+|  2026-07-30 | T57  | 2025-08-12 |  11 | `20250812_180000.WAV` | 107 | Audiomoth récupéré le 12 mais actif jusqu'au 14 août|
+|  2026-08-04 | T42\_S1  | - | - | - | - | Audiomoth perdu |
+|  2026-08-04 | T28  | - | - | - | - | Audiomoth perdu |
+|  2026-08-04 | T49_\1 | - | - | - | - | Audiomoth retrouvé avec batteries en dehors du boîtier |
 
 #### Données d'inventaires des milieux humides (Local : R8751/data/raw)
 
@@ -111,6 +115,10 @@ R8751/
 Remarques générales : 
 - Plusieurs commentaires font état d'espèce à déterminer. S'agissant de têtards il me paraît vain d'espérer aller plus loin. Autrement il faudrait demander à Éloïse d'actualiser les identifications.
 
+#### Données de persistance (Local : R8751/data/raw)
 
+| Tronçon| Date pose caméra test | Problème | Décision temporaire |
+|---|---|---|---|
+| T35 | 2025-07-22 | Les données n'ont pas été rentré ou il y a eu un problème | Retrait de l'analyse |
 
 

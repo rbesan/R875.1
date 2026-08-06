@@ -67,27 +67,31 @@ Au printemps 2025, nous avons déployé des Audiomoths sur 18 sites différents.
 \centering
 \caption{Effort d'enregistrement par site en 2025.} 
 \label{tab:tab_AM25}
-\begin{tabular}{lccccrr}
+\begin{tabular}{lccccccrr}
   \toprule
-Site & Longitude & Latitude & Début & Fin & Fichiers & Jours \\ 
+ID & Tronçon & Route & Longitude & Latitude & Début & Fin & Fichiers & Jours \\ 
   \midrule
-T01 & -73.77296 & 45.33867 &2025-04-23 & 2025-10-26 & 930 & 187  \\ 
-  T20 & -73.50559 & 45.72043 &2025-04-28 & 2025-08-12 & 531 & 107  \\ 
-  T41\_N1 & -73.40726 & 45.42859 & 2025-04-24 & 2025-10-27 & 934 & 187  \\ 
-  T42\_N2 & -73.39514 & 45.42083 & 2025-04-29 & 2025-10-27  & 907 & 182  \\ 
-  T42\_N3 & -73.38264 & 45.41086 & 2025-04-24 & 2025-10-27 & 934 & 187  \\ 
-  T42\_S2 & -73.38949 & 45.41400 & 2025-04-29 & 2025-10-27 & 905 & 182  \\ 
-  T42\_S3 & -73.38221 & 45.40899 & 2025-04-29 & 2025-10-27   & 905 & 182  \\ 
-  T47\_1 & -73.46607 & 45.39333 & 2025-04-29 & 2025-10-26   & 901 & 181  \\ 
-  T47\_2 & -73.46528 & 45.39450 & 2025-04-29 & 2025-10-26  & 901 & 181  \\ 
-  T47\_3 & -73.46489 & 45.39582 & 2025-04-29 & 2025-10-26 & 901 & 181  \\ 
-  T48 & -73.37865 & 45.60879 & 2025-04-28 & 2025-07-31 & 471 &  95 \\ 
-  T49\_1 & -73.44930 & 45.39827 & 2025-04-29 & 2025-08-01  & 469 &  95  \\ 
-  T49\_2 & -73.45128 & 45.40024 & 2025-04-29 & 2025-10-26 & 901 & 181  \\ 
-  T52 & -73.61703 & 45.37937 & 2025-04-30 & 2025-10-26 & 894 & 180  \\ 
-  T57 & -73.51642 & 45.73052 & 2025-04-28 & 2025-08-12 & 530 & 107 \\ 
-  T65 & -73.48378 & 45.29352 & 2025-05-01 & 2025-10-26 & 890 & 179  \\ 
-   \bottomrule
+T01 & T01 & A030 & -73.77296 & 45.33867 &2025-04-23 & 2025-10-26 & 930 & 187  \\ 
+  T20 & T20 & A040 & -73.50559 & 45.72043 &2025-04-28 & 2025-08-12 & 531 & 107  \\ 
+  T28\textsuperscript{a} & T28 & R205 & -73.84782 & 45.29789 & - & - & 0 & 0  \\ 
+  T41\_N1 & T41 & A010 & -73.40726 & 45.42859 & 2025-04-24 & 2025-10-27 & 934 & 187  \\ 
+  T42\_N2 & T42 & A010 & -73.39514 & 45.42083 & 2025-04-29 & 2025-10-27  & 907 & 182  \\ 
+  T42\_N3 & T42 & A010 & -73.38264 & 45.41086 & 2025-04-24 & 2025-10-27 & 934 & 187  \\ 
+  T42\_S1\textsuperscript{a} & T42 & A030 & -73.39901 & 45.42140 & - & - & 0 & 0 \\
+  T42\_S2 & T42 & A030 & -73.38949 & 45.41400 & 2025-04-29 & 2025-10-27 & 905 & 182  \\ 
+  T42\_S3 & T42 & A010 & -73.38221 & 45.40899 & 2025-04-29 & 2025-10-27   & 905 & 182  \\ 
+  T47\_1 & T47 & A030 & -73.46607 & 45.39333 & 2025-04-29 & 2025-10-26   & 901 & 181  \\ 
+  T47\_2 & T47 & A030 & -73.46528 & 45.39450 & 2025-04-29 & 2025-10-26  & 901 & 181  \\ 
+  T47\_3 & T47& A030 & -73.46489 & 45.39582 & 2025-04-29 & 2025-10-26 & 901 & 181  \\ 
+  T48 & T48 & A030 & -73.37865 & 45.60879 & 2025-04-28 & 2025-07-31 & 471 &  95 \\ 
+  T49\_1\textsuperscript{b} & T49 & R104 & -73.44930 & 45.39827 & 2025-04-29 & 2025-08-01  & 469 &  95  \\ 
+  T49\_2 & T49 & R104 & -73.45128 & 45.40024 & 2025-04-29 & 2025-10-26 & 901 & 181  \\ 
+  T52 & T52 & A730 & -73.61703 & 45.37937 & 2025-04-30 & 2025-10-26 & 894 & 180  \\ 
+  T57 & T57 & A640 & -73.51642 & 45.73052 & 2025-04-28 & 2025-08-12 & 530 & 107 \\ 
+  T65 & T65 & A015 & -73.48378 & 45.29352 & 2025-05-01 & 2025-10-26 & 890 & 179  \\ 
+\bottomrule
+  \multicolumn{9}{l}{\footnotesize\textsuperscript{a}Enregistreur perdu ; aucune donnée récupérée.} \\
+  \multicolumn{9}{l}{\footnotesize\textsuperscript{b}Enregistreur défectueux ; processus de prise de son interrompu.} \\
 \end{tabular}
 \end{table}
 
@@ -122,8 +126,34 @@ T01 & - & 1 & - & - & - & - \\
 \end{table}
 
 
-Le modèle personnalisé de birdNET n'aura pas permis 
 
+\begin{table}[ht]
+\setlength{\tabcolsep}{4pt}
+\centering
+\caption{Stades de développement des amphibiens observés par station.
+Ad, adulte ; Juv, juvénile ; Meta, métamorphe ; La, larve ; Oe, \oe{}ufs ; --, taxon non détecté. }
+\label{tab:tab_mh_amphibia}
+\begin{tabular}{lllllll}
+  \toprule
+Site & A. americanus & Anura ind. & H. versicolor & L. clamitans & L. pipiens & L. sylvaticus \\ 
+  \midrule
+MH-T01 & -- & La & -- & Ad & -- & -- \\ 
+  MH-T20 & -- & -- & -- & -- & -- & -- \\ 
+  MH-T41\_1 & -- & -- & -- & -- & -- & -- \\ 
+  MH-T41\_2 & -- & Ad/Ju & -- & Ad & Ad & Ad \\ 
+  MH-T42\_3 & -- & Ad & Ju & Ad & Ad & -- \\ 
+  MH-T42\_4 & -- & Ad & -- & Ad & -- & Ad/Ju \\ 
+  MH-T42\_5 & -- & Ad & -- & Ad/Ju & Ju & -- \\ 
+  MH-T47 & Ad & La & -- & Ad & -- & Ad \\ 
+  MH-T48 & -- & -- & -- & -- & -- & -- \\ 
+  MH-T49\_1 & Ju & Ad/Ju/La/Oe & -- & Ad & -- & -- \\ 
+  MH-T49\_2 & -- & Ad/La & -- & Ad/Ju & -- & Ju \\ 
+  MH-T52 & -- & -- & -- & Ad & Ad & -- \\ 
+  MH-T57 & -- & -- & -- & Ad & -- & -- \\ 
+  MH-T65 & Ad & Ad/Mé & -- & Ad & -- & -- \\ 
+   \bottomrule
+\end{tabular}
+\end{table}
 
 \begin{figure}[ht]
 \centering
@@ -131,6 +161,65 @@ Le modèle personnalisé de birdNET n'aura pas permis
 \caption{Nombre de détections par site en 2025.}
 \label{fig:densplot}
 \end{figure}
+
+
+
+\begin{table}[ht]
+\centering
+\caption{Résumé des observations de reptiles sur les 14 milieux humides inventoriés en 2025.}
+\label{tab:tab_mh_squamates}
+\begin{tabular}{lllll}
+  \toprule
+Site & C. picta & C. serpentina & T. sirtalis & Testudines ind. \\ 
+  \midrule
+MH-T01 & -- & -- & Ad & -- \\ 
+  MH-T20 & -- & -- & -- & -- \\ 
+  MH-T41\_1 & -- & -- & -- & -- \\ 
+  MH-T41\_2 & -- & -- & -- & -- \\ 
+  MH-T42\_3 & Ad & Ad & -- & Ad \\ 
+  MH-T42\_4 & -- & -- & -- & -- \\ 
+  MH-T42\_5 & -- & -- & Ad & -- \\ 
+  MH-T47 & -- & -- & -- & -- \\ 
+  MH-T48 & -- & -- & -- & -- \\ 
+  MH-T49\_1 & -- & -- & -- & -- \\ 
+  MH-T49\_2 & -- & -- & Ad & -- \\ 
+  MH-T52 & -- & -- & -- & -- \\ 
+  MH-T57 & -- & -- & -- & -- \\ 
+  MH-T65 & -- & -- & -- & -- \\ 
+   \bottomrule
+\end{tabular}
+\end{table}
+
+
+
+\begin{table}[ht]
+\centering
+\caption{Résumé des observations de reptiles sur les 14 milieux humides inventoriés en 2025.}
+\label{tab:tab_mh_squamates}
+\begin{tabular}{lc}
+  \toprule
+Site & Autres taxons \\ 
+  \midrule
+MH-T01 & -- \\ 
+  MH-T20 & -- \\ 
+  MH-T41\_1 & -- \\ 
+  MH-T41\_2 & -- \\ 
+  MH-T42\_3 & -- \\ 
+  MH-T42\_4 & -- \\ 
+  MH-T42\_5 & -- \\ 
+  MH-T47 & B. lentiginosus \\ 
+  MH-T48 & -- \\ 
+  MH-T49 & A. alba/A. herodias/Écrevisses/O. virginianus/Poissons \\ 
+  MH-T49\_2 & -- \\ 
+  MH-T52 & Poissons \\ 
+  MH-T57 & -- \\ 
+  MH-T65 & Poissons \\ 
+   \bottomrule
+\end{tabular}
+\end{table}
+
+
+
 
 \subsubsection{Recherche par drones}
 

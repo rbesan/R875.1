@@ -14,4 +14,4 @@ data_coords_am25 <- data.frame(
   site = kml_am25$Name,
   lon  = coords_am25[, "X"],
   lat  = coords_am25[, "Y"]
-)z
+)
