@@ -1,47 +1,10 @@
-\begin{thebibliography}{19}
-
-\bibitem[Aota et~al.(2021)Aota, Ashizawa, Mori, Toda, et Chiba]{aota2021}
-Aota, T., K.~Ashizawa, H.~Mori, M.~Toda, et S.~Chiba. 2021.
-\newblock Detection of {\emph{Anolis carolinensis}} using drone images and a
-  deep neural network: an effective tool for controlling invasive species.
-\newblock Biological Invasions 23:1321--1327.
+\begin{thebibliography}{9}
 
 \bibitem[Araya-Salas et~al.(2025)Araya-Salas, Elizondo-Calvo, et
   Rico-Guevara]{arya-salas2025suwo}
 Araya-Salas, M., J.~Elizondo-Calvo, et A.~Rico-Guevara. 2025.
 \newblock suwo: Access Nature Media Repositories.
 \newblock R package version 0.1.0.
-
-\bibitem[Bevan et~al.(2018)Bevan, Whiting, Tucker, Guinea, Raith, et
-  Douglas]{bevan2018}
-Bevan, E., S.~Whiting, T.~Tucker, M.~Guinea, A.~Raith, et R.~Douglas. 2018.
-\newblock Measuring behavioral responses of sea turtles, saltwater crocodiles,
-  and crested terns to drone disturbance to define ethical operating
-  thresholds.
-\newblock PLOS ONE 13:e0194460.
-
-\bibitem[Bogolin et~al.(2021)Bogolin, Davis, Kline, et Rahman]{bogolin2021}
-Bogolin, A.~P., D.~R. Davis, R.~J. Kline, et A.~F. Rahman. 2021.
-\newblock A drone-based survey for large, basking freshwater turtle species.
-\newblock PLOS ONE 16:e0257720.
-
-\bibitem[Boyer(1965)]{boyer1965}
-Boyer, D.~R. 1965.
-\newblock Ecology of the {Basking} {Habit} in {Turtles}.
-\newblock Ecology 46:99--118.
-\newblock \_eprint:
-  https://esajournals.onlinelibrary.wiley.com/doi/pdf/10.2307/1935262.
-
-\bibitem[Charbonneau et Lemaître(2021)]{charbonneau2021}
-Charbonneau, P. et J.~Lemaître. 2021.
-\newblock Revue des applications et de l’utilité des drones en conservation
-  de la faune.
-\newblock Le Naturaliste Canadien 145:3--34.
-
-\bibitem[Dodd(2016)]{dodd2016}
-Dodd, C.~K., Jr., éditeur. 2016.
-\newblock Reptile ecology and conservation: a handbook of techniques.
-\newblock Oxford University Press, Oxford, UK.
 
 \bibitem[Fayard(2022)]{fayard2022}
 Fayard, A. 2022.
@@ -50,17 +13,10 @@ Fayard, A. 2022.
   aménagé.
 \newblock Mémoire de maîtrise, Université Laval.
 
-\bibitem[Fayard et Mazerolle(2024)]{fayard2024a}
-Fayard, A. et M.~J. Mazerolle. 2024.
-\newblock Évalutation des critères permettant d'améliorer l'efficacité des
-  passages fauniques adaptés aux amphibiens et reptiles ({R875}.1).
-\newblock Rapport technique Rapport d'avancement 1, Ministère des transports
-  et de la mobilité durable.
-
 \bibitem[Hill et~al.(2019)Hill, Prince, Snaddon, Doncaster, et
   Rogers]{hill2019}
 Hill, A.~P., P.~Prince, J.~L. Snaddon, C.~P. Doncaster, et A.~Rogers. 2019.
-\newblock {AudioMoth}: {a} low-cost acoustic device for monitoring biodiversity
+\newblock {AudioMoth}: {A} low-cost acoustic device for monitoring biodiversity
   and the environment.
 \newblock HardwareX 6:e00073.
 
@@ -80,18 +36,6 @@ Kahl, S., C.~M. Wood, M.~Eibl, et H.~Klinck. 2021.
 \newblock BirdNET: a deep learning solution for avian diversity monitoring.
 \newblock Ecological Informatics 61:101236.
 
-\bibitem[Lefevre et Brooks(1995)]{lefevre1995}
-Lefevre, K. et R.~J. Brooks. 1995.
-\newblock Effects of sex and body size on basking behavior in a northern
-  population of the painted turtle, \emph{Chrysemys picta}.
-\newblock Herpetologica 51:217--224.
-
-\bibitem[{Ministère des forêts, de la faune et des parcs}(2021)]{mffp2021}
-{Ministère des forêts, de la faune et des parcs}. 2021.
-\newblock Protocole standardisé de détection et d’identification des
-  tortues d’eau douce à l’aide de drones au {Québec}.
-\newblock Rapport technique, Gouvernement du Québec, Québec, Canada.
-
 \bibitem[Norouzzadeh et~al.(2021)Norouzzadeh, Morris, Beery, Joshi, Jojic, et
   Clune]{norouzzadeh2021}
 Norouzzadeh, M.~S., D.~Morris, S.~Beery, N.~Joshi, N.~Jojic, et J.~Clune. 2021.
@@ -99,18 +43,10 @@ Norouzzadeh, M.~S., D.~Morris, S.~Beery, N.~Joshi, N.~Jojic, et J.~Clune. 2021.
   in camera trap images.
 \newblock Methods in Ecology and Evolution 12:150--161.
 
-\bibitem[Obbard et Brooks(1981)]{obbard1981}
-Obbard, M.~E. et R.~J. Brooks. 1981.
-\newblock A {radio}-{telemetry} and {mark}-{recapture} {study} of {activity} in
-  the {common} {snapping} {turtle}, \emph{{Chelydra} serpentina}.
-\newblock Copeia 1981:630--637.
-
-\bibitem[{SNC-Lavalin}(2023)]{snc2023}
-{SNC-Lavalin}. 2023.
-\newblock Rapport d’inventaire herpétofaunique - {Travaux}
-  d’élargissement et ajout d’une voie réservée sur l’autoroute 10 en
-  {Montérégie}.
-\newblock Rapport technique, SNC-Lavalin.
+\bibitem[{R Core Team}(2025)]{R}
+{R Core Team}. 2025.
+\newblock R: A Language and Environment for Statistical Computing.
+\newblock R Foundation for Statistical Computing, Vienna, Austria.
 
 \bibitem[Stark et~al.(2023)Stark, Stefan, Wurm, Spanier, Taubenböck, et
   Knight]{stark2023}

@@ -1,0 +1,11 @@
+Anaxyrus americanus_American Toad
+Dryophytes versicolor_Gray Treefrog
+Dryophytes chrysoscelis_Cope's Gray Treefrog
+Pseudacris crucifer_Spring Peeper
+Pseudacris triseriata_Striped Chorus Frog
+Pseudacris feriarum_Upland Chorus Frog
+Lithobates sylvaticus_Wood Frog
+Lithobates clamitans_Green Frog
+Lithobates palustris_Pickerel Frog
+Lithobates catesbeianus_American Bullfrog
+Engine_Engine

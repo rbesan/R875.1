@@ -111,41 +111,173 @@ occ_clips <- barplot(barplot3$clips, names.arg = barplot3$species, horiz = TRUE,
 text(barplot3$clips, occ_clips, labels = ifelse(barplot3$clips == 0, "", barplot3$clips), pos = 4, cex = 1, )
 
 
-pheno <- unique(table_birdnet_2025[table_birdnet_2025$val == 1, c("site", "date", "time", "species")])
-pheno$date <- as.Date(pheno$date)
-
-#pheno <- pheno[pheno$date >= as.Date("2025-04-01") & pheno$date <= as.Date("2025-09-30"), ]
-
-levels(pheno$species)
-
 # Figure de densité de probabilité
-couleurs <- c(
-  "P. crucifer"   = "#D55E00",  # vermillon
-  "L. sylvaticus" = "#E69F00",  # orange
-  "L. clamitans"  = "#009E73",  # vert bleuté
-  "A. americanus" = "#0072B2",  # bleu
-  "H. versicolor" = "#CC79A7",  # violet rosé
-  "P. maculata"   = "#56B4E9"   # bleu ciel
-)
 
-ggplot(pheno, aes(x = date, fill = species, color = species)) +
-  geom_density(alpha = 0.4) +
-  scale_fill_manual(values = couleurs) +
-  scale_color_manual(values = couleurs) +
-  scale_x_date(
-    date_labels = "%B",
-    date_breaks = "1 month",
-    limits = c(as.Date("2025-04-01"), as.Date("2025-09-30"))
-  ) +
-  labs(x = NULL, y = expression("Densité de probabilité (jour"^{-1}*")"),
-       title = "Distribution temporelle de l'activité de chant des anoures détectés en 2025",
-       fill = NULL, color = NULL) +
-  theme_minimal(base_size = 11) +
-  theme(
-    axis.text.x = element_text(angle = 45, hjust = 1),
-    legend.text = element_text(face = "italic"),
-    panel.grid = element_blank(),
-    panel.grid.major.x = element_line(color = "black",
-                                      linewidth = 0.3,
-                                      linetype = "dashed")
-  )
+# On sélectionne les déctions par fichier pour chaque espèce
+pheno25 <- unique(table_birdnet_2025[table_birdnet_2025$val==1, c("site","date","time","species")])
+levels(pheno25$species)
+# Conversion en date
+pheno25$date <- as.Date(pheno25$date)
+
+png("/home/robes1/CONTRAT_ULAVAL/R8751/output/graphique/resultats/suivi_petite_faune_2025/pheno_25.png", 
+    width = 8, height = 5, units = "in", res = 600)
+
+# Panneau pour les graphiques
+par(mfrow = c(5,1), mar = c(0.5, 4, 0.5, 6), oma = c(5, 0, 1, 0))
+# Spécifier les bornes inf et sup des dates au format numérique
+xlim <- as.numeric(as.Date(c("2025-04-01","2025-09-01")))
+# objet à appeler à la fin pour spécifier les étiquettes en abscisse
+xnames <- seq(as.Date("2025-04-01"), as.Date("2025-09-01"), by = "month")
+
+# Courbe P. maculata
+maculata <- density(as.numeric(pheno25$date[pheno25$species=="P. maculata"]))
+plot(NA, 
+     xlim = xlim, 
+     ylim=c(0, max(maculata$y)*1.1),
+     xaxt = "n",
+     yaxt ="n",
+     xlab="", 
+     ylab="",
+     yaxs = "i")
+polygon(maculata,
+        col = "grey45",
+        border = "black",
+        lwd=1)
+axis(2, pretty(c(0, max(maculata$y)), 3), 
+     cex.axis = 0.7, 
+     las = 1)
+mtext("P. maculata",
+      side = 4,
+      las = 1, 
+      line = 0.5, 
+      font = 3, 
+      cex = 0.7)
+
+# Courbe H. versicolor
+versi <- density(as.numeric(pheno25$date[pheno25$species=="H. versicolor"]))
+plot(NA, 
+     xlim = xlim, 
+     ylim=c(0, max(versi$y)*1.1),
+     xaxt = "n",
+     yaxt ="n",
+     xlab="", 
+     ylab="",
+     yaxs = "i")
+polygon(versi,
+        col = "grey45",
+        border = "black",
+        lwd=1)
+axis(2, pretty(c(0, max(versi$y)), 3), 
+     cex.axis = 0.7, 
+     las = 1)
+mtext("H. versicolor",
+      side = 4,
+      las = 1, 
+      line = 0.5, 
+      font = 3, 
+      cex = 0.7)
+
+# Courbe P. crucifer
+cruci <- density(as.numeric(pheno25$date[pheno25$species=="P. crucifer"]))
+plot(NA, 
+     xlim = xlim, 
+     ylim=c(0, max(cruci$y)*1.1),
+     xaxt = "n",
+     yaxt ="n",
+     xlab="", 
+     ylab="",
+     yaxs = "i")
+polygon(cruci,
+        col = "grey45",
+        border = "black",
+        lwd=1)
+axis(2, pretty(c(0, max(cruci$y)), 3), 
+     cex.axis = 0.7, 
+     las = 1)
+mtext("P. crucifer",
+      side = 4,
+      las = 1, 
+      line = 0.5, 
+      font = 3, 
+      cex = 0.7)
+
+# Courbe L. clamitans
+clami <- density(as.numeric(pheno25$date[pheno25$species=="L. clamitans"]))
+plot(NA, 
+     xlim = xlim, 
+     ylim=c(0, max(clami$y)*1.1),
+     xaxt = "n",
+     yaxt ="n",
+     xlab="", 
+     ylab="",
+     yaxs = "i")
+polygon(clami,
+        col = "grey45",
+        border = "black",
+        lwd=1)
+axis(2, pretty(c(0, max(clami$y)), 3), 
+     cex.axis = 0.7, 
+     las = 1)
+mtext("L. clamitans",
+      side = 4,
+      las = 1, 
+      line = 0.5, 
+      font = 3, 
+      cex = 0.7)
+
+# Courbe A. americanus
+america <- density(as.numeric(pheno25$date[pheno25$species=="A. americanus"]))
+plot(NA, 
+     xlim = xlim, 
+     ylim=c(0, max(america$y)*1.1),
+     xaxt = "n",
+     yaxt ="n",
+     xlab="", 
+     ylab="",
+     yaxs = "i")
+polygon(america,
+        col = "grey45",
+        border = "black",
+        lwd=1)
+axis(2, pretty(c(0, max(america$y)), 3), 
+     cex.axis = 0.7, 
+     las = 1)
+mtext("A. americanus",
+      side = 4,
+      las = 1, 
+      line = 0.5, 
+      font = 3, 
+      cex = 0.7)
+
+axis(1, as.numeric(xnames), format(xnames, "%B"), las = 2)
+
+mtext(expression("Densité de probabilité (Jour"^{-1}*")"), side=2, outer = TRUE, line=-2)
+
+
+dev.off()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
