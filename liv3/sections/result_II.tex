@@ -25,19 +25,25 @@ Parmis les carcasses dénombrées au cours des inventaires à pied, 49,3\% étai
 \label{fig:densplot}
 \end{figure}
 
+En termes de nombre de carcasses
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{figs_monteregie_liv3/box_cat_2025.png}
+\caption{Nombre de détections de carcasses par groupes lors des inventaires à pied sur 26 tronçons en 2025. Les pourcentages au-dessus des barres indiquent la part de chaque groupe dans l'ensemble des détections.}
+\label{fig:box25}
+\end{figure}
 
 
 \subsubsection{Persistance de carcasses sur la route}
 
-Durant l'été 2025, 57 tests de persistance ont été réalisés. Bien que le protocole soit deux tests par
-tronçon, un le matin et un le soir, pour la plupart d'entre eux. Les trois tests
-manquants ont été annulés par manque de temps ou en raison d'un matériel
-défectueux. Dans 15 tests (26~\%), l'appât a été retiré par un prédateur ou
+Durant l'été 2025, 57 tests de persistance ont été réalisés. Bien que le protocole fonctionne avec deux tests par tronçon, un le matin et un le soir, trois tests
+ont été annulés en raison d'un problème de matériel ou par manque de temp. Pour 15 tests (26~\%), l'appât a été retiré par un prédateur ou
 déplacé par un élément extérieur non identifié. Dans 7 de ces cas (47~\%), la
 prédation était avérée et le prédateur identifié : les corvidés (corneille
 d'Amérique et grand corbeau) étaient responsables dans 6 tests, contre 1 test
-pour le chat domestique. 
+pour le chat domestique. f
+
 
 Afin de comparer la probabilité de retrait de l'appât entre le matin et le
 soir, nous avons utilisé un modèle linéaire généralisé mixte binomial (lien
@@ -46,9 +52,25 @@ moment du déploiement (matin ou soir) en effet fixe et le tronçon en effet
 aléatoire sur l'ordonnée à l'origine, la plupart des tronçons ayant fait
 l'objet des deux traitements. Les prédictions et leurs intervalles de
 confiance à 95~\% ont été calculés sur l'échelle du prédicteur linéaire, puis
-rétro-transformés en probabilités. La probabilité de retrait ne différait pas significativement entre le matin (0,23) et le soir (0,30 ; rapport de cotes = 1,38, IC 95~\% [0,42 ; 4,51], $p$ = 0,59).
+rétro-transformés en probabilités. La probabilité de retrait ne différait pas significativement entre le matin et le soir.
 
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{figs_monteregie_liv3/pred_persi_2025.png}
+\caption{.}
+\label{fig:persi_pred_25}
+\end{figure}
+
+
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{figs_monteregie_liv3/periode_persi_2025.png}
+\caption{.}
+\label{fig:persi_period_25}
+\end{figure}
 
 
 \subsection{Suivi de la petite faune}
@@ -58,7 +80,7 @@ Un total de \mbox{2 584 774} images prises en 2025 sur les trente ponceaux à l'
 
 Différents groupes et espèces ont été observées sur les images, incluant des invertebrés (araignées, odonates, papillons) et plusieurs vertébrés (Tableau \ref{tab:cam-sp-2025}). Des 21 555 détections animales, 78\% étaient des mammifères de moyenne taille et 13\% étaient de la sauvagine. Les autres animaux détectés étaient des oiseaux forestiers (7\%), des petits mammifères (1\%), des reptiles (0.2\%) et des amphibiens (0.6\%) (Fig. \ref{fig:cam-Prop-2025}. La répartition des observations selon les types de tronçons ne suggère pas de patrons particuliers pour le moment, mis à part les petits mammifères qui semblaient plus fréquents dans les tronçons de catégorie 2 (milieu humide de chaque côté), bien qu'il reste environ 50\% des images à valider (Fig. \ref{fig:cam-Prop-Type-2025}).
 
-\begin{table}
+\begin{table}[H]
   \caption{Espèces et groupes d'espèces répertoriées sur les images prises par les pièges photographiques dans les ponceaux des tronçons suivis en 2025. Le tableau a été préparé à partir des 21 555 détections animales provenant des 18 tronçons analysés.}
   \label{tab:cam-sp-2025}
   \begin{tabular}{p{0.3\textwidth}p{0.7\textwidth}}
@@ -96,7 +118,7 @@ Différents groupes et espèces ont été observées sur les images, incluant de
 \subsubsection{Enregistrements acoustiques et suivi des milieux humides}
 
 
-Au printemps 2025, nous avons déployé 18 enregistreurs Audiomoth, dont 16 ont fourni des données exploitables, deux Audiomoths ayant été perdues au cours de la phase d'échantillonnage. Comme souvent dans ce genre de cas, il s'agit de vols ou de dégradation volontaire. Ces appareils  couvraient chacuns une plage temporelle allant de 95 à 187 jours selon sa date de pose et de récupération. Au total, nous avons pu cumuler 2 594 journées d'enregistrement toutes unités confondues. Cet effort a permis d'analyser 12 904 fichiers audio à l'aide du modèle générique de BirdNET, complété par un modèle BirdNET entrainé pour la grenouille léopard et la grenouille du Nord, deux espèces non reconnues par le modèle génériqu. 
+Au printemps 2025, nous avons déployé 18 enregistreurs Audiomoth, dont 16 ont fourni des données exploitables, deux Audiomoths ayant été perdues au cours de la phase d'échantillonnage. Comme souvent dans ce genre de cas, il s'agit de vols ou de dégradation volontaire. Ces appareils  couvraient chacuns une plage temporelle allant de 95 à 187 jours selon sa date de pose et de récupération. Au total, nous avons pu cumuler 2 594 journées d'enregistrement toutes unités confondues. Cet effort a permis d'analyser 12 904 fichiers audio à l'aide du modèle générique de BirdNET, complété par un modèle BirdNET entrainé pour la grenouille léopard et la grenouille du Nord, deux espèces non reconnues par le modèle générique. 
 
 
 \begin{table}[H]
@@ -174,8 +196,12 @@ T01 & - & 1 & - & - & - & - \\
 \label{fig:densplot}
 \end{figure}
 
+Afin de compléter l'effort des enregistreurs accoustiques, des inventaires visuels d'amphibiens ont été réalisés dans 13 milieux humides adjacents aux 30 tronçons suivis.  Ces sites étaient visités à deux reprises durant l'été. Ces inventaires ont permis de détecter la présence de crapaud d'Amérique (n=3), de rainette versicolore (n=1), de grenouille verte (n=11), de grenouille léopard (n=3) et de grenouille des bois (n=3). La majorité des observations étaient des adultes  
 
-\begin{table}[ht]
+
+
+
+\begin{table}[H]
 \setlength{\tabcolsep}{4pt}
 \centering
 \caption{Stades de développement des amphibiens observés par station.
@@ -206,7 +232,7 @@ MH-T01 & -- & La & -- & Ad & -- & -- \\
 
 
 
-\begin{table}[ht]
+\begin{table}[H]
 \centering
 \caption{Résumé des observations de reptiles sur les 14 milieux humides inventoriés en 2025.}
 \label{tab:tab_mh_squamates}
@@ -234,7 +260,7 @@ MH-T01 & -- & -- & Ad & -- \\
 
 
 
-\begin{table}[ht]
+\begin{table}[H]
 \centering
 \caption{Résumé des observations de reptiles sur les 14 milieux humides inventoriés en 2025.}
 \label{tab:tab_mh_squamates}
@@ -266,7 +292,7 @@ MH-T01 & -- \\
 
 En 2025, 21 stations équipées de plaques à reptiles étaient visitées à quatres reprises entre le 29 mai 2025 et le 14 août 2025. La couleuvre rayée \emph{Thamnophis sirtalis} était la seule espèce de reptile détectée sur le dispositif. Une grenouille verte \emph{Lithobates clamitans} adulte et un micrommamifère non identifié ont également été observés lors des inventaires. Au total, 12 détections de couleuvres rayées ont été comptabilisées avec un maximum de 4 détections pour une seule station. Les individus ont été localisés sous la planche (n = 5), sous le géotextile (n = 5) et à proximité du dispositif (n = 2). 
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering
 \includegraphics[width=1.1\textwidth]{figs_monteregie_liv3/plaques25.png}
 \caption{Nombre de T. sirtalis observés durant les visites de plaques à reptiles.}

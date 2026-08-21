@@ -123,7 +123,7 @@ png("/home/robes1/CONTRAT_ULAVAL/R8751/output/graphique/resultats/suivi_petite_f
     width = 8, height = 5, units = "in", res = 600)
 
 # Panneau pour les graphiques
-par(mfrow = c(5,1), mar = c(0.5, 4, 0.5, 6), oma = c(5, 0, 1, 0))
+par(mfrow = c(5,1), mar = c(0.5, 4, 0.5, 8), oma = c(5, 0, 1, 0))
 # Spécifier les bornes inf et sup des dates au format numérique
 xlim <- as.numeric(as.Date(c("2025-04-01","2025-09-01")))
 # objet à appeler à la fin pour spécifier les étiquettes en abscisse
