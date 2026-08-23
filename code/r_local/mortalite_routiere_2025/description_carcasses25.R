@@ -8,8 +8,6 @@ setwd("/home/robes1/CONTRAT_ULAVAL/R8751/data/clean/mortalite_routiere_2025")
 
 carca_clean <- read.csv("clean_bino_2025.csv", header = TRUE, sep = ",")
 
-boxplot(carca_clean$Classe)
-
 table_classe <- table(carca_clean$Classe)
 
 percent <- round(100*prop.table(table_classe),1)
@@ -47,6 +45,18 @@ barplot(table_cat,las =1, xlab = "Nombre de carcasses")
 nb_tr <- table(carca_clean$tr)
 cat_tr <- carca_clean$cat[match(names(n_tr), carca_clean$tr)]
 
-boxplot(nb_tr~cat_tr,
+
+png("/home/robes1/CONTRAT_ULAVAL/R8751/output/graphique/resultats/mortalite_routiere_2025/box_cat_2025.png", 
+    width = 8, height = 6, units = "in", res = 600)
+
+boxplot(nb_tr ~ cat_tr,
         xlab = "Catégorie de tronçons",
-        ylab = "Observations de carcasses")
+        ylab = "Observations de carcasses",
+        boxwex = 0.45,
+        staplewex = 0,
+        whisklty = 1,
+        col = "grey93",
+        border = "grey35",
+        las = 1)
+
+dev.off()
