@@ -6,6 +6,7 @@ mort25 <- read.csv("inv_road_2025.csv",
                    sep = ";",
                    fileEncoding = "utf-8")
 
+
 # Suppression de tronçons suspects en GoPro
 
 mort25 <- mort25[!(mort25$Troncons_ID %in% c(41, 42) &
@@ -69,6 +70,18 @@ mort25_clean2 <- mort25_clean[, !(names(mort25_clean)) %in% c("Date_inv","Heure_
 
 
 names(mort25_clean2) <- c("tr","protocol","date","debut", "fin")
+
+mort25_clean2$tr <- sprintf("T%02d", as.integer(sub("T", "", mort25_clean2$tr)))
+
+mort25_clean2$visit <- paste(mort25_clean2$tr, 
+                      effort$date, 
+                      effort$protocol, 
+                      sep = "_")
+
+
+merge(mort25_clean2, tr_cat, by="tr", all.x = TRUE)
+
+
 
 write.csv(mort25_clean2, 
           "/home/robes1/CONTRAT_ULAVAL/R8751/data/clean/mortalite_routiere_2025/clean_road_2025.csv",

@@ -43,14 +43,14 @@ carca_raw_select$Espece <- factor(carca_raw_select$Espece, levels = c("Lithobate
                                                                       "Cardinalis cardinalis"))
 
 
-names(carca_raw_select)[names(carca_raw_select)=="Site"] <- "tr"
-names(cat_25)[names(cat_25)=="troncon_id"] <- "tr"
-cat_25$tr <- sprintf("T%02d", as.integer(cat_25$tr))
-carca_raw_select$tr <- sprintf("T%02d", as.integer(sub("T", "", carca_raw_select$tr)))
 
-carca25_clean <- merge(carca_raw_select, cat_25, by="tr", all.x = TRUE, sort = FALSE)
+carca_raw_select$Date <- as.Date(carca_raw_select$Date, format = "%d/%m/%Y")
 
-write.csv(carca25_clean, 
+names(carca_raw_select) <- c("tr","taxon_id","group","etat","loc","date","h_obs")
+
+carca_raw_select$protocol <- "pied"
+
+write.csv(carca_raw_select, 
           "/home/robes1/CONTRAT_ULAVAL/R8751/data/clean/mortalite_routiere_2025/clean_bino_2025.csv",
           row.names = FALSE)
 

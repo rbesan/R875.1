@@ -50,7 +50,7 @@ Tronçon & Visites & Méthodes & Catégorie \\
 \end{tabular}
 \end{table}
 
-Les inventaires par caméra embarquée ont été réalisés à l'aide d'une caméra GoPro Hero 11 Black (GoPro, San Mateo, Californie, États-Unis) fixée au centre de la partie avant du capot du véhicule au moyen d'un trépied magnétique 3-Footed Monster. Afin d'enregistrer la chaussée lors du parcours de chaque tronçon, la caméra était configurée en résolution 4K au format 4:3, à une cadence de 30 images par seconde. La caméra était pilotée depuis l'habitacle du véhicule au moyen de l'application Quik (GoPro, San Mateo, Californie, États-Unis) installée sur un téléphone intelligent. Les carcasses ont été dénombrées a posteriori par \delM{visionnage}\addM{visionnement} des enregistrements vidéo. La caméra étant équipée d'un récepteur GPS intégré, chaque carcasse détectée à l'écran a pu être géolocalisée en croisant le minutage de sa détection avec les données de position contenues dans les métadonnées des fichiers \texttt{.mp4}. Dans le cas des inventaires par caméra embarquée, les deux voies de circulation étaient systématiquement parcourues.
+Les inventaires par caméra embarquée ont été réalisés à l'aide d'une caméra GoPro Hero 11 Black (GoPro, San Mateo, Californie, États-Unis) fixée au centre de la partie avant du capot du véhicule au moyen d'un trépied magnétique 3-Footed Monster. Afin d'enregistrer la chaussée lors du parcours de chaque tronçon, la caméra était configurée en résolution 4K au format 4:3, à une cadence de 30 images par seconde. La caméra était pilotée depuis l'habitacle du véhicule au moyen de l'application Quik (GoPro, San Mateo, Californie, États-Unis) installée sur un téléphone intelligent. Les carcasses ont été dénombrées a posteriori par visionnement des enregistrements vidéo. La caméra étant équipée d'un récepteur GPS intégré, chaque carcasse détectée à l'écran a pu être géolocalisée en croisant le minutage de sa détection avec les données de position contenues dans les métadonnées des fichiers \texttt{.mp4}. Dans le cas des inventaires par caméra embarquée, les deux voies de circulation étaient systématiquement parcourues.
 
 La méthode à pied consistait à parcourir l'accotement \delM{en marchant}, celui-ci étant constitué de gravel ou enherbé selon le tronçon. Les observateurs y repéraient, identifiaient et dénombraient toutes les carcasses détectées, y compris celles situées hors de la chaussée, sur l'accotement gravillonné ou dans la végétation herbacée en bordure de route. \delM{Lorsqu'un demi-tour était possible}\addM{Sur les routes secondaires, les observateurs parcouraient} \delM{, ils} parcouraient successivement les deux voies en veillant à ne pas compter deux fois une même carcasse. Dans le cas où les observateurs ne pouvaient pas traverser le tronçon de manière sécuritaire, ils inventoriaient les deux voies à partir d'un seul côté de la route. Les observateurs notaient la date, l'heure, le taxon et les coordonnées géographique de chaque carcasse à l'aide d'un GPS GARMIN GPSMAP 79s (Garmin, Schaffhausen, Suisse).
 
@@ -113,114 +113,7 @@ WEATHER & 250 &  Bruits météorologiques (vent et pluie) \\
 Nous avons évalué les performances du modèle personnalisé à partir d'un ensemble indépendant de 386 clips audio de 3 secondes, représentant environ 20 \% du corpus d'entraînement. Cet ensemble comprenait des clips de grenouille du Nord et de grenouille léopard, ainsi que des clips négatifs (bruits environnementaux sans grenouille du Nord ou grenouille léopard) afin de tester la capacité du modèle à discriminer les deux espèces cibles du bruit de fond. Cette approche suit une règle courante en apprentissage automatique qui consiste à réserver environ 20 \% des données à la validation du modèle\comM{Une ref pour ça?}. Afin de garantir l’indépendance de l’évaluation, nous avons veillé à ce que ces clips soient issus de fichiers qui n’avaient pas servi à entraîner BirdNET en amont. Toutefois, cette validation sur un jeu de données délimité ne reflète pas pleinement le comportement réel du modèle en situation réelle, où ce dernier est exposé à un volume de données considérablement plus important, à une plus grande variabilité acoustique et à des sons pour lesquels il n'a pas été entraîné, augmentant ainsi le risque de faux positifs.\comM{Pas clair ce que tu essaies de dire ici. Il manque une phrase pour clarifier. Ça donne l'impression que ça ne donne pas grand chose de valider. Reformuler avec un ton plus positif ou mieux clarifier l'idée.}
 
 \comM[inline]{Il y a beaucoup trop de tableaux et ça alourdit le texte. Choisis un ou deux tableaux qui résument la performance et déplace les autres en annexes. C'est bien de fournir les détails, mais ils sont un peu secondaires et on perd le fil conducteur.}
-  
-\begin{table}[H]
-\centering
-\caption{Matrice de confusion du modèle personnalisé pour la grenouille léopard à un seuil de 0.25. Les vraies présences désignent les clips contenant une vocalisation de l'espèce cible ; les vraies absences désignent les clips n'en contenant pas.}
-\label{tab:tab_confusion_pipiens}
-\begin{tabular}{lrr}
-  \hline
- & Détection de BirdNET & Non-détection de BirdNET \\
-  \hline
-Vraie absence  &  0 & 62 \\
-Vraie présence & 72 &  3 \\
-  \hline
-\end{tabular}
-\end{table}
 
-\begin{table}[H]
-\centering
-\caption{Métriques de performance du modèle personnalisé pour la grenouille léopard à un seuil de confiance de 0,25. Le seuil de confiance est un indice calculé par BirdNET (pas une probabilité) compris entre 0 et 1. TP : vrais positifs ; FP : faux positifs ; FN : faux négatifs ; TN : vrais négatifs ; Exactitude = (TP + TN) / (TP + TN + FP + FN) ; Précision = TP / (TP + FP) ; Rappel = TP / (TP + FN) ; F1 = 2 × (Précision × Rappel) / (Précision + Rappel).}
-\label{tab:tab_metrics_pipiens_025}
-\begin{tabular}{rrrrrrrrr}
-  \hline
-Seuil & TP & FP & FN & TN & Exactitude & Précision & Rappel & F1 \\
-  \hline
-0.25 & 72 & 0 & 3 & 62 & 0.978 & 1 & 0.96 & 0.98 \\
-  \hline
-\end{tabular}
-\end{table}
-
-\begin{table}[H]
-\centering
-\caption{Matrice de confusion du modèle personnalisé pour la grenouille léopard à un seuil de 0.75. Les vraies présences désignent les clips contenant une vocalisation de l'espèce cible ; les vraies absences désignent les clips n'en contenant pas.}
-\label{tab:tab_confusion_pipiens_075}
-\begin{tabular}{lrr}
-  \hline
- & Détection de BirdNET & Non-détection de BirdNET \\
-  \hline
-Vraie absence  &  0 & 62 \\
-Vraie présence & 45 & 30 \\
-  \hline
-\end{tabular}
-\end{table}
-
-\begin{table}[H]
-\centering
-\caption{Métriques de performance du modèle personnalisé pour la grenouille léopard à un seuil de confiance de 0,75. Le seuil de confiance est un indice calculé par BirdNET (pas une probabilité) compris entre 0 et 1. TP : vrais positifs ; FP : faux positifs ; FN : faux négatifs ; TN : vrais négatifs ; Exactitude = (TP + TN) / (TP + TN + FP + FN) ; Précision = TP / (TP + FP) ; Rappel = TP / (TP + FN) ; F1 = 2 × (Précision × Rappel) / (Précision + Rappel).}
-\label{tab:tab_metrics_pipiens_075}
-\begin{tabular}{rrrrrrrrr}
-  \hline
-Seuil & TP & FP & FN & TN & Exactitude & Précision & Rappel & F1 \\
-  \hline
-0.75 & 45 & 0 & 30 & 62 & 0.781 & 1 & 0.6 & 0.75 \\
-  \hline
-\end{tabular}
-\end{table}
-
-\begin{table}[H]
-\centering
-\caption{Matrice de confusion du modèle personnalisé pour la grenouille du Nord à un seuil de 0.25. Les vraies présences désignent les clips contenant une vocalisation de l'espèce cible ; les vraies absences désignent les clips n'en contenant pas.}
-\label{tab:tab_confusion_septentrionalis_025}
-\begin{tabular}{lrr}
-  \hline
- & Détection de BirdNET & Non-détection de BirdNET \\
-  \hline
-Vraie absence  &  9 & 57 \\
-Vraie présence & 91 & 14 \\
-  \hline
-\end{tabular}
-\end{table}
-
-\begin{table}[H]
-\centering
-\caption{Métriques de performance du modèle personnalisé pour la grenouille du Nord à un seuil de confiance de 0,25. Le seuil de confiance est un indice calculé par BirdNET (pas une probabilité) compris entre 0 et 1. TP : vrais positifs ; FP : faux positifs ; FN : faux négatifs ; TN : vrais négatifs ; Exactitude = (TP + TN) / (TP + TN + FP + FN) ; Précision = TP / (TP + FP) ; Rappel = TP / (TP + FN) ; F1 = 2 × (Précision × Rappel) / (Précision + Rappel).}
-\label{tab:tab_metrics_septentrionalis_025}
-\begin{tabular}{rrrrrrrrr}
-  \hline
-Seuil & TP & FP & FN & TN & Exactitude & Précision & Rappel & F1 \\
-  \hline
-0.25 & 91 & 9 & 14 & 57 & 0.865 & 0.91 & 0.867 & 0.888 \\
-  \hline
-\end{tabular}
-\end{table}
-
-\begin{table}[H]
-\centering
-\caption{Matrice de confusion du modèle personnalisé pour la grenouille du Nord à un seuil de 0.75. Les vraies présences désignent les clips contenant une vocalisation de l'espèce cible ; les vraies absences désignent les clips n'en contenant pas.}
-\label{tab:tab_confusion_septentrionalis_075}
-\begin{tabular}{lrr}
-  \hline
- & Détection de BirdNET & Non-détection de BirdNET \\
-  \hline
-Vraie absence  &  1 & 65 \\
-Vraie présence & 58 & 47 \\
-  \hline
-\end{tabular}
-\end{table}
-
-\begin{table}[H]
-\centering
-\caption{Métriques de performance du modèle personnalisé pour la grenouille du Nord à un seuil de confiance de 0,75. Le seuil de confiance est un indice calculé par BirdNET (pas une probabilité) compris entre 0 et 1. TP : vrais positifs ; FP : faux positifs ; FN : faux négatifs ; TN : vrais négatifs ; Exactitude = (TP + TN) / (TP + TN + FP + FN) ; Précision = TP / (TP + FP) ; Rappel = TP / (TP + FN) ; F1 = 2 × (Précision × Rappel) / (Précision + Rappel).}
-\label{tab:tab_metrics_septentrionalis_075}
-\begin{tabular}{rrrrrrrrr}
-  \hline
-Seuil & TP & FP & FN & TN & Exactitude & Précision & Rappel & F1 \\
-  \hline
-0.75 & 58 & 1 & 47 & 65 & 0.719 & 0.983 & 0.552 & 0.707 \\
-  \hline
-\end{tabular}
-\end{table}
 
 Malgré la présence de faux positifs (Tableau~\ref{tab:tab_confusion_pipiens}; Tableau~\ref{tab:tab_metrics_pipiens_025}; Tableau~\ref{tab:tab_confusion_pipiens_075}; Tableau~\ref{tab:tab_metrics_pipiens_075}; Tableau~\ref{tab:tab_confusion_septentrionalis_025}; Tableau~\ref{tab:tab_metrics_septentrionalis_025}; Tableau~\ref{tab:tab_confusion_septentrionalis_075}; Tableau~\ref{tab:tab_metrics_septentrionalis_075}), particulièrement pour la grenouille Nord (Tableau~\ref{tab:tab_confusion_septentrionalis_025}; Tableau~\ref{tab:tab_metrics_septentrionalis_025}; Tableau~\ref{tab:tab_confusion_septentrionalis_075}; Tableau~\ref{tab:tab_metrics_septentrionalis_075}), le modèle a démontré des performances satisfaisantes pour les deux espèces cibles, avec une exactitude (proportion de prédictions vraies sur l’ensemble des prédictions) supérieure à 0,70 pour les deux seuils testés. Ces résultats indiquent que le modèle peut être utilisé comme outil de présélection des détections, réduisant substantiellement le temps de validation par rapport à l'écoute intégrale des enregistrements (à condition que les détections retenues fassent l'objet d'une validation manuelle). Les faux positifs observés s'expliquent en partie par la similarité entre les vocalisations de \addM{\emph{L. septentrionalis} et celles d'autres espèces, notamment \emph{L. sylvaticus}.} La constitution d'un corpus d'entraînement plus étoffé, incluant des enregistrements printaniers et estivaux de 2026, permettront d’améliorer les performances du modèle.
 

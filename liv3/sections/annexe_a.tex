@@ -1,0 +1,166 @@
+\section*{Annexes}
+
+
+
+\begin{table}[H]
+\centering
+\caption{Matrice de confusion du modèle personnalisé pour la grenouille léopard à un seuil de 0.25. Les vraies présences désignent les clips contenant une vocalisation de l'espèce cible ; les vraies absences désignent les clips n'en contenant pas.}
+\label{tab:tab_confusion_pipiens}
+\begin{tabular}{lrr}
+  \hline
+ & Détection de BirdNET & Non-détection de BirdNET \\
+  \hline
+Vraie absence  &  0 & 62 \\
+Vraie présence & 72 &  3 \\
+  \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Métriques de performance du modèle personnalisé pour la grenouille léopard à un seuil de confiance de 0,25. Le seuil de confiance est un indice calculé par BirdNET (pas une probabilité) compris entre 0 et 1. TP : vrais positifs ; FP : faux positifs ; FN : faux négatifs ; TN : vrais négatifs ; Exactitude = (TP + TN) / (TP + TN + FP + FN) ; Précision = TP / (TP + FP) ; Rappel = TP / (TP + FN) ; F1 = 2 × (Précision × Rappel) / (Précision + Rappel).}
+\label{tab:tab_metrics_pipiens_025}
+\begin{tabular}{rrrrrrrrr}
+  \hline
+Seuil & TP & FP & FN & TN & Exactitude & Précision & Rappel & F1 \\
+  \hline
+0.25 & 72 & 0 & 3 & 62 & 0.978 & 1 & 0.96 & 0.98 \\
+  \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Matrice de confusion du modèle personnalisé pour la grenouille léopard à un seuil de 0.75. Les vraies présences désignent les clips contenant une vocalisation de l'espèce cible ; les vraies absences désignent les clips n'en contenant pas.}
+\label{tab:tab_confusion_pipiens_075}
+\begin{tabular}{lrr}
+  \hline
+ & Détection de BirdNET & Non-détection de BirdNET \\
+  \hline
+Vraie absence  &  0 & 62 \\
+Vraie présence & 45 & 30 \\
+  \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Métriques de performance du modèle personnalisé pour la grenouille léopard à un seuil de confiance de 0,75. Le seuil de confiance est un indice calculé par BirdNET (pas une probabilité) compris entre 0 et 1. TP : vrais positifs ; FP : faux positifs ; FN : faux négatifs ; TN : vrais négatifs ; Exactitude = (TP + TN) / (TP + TN + FP + FN) ; Précision = TP / (TP + FP) ; Rappel = TP / (TP + FN) ; F1 = 2 × (Précision × Rappel) / (Précision + Rappel).}
+\label{tab:tab_metrics_pipiens_075}
+\begin{tabular}{rrrrrrrrr}
+  \hline
+Seuil & TP & FP & FN & TN & Exactitude & Précision & Rappel & F1 \\
+  \hline
+0.75 & 45 & 0 & 30 & 62 & 0.781 & 1 & 0.6 & 0.75 \\
+  \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Matrice de confusion du modèle personnalisé pour la grenouille du Nord à un seuil de 0.25. Les vraies présences désignent les clips contenant une vocalisation de l'espèce cible ; les vraies absences désignent les clips n'en contenant pas.}
+\label{tab:tab_confusion_septentrionalis_025}
+\begin{tabular}{lrr}
+  \hline
+ & Détection de BirdNET & Non-détection de BirdNET \\
+  \hline
+Vraie absence  &  9 & 57 \\
+Vraie présence & 91 & 14 \\
+  \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Métriques de performance du modèle personnalisé pour la grenouille du Nord à un seuil de confiance de 0,25. Le seuil de confiance est un indice calculé par BirdNET (pas une probabilité) compris entre 0 et 1. TP : vrais positifs ; FP : faux positifs ; FN : faux négatifs ; TN : vrais négatifs ; Exactitude = (TP + TN) / (TP + TN + FP + FN) ; Précision = TP / (TP + FP) ; Rappel = TP / (TP + FN) ; F1 = 2 × (Précision × Rappel) / (Précision + Rappel).}
+\label{tab:tab_metrics_septentrionalis_025}
+\begin{tabular}{rrrrrrrrr}
+  \hline
+Seuil & TP & FP & FN & TN & Exactitude & Précision & Rappel & F1 \\
+  \hline
+0.25 & 91 & 9 & 14 & 57 & 0.865 & 0.91 & 0.867 & 0.888 \\
+  \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Matrice de confusion du modèle personnalisé pour la grenouille du Nord à un seuil de 0.75. Les vraies présences désignent les clips contenant une vocalisation de l'espèce cible ; les vraies absences désignent les clips n'en contenant pas.}
+\label{tab:tab_confusion_septentrionalis_075}
+\begin{tabular}{lrr}
+  \hline
+ & Détection de BirdNET & Non-détection de BirdNET \\
+  \hline
+Vraie absence  &  1 & 65 \\
+Vraie présence & 58 & 47 \\
+  \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Métriques de performance du modèle personnalisé pour la grenouille du Nord à un seuil de confiance de 0,75. Le seuil de confiance est un indice calculé par BirdNET (pas une probabilité) compris entre 0 et 1. TP : vrais positifs ; FP : faux positifs ; FN : faux négatifs ; TN : vrais négatifs ; Exactitude = (TP + TN) / (TP + TN + FP + FN) ; Précision = TP / (TP + FP) ; Rappel = TP / (TP + FN) ; F1 = 2 × (Précision × Rappel) / (Précision + Rappel).}
+\label{tab:tab_metrics_septentrionalis_075}
+\begin{tabular}{rrrrrrrrr}
+  \hline
+Seuil & TP & FP & FN & TN & Exactitude & Précision & Rappel & F1 \\
+  \hline
+0.75 & 58 & 1 & 47 & 65 & 0.719 & 0.983 & 0.552 & 0.707 \\
+  \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+\caption{Résumé des observations de reptiles sur les 14 milieux humides inventoriés en 2025.}
+\label{tab:tab_mh_squamates}
+\begin{tabular}{lllll}
+  \toprule
+Site & C. picta & C. serpentina & T. sirtalis & Testudines ind. \\ 
+  \midrule
+MH-T01 & -- & -- & Ad & -- \\ 
+  MH-T20 & -- & -- & -- & -- \\ 
+  MH-T41\_1 & -- & -- & -- & -- \\ 
+  MH-T41\_2 & -- & -- & -- & -- \\ 
+  MH-T42\_3 & Ad & Ad & -- & Ad \\ 
+  MH-T42\_4 & -- & -- & -- & -- \\ 
+  MH-T42\_5 & -- & -- & Ad & -- \\ 
+  MH-T47 & -- & -- & -- & -- \\ 
+  MH-T48 & -- & -- & -- & -- \\ 
+  MH-T49\_1 & -- & -- & -- & -- \\ 
+  MH-T49\_2 & -- & -- & Ad & -- \\ 
+  MH-T52 & -- & -- & -- & -- \\ 
+  MH-T57 & -- & -- & -- & -- \\ 
+  MH-T65 & -- & -- & -- & -- \\ 
+   \bottomrule
+\end{tabular}
+\end{table}
+
+
+
+\begin{table}[H]
+\centering
+\caption{Résumé des observations de reptiles sur les 14 milieux humides inventoriés en 2025.}
+\label{tab:tab_mh_squamates}
+\begin{tabular}{lc}
+  \toprule
+Site & Autres taxons \\ 
+  \midrule
+MH-T01 & -- \\ 
+  MH-T20 & -- \\ 
+  MH-T41\_1 & -- \\ 
+  MH-T41\_2 & -- \\ 
+  MH-T42\_3 & -- \\ 
+  MH-T42\_4 & -- \\ 
+  MH-T42\_5 & -- \\ 
+  MH-T47 & B. lentiginosus \\ 
+  MH-T48 & -- \\ 
+  MH-T49 & A. alba/A. herodias/Écrevisses/O. virginianus/Poissons \\ 
+  MH-T49\_2 & -- \\ 
+  MH-T52 & Poissons \\ 
+  MH-T57 & -- \\ 
+  MH-T65 & Poissons \\ 
+   \bottomrule
+\end{tabular}
+\end{table}

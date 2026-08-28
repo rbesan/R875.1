@@ -5,6 +5,7 @@ library(lme4)
 
 persi_2025 <- read.csv("clean_persistance_2025.csv", header = TRUE, sep = ",")
 
+length(unique(persi_2025$tr))
 nrow(persi_2025)
 
 table(persi_2025$tr)

@@ -13,8 +13,11 @@ effort <- read.csv("clean_road_2025.csv",
 
 effort$time <- as.numeric((difftime(effort$fin, effort$debut, units = "mins")))
 
+length(unique(effort$tr[effort$protocol=="Pied"]))
+
+
 tapply(effort$tr, effort$protocol, function(x) length(unique(x)))
 
-
+table(effort$protocol[effort$protocol == "Pied"]) 
 table(effort$tr)
 
