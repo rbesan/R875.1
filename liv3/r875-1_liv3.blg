@@ -6,50 +6,55 @@ A level-1 auxiliary file: sections/comite.aux
 A level-1 auxiliary file: sections/specialistes.aux
 A level-1 auxiliary file: sections/mandat.aux
 A level-1 auxiliary file: sections/intro.aux
+A level-1 auxiliary file: sections/result_I.aux
 A level-1 auxiliary file: sections/method_II.aux
 A level-1 auxiliary file: sections/result_II.aux
+A level-1 auxiliary file: sections/discussion.aux
 The style file: ecologyNewFR.bst
+A level-1 auxiliary file: sections/annexe_A.aux
 Database file #1: R875-1.bib
-Warning--I didn't find a database entry for "Bates2015"
-You've used 9 entries,
+Warning--I didn't find a database entry for "seiler2020;rytwinski2016"
+Warning--I didn't find a database entry for "gunson2018"
+Warning--I didn't find a database entry for "jones2012"
+You've used 15 entries,
             2716 wiz_defined-function locations,
-            663 strings with 6273 characters,
-and the built_in function-call counts, 4308 in all, are:
-= -- 386
-> -- 311
-< -- 3
-+ -- 104
-- -- 93
-* -- 374
-:= -- 844
-add.period$ -- 35
-call.type$ -- 9
-change.case$ -- 67
-chr.to.int$ -- 9
-cite$ -- 9
-duplicate$ -- 148
-empty$ -- 232
-format.name$ -- 104
-if$ -- 815
+            711 strings with 7884 characters,
+and the built_in function-call counts, 7105 in all, are:
+= -- 665
+> -- 475
+< -- 6
++ -- 162
+- -- 141
+* -- 604
+:= -- 1386
+add.period$ -- 61
+call.type$ -- 15
+change.case$ -- 108
+chr.to.int$ -- 15
+cite$ -- 15
+duplicate$ -- 246
+empty$ -- 392
+format.name$ -- 160
+if$ -- 1351
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 5
-newline$ -- 47
-num.names$ -- 36
-pop$ -- 57
+missing$ -- 9
+newline$ -- 79
+num.names$ -- 60
+pop$ -- 83
 preamble$ -- 1
-purify$ -- 67
+purify$ -- 107
 quote$ -- 0
-skip$ -- 105
+skip$ -- 174
 stack$ -- 0
-substring$ -- 198
-swap$ -- 18
+substring$ -- 368
+swap$ -- 27
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 81
+type$ -- 135
 warning$ -- 0
-while$ -- 33
+while$ -- 59
 width$ -- 0
-write$ -- 115
-(There was 1 warning)
+write$ -- 199
+(There were 3 warnings)

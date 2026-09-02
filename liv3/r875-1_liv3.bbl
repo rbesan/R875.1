@@ -1,10 +1,27 @@
-\begin{thebibliography}{9}
+\begin{thebibliography}{15}
 
 \bibitem[Araya-Salas et~al.(2025)Araya-Salas, Elizondo-Calvo, et
   Rico-Guevara]{arya-salas2025suwo}
 Araya-Salas, M., J.~Elizondo-Calvo, et A.~Rico-Guevara. 2025.
 \newblock suwo: Access Nature Media Repositories.
 \newblock R package version 0.1.0.
+
+\bibitem[Barrientos et~al.(2021)Barrientos, Ascensão, D’Amico, Grilo, et
+  Pereira]{barrientos2021}
+Barrientos, R., F.~Ascensão, M.~D’Amico, C.~Grilo, et H.~M. Pereira. 2021.
+\newblock The lost road: {Do} transportation networks imperil wildlife
+  population persistence?
+\newblock Perspectives in Ecology and Conservation 19:411--416.
+
+\bibitem[{COSEPAC}(2008)]{cosepac2008}
+{COSEPAC}. 2008.
+\newblock Mise à jour. Évaluation et {Rapport} de situation du {COSEPAC} sur
+  la {Rainette} faux-grillon de l'ouest ({Pseudacris} triseriata), population
+  carolinienne, population des {Grands} {Lacs} et {Saint}-{Laurent} et du
+  {Bouclier} canadien, au {Canada}.
+\newblock non disponible, Comité sur la situation des espèces en péril au
+  Canada, Ottawa.
+\newblock Last Modified: 2017-09-29.
 
 \bibitem[Fayard(2022)]{fayard2022}
 Fayard, A. 2022.
@@ -13,10 +30,23 @@ Fayard, A. 2022.
   aménagé.
 \newblock Mémoire de maîtrise, Université Laval.
 
+\bibitem[Forman et Alexander(1998)]{forman1998}
+Forman, R. T.~T. et L.~E. Alexander. 1998.
+\newblock Roads and their major ecological effects.
+\newblock Annual Review of Ecology and Systematics 29:207--231.
+
+\bibitem[González-Gallina et~al.(2013)González-Gallina, Benítez-Badillo,
+  Rojas-Soto, et Hidalgo-Mihart]{gonzalezgallina2013}
+González-Gallina, A., G.~Benítez-Badillo, O.~R. Rojas-Soto, et M.~G.
+  Hidalgo-Mihart. 2013.
+\newblock The small, the forgotten and the dead: highway impact on vertebrates
+  and its implications for mitigation strategies.
+\newblock Biodiversity and Conservation 22:325--342.
+
 \bibitem[Hill et~al.(2019)Hill, Prince, Snaddon, Doncaster, et
   Rogers]{hill2019}
 Hill, A.~P., P.~Prince, J.~L. Snaddon, C.~P. Doncaster, et A.~Rogers. 2019.
-\newblock {AudioMoth}: {A} low-cost acoustic device for monitoring biodiversity
+\newblock {AudioMoth}: {a} low-cost acoustic device for monitoring biodiversity
   and the environment.
 \newblock HardwareX 6:e00073.
 
@@ -36,6 +66,14 @@ Kahl, S., C.~M. Wood, M.~Eibl, et H.~Klinck. 2021.
 \newblock BirdNET: a deep learning solution for avian diversity monitoring.
 \newblock Ecological Informatics 61:101236.
 
+\bibitem[Langen et~al.(2009)Langen, Ogden, et Schwarting]{langen2009}
+Langen, T.~A., K.~M. Ogden, et L.~L. Schwarting. 2009.
+\newblock Predicting {Hot} {Spots} of {Herpetofauna} {Road} {Mortality} {Along}
+  {Highway} {Networks}.
+\newblock The Journal of Wildlife Management 73:104--114.
+\newblock \_eprint:
+  https://wildlife.onlinelibrary.wiley.com/doi/pdf/10.2193/2008-017.
+
 \bibitem[Norouzzadeh et~al.(2021)Norouzzadeh, Morris, Beery, Joshi, Jojic, et
   Clune]{norouzzadeh2021}
 Norouzzadeh, M.~S., D.~Morris, S.~Beery, N.~Joshi, N.~Jojic, et J.~Clune. 2021.
@@ -47,6 +85,12 @@ Norouzzadeh, M.~S., D.~Morris, S.~Beery, N.~Joshi, N.~Jojic, et J.~Clune. 2021.
 {R Core Team}. 2025.
 \newblock R: A Language and Environment for Statistical Computing.
 \newblock R Foundation for Statistical Computing, Vienna, Austria.
+
+\bibitem[Retamal~Diaz(2020)]{retamal2020}
+Retamal~Diaz, F. 2020.
+\newblock Impact des infrastructures sous la route sur les populations
+  d'amphibiens.
+\newblock Thèse de doctorat, Université Laval, Québec,Canada.
 
 \bibitem[Stark et~al.(2023)Stark, Stefan, Wurm, Spanier, Taubenböck, et
   Knight]{stark2023}
