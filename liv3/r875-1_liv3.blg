@@ -6,7 +6,9 @@ A level-1 auxiliary file: sections/comite.aux
 A level-1 auxiliary file: sections/specialistes.aux
 A level-1 auxiliary file: sections/mandat.aux
 A level-1 auxiliary file: sections/intro.aux
+A level-1 auxiliary file: sections/goals_I.aux
 A level-1 auxiliary file: sections/result_I.aux
+A level-1 auxiliary file: sections/goals_II.aux
 A level-1 auxiliary file: sections/method_II.aux
 A level-1 auxiliary file: sections/result_II.aux
 A level-1 auxiliary file: sections/discussion.aux
@@ -18,7 +20,7 @@ Warning--I didn't find a database entry for "gunson2018"
 Warning--I didn't find a database entry for "jones2012"
 You've used 15 entries,
             2716 wiz_defined-function locations,
-            711 strings with 7884 characters,
+            713 strings with 7925 characters,
 and the built_in function-call counts, 7105 in all, are:
 = -- 665
 > -- 475
