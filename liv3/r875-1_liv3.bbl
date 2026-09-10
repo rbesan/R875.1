@@ -1,4 +1,4 @@
-\begin{thebibliography}{15}
+\begin{thebibliography}{19}
 
 \bibitem[Araya-Salas et~al.(2025)Araya-Salas, Elizondo-Calvo, et
   Rico-Guevara]{arya-salas2025suwo}
@@ -43,6 +43,12 @@ González-Gallina, A., G.~Benítez-Badillo, O.~R. Rojas-Soto, et M.~G.
   and its implications for mitigation strategies.
 \newblock Biodiversity and Conservation 22:325--342.
 
+\bibitem[Gunson(2019)]{gunson2019}
+Gunson, K. 2019.
+\newblock Comparaison du passage de tortues et de serpents dans des ponceaux de
+  drainage le long de deux autoroutes en {Amérique} du {Nord}.
+\newblock Le Naturaliste canadien 143:81--84.
+
 \bibitem[Hill et~al.(2019)Hill, Prince, Snaddon, Doncaster, et
   Rogers]{hill2019}
 Hill, A.~P., P.~Prince, J.~L. Snaddon, C.~P. Doncaster, et A.~Rogers. 2019.
@@ -60,6 +66,15 @@ Hopkins, J., G.~M. Santos-Elizondo, et F.~Villablanca. 2024.
 \bibitem[Jocher et Qiu(2024)]{jocher2024}
 Jocher, G. et J.~Qiu. 2024.
 \newblock Ultralytics YOLO11, version 11.0.0.
+
+\bibitem[Jones et~al.(2022)Jones, Marshall, Smith, Crane, Silva, Artchawakom,
+  Suwanwaree, Waengsothorn, Wüster, Goode, et Strine]{jones2022}
+Jones, M.~D., B.~M. Marshall, S.~N. Smith, M.~Crane, I.~Silva, T.~Artchawakom,
+  P.~Suwanwaree, S.~Waengsothorn, W.~Wüster, M.~Goode, et C.~T. Strine. 2022.
+\newblock How do {King} {Cobras} move across a major highway? {Unintentional}
+  wildlife crossing structures may facilitate movement.
+\newblock Ecology and Evolution 12:e8691.
+\newblock \_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/ece3.8691.
 
 \bibitem[Kahl et~al.(2021)Kahl, Wood, Eibl, et Klinck]{kahl2021}
 Kahl, S., C.~M. Wood, M.~Eibl, et H.~Klinck. 2021.
@@ -91,6 +106,23 @@ Retamal~Diaz, F. 2020.
 \newblock Impact des infrastructures sous la route sur les populations
   d'amphibiens.
 \newblock Thèse de doctorat, Université Laval, Québec,Canada.
+
+\bibitem[Rytwinski et~al.(2016)Rytwinski, Soanes, Jaeger, Fahrig, Findlay,
+  Houlahan, Van~der Ree, et Van~der Grift]{rytwinski2016}
+Rytwinski, T., K.~Soanes, J.~A.~G. Jaeger, L.~Fahrig, C.~S. Findlay,
+  J.~Houlahan, R.~Van~der Ree, et E.~A. Van~der Grift. 2016.
+\newblock How {effective} {is} {road} {mitigation} at {reducing} {road}-{kill}?
+  {A} {meta}-{analysis}.
+\newblock PLoS One 11:e0166941.
+
+\bibitem[Seiler et Bhardwaj(2020)]{seiler2020}
+Seiler, A. et M.~Bhardwaj. 2020.
+\newblock Wildlife and {traffic}: {an} {inevitable} but {not} {unsolvable}
+  {problem}?
+\newblock Dans F.~M. Angelici et L.~Rossi, éditeurs, \emph{Problematic
+  {Wildlife} {II}: {New} {Conservation} and {Management} {Challenges} in the
+  {Human}-{Wildlife} {Interactions}}, pages 171--190. Springer International
+  Publishing, Cham.
 
 \bibitem[Stark et~al.(2023)Stark, Stefan, Wurm, Spanier, Taubenböck, et
   Knight]{stark2023}

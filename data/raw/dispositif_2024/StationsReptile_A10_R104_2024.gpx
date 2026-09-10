@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<gpx version="1.1" creator="GDAL 3.6.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ogr="http://osgeo.org/gdal" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<metadata><bounds minlat="45.396220000002842" minlon="-73.455668000001282" maxlat="45.428907000002852" maxlon="-73.378508000001247"/></metadata>                
+<wpt lat="45.40781200000287" lon="-73.378508000001247">
+  <name>ReptileTAS_4</name>
+  <extensions>
+    <ogr:elevation>21.659777</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.418658000002857" lon="-73.395025000001255">
+  <name>ReptileTAS_2</name>
+  <extensions>
+    <ogr:elevation>21.507448</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.421285000002833" lon="-73.398694000001285">
+  <name>ReptilePAS_2</name>
+  <extensions>
+    <ogr:elevation>16.060072</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.424370000002853" lon="-73.403074000001268">
+  <name>ReptileTAS_1</name>
+  <extensions>
+    <ogr:elevation>25.899765</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.415012000002832" lon="-73.390129000001281">
+  <name>ReptilePAS_3</name>
+  <extensions>
+    <ogr:elevation>27.954241</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.421960000002848" lon="-73.398298000001276">
+  <name>ReptilePAN_2</name>
+  <extensions>
+    <ogr:elevation>28.415712</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.418522000002866" lon="-73.393777000001279">
+  <name>ReptileTAN_2</name>
+  <extensions>
+    <ogr:elevation>32.109276</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.428907000002852" lon="-73.407904000001281">
+  <name>ReptilePAN_1</name>
+  <extensions>
+    <ogr:elevation>23.536041</ogr:elevation>
+  </extensions>
+</wpt>
+
+<wpt lat="45.413738000002837" lon="-73.386498000001268">
+  <name>ReptileTAN_3</name>
+  <extensions>
+    <ogr:elevation>24.681387</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.415943000002855" lon="-73.390018000001263">
+  <name>ReptilePAN_3</name>
+  <extensions>
+    <ogr:elevation>28.342474</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.40069300000286" lon="-73.455228000001284">
+  <name>ReptilePRS_1</name>
+  <extensions>
+    <ogr:elevation>23.805761</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.40127400000285" lon="-73.455668000001282">
+  <name>ReptilePRN_1</name>
+  <extensions>
+    <ogr:elevation>22.667416</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.408685000002855" lon="-73.379183000001262">
+  <name>ReptileTAN_4</name>
+  <extensions>
+    <ogr:elevation>25.38805</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.409138000002855" lon="-73.380623000001265">
+  <name>ReptilePAN_4</name>
+  <extensions>
+    <ogr:elevation>18.275778</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.398207000002856" lon="-73.44889200000128">
+  <name>ReptilePRN_2</name>
+  <extensions>
+    <ogr:elevation>24.513332</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.396320000002845" lon="-73.446176000001273">
+  <name>ReptileTRS_2</name>
+  <extensions>
+    <ogr:elevation>24.45863</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.396220000002842" lon="-73.44545100000127">
+  <name>ReptileTRN_2</name>
+  <extensions>
+    <ogr:elevation>26.127575</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.39799200000283" lon="-73.449617000001268">
+  <name>ReptilePRS_2</name>
+  <extensions>
+    <ogr:elevation>19.382839</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.399562000002845" lon="-73.451650000001266">
+  <name>ReptileTRN_1</name>
+  <extensions>
+    <ogr:elevation>23.719883</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.399658000002859" lon="-73.452718000001298">
+  <name>ReptileTRS_1</name>
+  <extensions>
+    <ogr:elevation>24.949026</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.428636000002854" lon="-73.409059000001264">
+  <name>ReptilePAS_1</name>
+  <extensions>
+    <ogr:elevation>22.848789</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.408631000002863" lon="-73.381284000001244">
+  <name>ReptilePAS_4</name>
+  <extensions>
+    <ogr:elevation>31.869164</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.411267000002866" lon="-73.384956000001281">
+  <name>ReptileTAS_3</name>
+  <extensions>
+    <ogr:elevation>26.707497</ogr:elevation>
+  </extensions>
+</wpt>
+</gpx>
