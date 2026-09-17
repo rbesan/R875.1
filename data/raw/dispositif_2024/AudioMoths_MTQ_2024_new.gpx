@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<gpx version="1.1" creator="GDAL 3.6.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ogr="http://osgeo.org/gdal" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<metadata><bounds minlat="45.393590000002852" minlon="-73.466908000001268" maxlat="45.428579000002856" maxlon="-73.381396000001274"/></metadata>                
+<wpt lat="45.421399000002836" lon="-73.398990000001277">
+  <name>AUD_AS2</name>
+  <extensions>
+    <ogr:elevation>15.880837</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.408345000002853" lon="-73.381396000001274">
+  <name>AUD_AS4</name>
+  <extensions>
+    <ogr:elevation>18.857328</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.410775000002843" lon="-73.382569000001268">
+  <name>AUD_AN3</name>
+  <extensions>
+    <ogr:elevation>20.070318</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.393590000002852" lon="-73.466908000001268">
+  <name>AUD_A30decret</name>
+  <extensions>
+    <ogr:elevation>23.522675</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.398175000002851" lon="-73.44927300000127">
+  <name>AUD_RN2_pont</name>
+  <extensions>
+    <ogr:elevation>27.787741</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.399504000002835" lon="-73.450912000001281">
+  <name>AUD_RN1</name>
+  <extensions>
+    <ogr:elevation>23.458134</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.396192000002848" lon="-73.46433500000127">
+  <name>AUD_R217decret1</name>
+  <extensions>
+    <ogr:elevation>39.124603</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.394904000002839" lon="-73.464829000001274">
+  <name>AUD_R217decret2</name>
+  <extensions>
+    <ogr:elevation>33.674236</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.428579000002856" lon="-73.407292000001263">
+  <name>AUD_AN1</name>
+  <extensions>
+    <ogr:elevation>20.49843</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.420053000002873" lon="-73.395626000001272">
+  <name>AUD_AN2</name>
+  <extensions>
+    <ogr:elevation>22.503263</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.415159000002852" lon="-73.390566000001272">
+  <name>AUD_AS3</name>
+  <extensions>
+    <ogr:elevation>14.14086</ogr:elevation>
+  </extensions>
+</wpt>
+<wpt lat="45.428215000002865" lon="-73.409183000001278">
+  <name>AUD_AS1</name>
+  <extensions>
+    <ogr:elevation>17.868275</ogr:elevation>
+  </extensions>
+</wpt>
+</gpx>

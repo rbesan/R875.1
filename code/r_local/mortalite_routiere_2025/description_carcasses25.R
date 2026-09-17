@@ -6,24 +6,55 @@ library("xtable")
 
 setwd("/home/robes1/CONTRAT_ULAVAL/R8751/data/clean/mortalite_routiere_2025")
 
-# Table des conditions 
+# Table décomptes
 
-carca_clean <- read.csv("clean_bino_2025.csv", header = TRUE, sep = ",")
+all_obs_clean <- read.csv("clean_obs_deaths_2025.csv", header = TRUE, sep = ",")
 
-# Table des conditions de transects
-effort <- read.csv("clean_road_2025.csv",
+# Table effort
+
+effort <- read.csv("inv_road_2025_clean.csv",
                    header = TRUE,
                    sep = ",",
                    fileEncoding = "utf-8")
 
+# Sous ensemble sans le drone (D)
+
+G_P_obs <- subset(all_obs_clean, method == "P" | method == "G" )
+
+# Effectifs par groupe et par méthode
+
+lamb_group_method <- table(G_P_obs$class, G_P_obs$method)
 
 
-# Table des catégories 
+# Effort en km par méthode
 
-cat_tr <- read.csv("clean_tr_cat.csv",
-                   header = TRUE,
-                   sep = ",",
-                   fileEncoding = "utf-8")
+km_P <- sum(subset(effort, method == "P")$km)
+km_G <- sum(subset(effort, method == "G")$km)
+
+tx_P <- lamb_group_method[,"P"]/km_P
+
+tx_G <- lamb_group_method[,"G"]/km_G
+
+
+tx_method <- rbind(tx_P, tx_G)
+
+rownames(tx_method) <- c("À pied", "GoPro")
+
+round(tx_method, 2)
+
+barplot(tx_method,
+        beside = TRUE,
+        col = c("grey","grey30"),
+        ylab = "Observations de carcasses par km parcouru",
+        las =1,
+        ylim = c(0,max(tx_method)*1.2),
+        legend.text = row.names(tx_method),
+        args.legend = list(title="Méthode", bty="n"))
+
+
+effort_pied <- subset(effort, method=="P")
+
+merg_carca <- merge(carca_clean, effort[,c("tr_id","km", "min")], by = "tr_id", all.x=TRUE)
 
 carca_clean$visit <- paste(carca_clean$tr, carca_clean$Date, "Pied", sep="_")
 inventaires <- table(carca_clean$visit)

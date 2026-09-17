@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --job-name=weather2025
+#SBATCH --job-name=weather2024
 #SBATCH --time=06:00:00
 #SBATCH --cpus-per-task=4
 
