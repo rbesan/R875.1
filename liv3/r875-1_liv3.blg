@@ -7,52 +7,55 @@ A level-1 auxiliary file: sections/specialistes.aux
 A level-1 auxiliary file: sections/mandat.aux
 A level-1 auxiliary file: sections/intro.aux
 A level-1 auxiliary file: sections/goals_I.aux
+A level-1 auxiliary file: sections/method_I.aux
 A level-1 auxiliary file: sections/result_I.aux
+A level-1 auxiliary file: sections/discussion_I.aux
 A level-1 auxiliary file: sections/goals_II.aux
 A level-1 auxiliary file: sections/method_II.aux
 A level-1 auxiliary file: sections/result_II.aux
-A level-1 auxiliary file: sections/discussion.aux
+A level-1 auxiliary file: sections/discussion_II.aux
+A level-1 auxiliary file: sections/conclusion_II.aux
 The style file: ecologyNewFR.bst
 A level-1 auxiliary file: sections/annexe_A.aux
 Database file #1: R875-1.bib
-You've used 19 entries,
+You've used 30 entries,
             2716 wiz_defined-function locations,
-            739 strings with 9236 characters,
-and the built_in function-call counts, 9753 in all, are:
-= -- 896
-> -- 695
-< -- 9
-+ -- 234
-- -- 209
-* -- 849
-:= -- 1876
-add.period$ -- 79
-call.type$ -- 19
-change.case$ -- 148
-chr.to.int$ -- 19
-cite$ -- 19
-duplicate$ -- 328
-empty$ -- 527
-format.name$ -- 234
-if$ -- 1870
+            811 strings with 11636 characters,
+and the built_in function-call counts, 14728 in all, are:
+= -- 1382
+> -- 975
+< -- 18
++ -- 330
+- -- 290
+* -- 1250
+:= -- 2835
+add.period$ -- 124
+call.type$ -- 30
+change.case$ -- 221
+chr.to.int$ -- 30
+cite$ -- 30
+duplicate$ -- 512
+empty$ -- 830
+format.name$ -- 334
+if$ -- 2832
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 13
-newline$ -- 100
-num.names$ -- 78
-pop$ -- 116
+missing$ -- 21
+newline$ -- 156
+num.names$ -- 123
+pop$ -- 170
 preamble$ -- 1
-purify$ -- 145
+purify$ -- 216
 quote$ -- 0
-skip$ -- 234
+skip$ -- 364
 stack$ -- 0
-substring$ -- 502
-swap$ -- 45
-text.length$ -- 1
+substring$ -- 794
+swap$ -- 64
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 171
+type$ -- 267
 warning$ -- 0
-while$ -- 79
+while$ -- 124
 width$ -- 0
-write$ -- 255
+write$ -- 401
