@@ -21,7 +21,7 @@ Globalement, les tests de persistances révèlent que peu de morceaux de poulet 
 
 \subsubsection{Pièges photographiques}
 
-Nous avons été en mesure de faire analyser par MegaDetector, la totalité des images prises sur les 30 tronçons suivis en 2025. Par ailleurs, 54 \% de ces images ont pu être validées. Les reste des images sera traité à l'automne 2025. À cette base de \delM{dojnées}\addM{données} se rajoutera les images prisent en 2026 sur 30 autres tronçons. \comM{Il faudrait étoffer un peu cette section sur les images pour 2025}
+Nous avons été en mesure de faire analyser par MegaDetector, la totalité des images prises sur les 30 tronçons suivis en 2025. Par ailleurs, 54 \% de ces images ont pu être validées. Les reste des images sera traité à l'automne 2025. À cette base de \delM{dojnées}\addM{données} se \addM{rajouteront} les images \addM{prises} en 2026 sur 30 autres tronçons. \comM{Il faudrait étoffer un peu cette section sur les images pour 2025}
 
 
 \subsubsection{Enregistrements acoustiques et suivi des milieux humides}
