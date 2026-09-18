@@ -58,14 +58,11 @@ Bien que certains tronçons de catégorie 1 présentent des nombres parfois éle
 
 \subsubsection{Persistance de carcasses sur la route}
 
-Durant l'été 2025, 57 tests de persistance ont été réalisés. Bien que le protocole fonctionnait avec deux tests par tronçon (un le matin et un le soir) trois tests
-ont dû être annulés en raison d'un problème de matériel ou par manque de temps. Après visionnage des images des caméras, il s'avère que pour 15 tests (26~\%), l'appât a été retiré par un prédateur ou
-déplacé par un élément extérieur non identifié (figure~\ref{fig:persi_pred_25}). Dans 7 de ces cas (47~\%), la
-prédation était avérée et le prédateur identifié. Parmi les prédateurs, nous avons pu identifier la corneille d'Amérique et le grand corbeau, qui étaient responsables de la prédation dans 6 tests. Pour le cas de prédation restant, le prédateur identifié était un chat domestique (Fig. \ref{fig:persi_pred_25}).
+Durant l'été 2025, 57 tests de persistance ont été réalisés. Bien que le protocole \delM{fonctionnait avec}\addM{planifiait} deux tests par tronçon (un le matin et un le soir)\addM{,} trois tests ont dû être annulés en raison d'un problème de matériel ou par manque de temps. \addM{Suite au visionnement des images,} \delM{Après visionnage des images des caméras,} il s'avère que \addM{l'appât a été retiré par un prédateur ou déplacé par un élément extérieur non identifié pour 15 tests (26~\%)} (figure~\ref{fig:persi_pred_25}). Dans 7 de ces cas (47~\%), la prédation \delM{était avérée}\addM{a été confirmée} et le prédateur identifié. Parmi les prédateurs, nous avons pu identifier la corneille d'Amérique et le grand corbeau, qui étaient responsables de la prédation dans 6 tests. Pour le cas de prédation restant, le prédateur identifié était un chat domestique (Fig. \ref{fig:persi_pred_25}).
 
 
 Nous avons également comparé la probabilité de retrait de l'appât entre le matin et le
-soir, pour ce faire nous avons utilisé un modèle linéaire généralisé mixte binomial (lien
+soir\delM{,} \addM{Pour ce faire,} nous avons utilisé un modèle linéaire généralisé mixte binomial (lien
 logit ; \texttt{glmer}, package \texttt{lme4}), avec le
 moment du déploiement (matin ou soir) en effet fixe et le tronçon en effet
 aléatoire sur l'ordonnée à l'origine, la plupart des tronçons ayant fait
@@ -96,12 +93,12 @@ rétro-transformés en probabilités. Au final, il s'avère que la probabilité 
 
 \subsubsection{Pièges photographiques}
 
-Un total de \mbox{2 584 774} images prises en 2025 sur les trente ponceaux à l'étude ont été traitées par MegaDetector, nécessitant \mbox{5 780 601} secondes de temps de calcul, équivalant à 66.9 jours de calcul en continu. À partir de ces images traitées, nous avons terminé la validation des images de 18 ponceaux, ce qui représente 54~\% des photos du jeu de données. Nous avons inspecté les 38 110 images étiquetées par MegaDetector comme ayant des détections animales pour lesquelles la confiance était $\geq 75$~\% dans ces 18 ponceaux. La validation de ces images par un humain a révélé que le taux de vrais positifs était de 45.95~\%: 19 090 des détections étaient de vraies détection d'animaux. Le taux de faux positifs était de 54.05\% (i.e., détections présumées par MegaDetector mais non avérées). À partir des 38 110 images étiquetées par MegaDetector, nous avons également noté des faux-négatifs, c'est-à-dire, des sections d'images où MegaDetector n'avait pas déclaré la présence d'un animal. À partir de l'inspection des images des 18 ponceaux pour lesquelles le seuil de confiance $\geq 75$~\%, nous avons détecté 2 465 animaux additionnels. Au total, nous avons répertorié 21 555 détections animales sur les 1 395 515 images des 18 ponceaux.
+Un total de \mbox{2 584 774} images prises en 2025 sur les trente ponceaux à l'étude ont été traitées par MegaDetector, nécessitant \mbox{5 780 601} secondes de temps de calcul, équivalant à 66.9 jours de calcul en continu. À partir de ces images traitées, nous avons terminé la validation des images de 19 ponceaux, ce qui représente 58~\% des photos du jeu de données. Nous avons inspecté les 42 678 images étiquetées par MegaDetector comme ayant des détections animales pour lesquelles la confiance était $\geq 75$~\% dans ces 19 ponceaux. La validation de ces images par un humain a révélé que le taux de vrais positifs était de 46.96~\%: 21 865 des détections étaient de vraies détection d'animaux. Le taux de faux positifs était de 53.03\% (i.e., détections présumées par MegaDetector mais non avérées). À partir des 42 678 images étiquetées par MegaDetector, nous avons également noté des faux-négatifs, c'est-à-dire, des sections d'images où MegaDetector n'avait pas déclaré la présence d'un animal. À partir de l'inspection des images des 19 ponceaux pour lesquelles le seuil de confiance $\geq 75$~\%, nous avons détecté 2 695 animaux additionnels. Au total, nous avons répertorié 24 560 détections animales sur les 1 504 842 images des 19 ponceaux.
 
-Différents groupes et espèces ont été observées sur les images, incluant des invertébrés (araignées, odonates, papillons) et plusieurs vertébrés (Tableau \ref{tab:cam-sp-2025}). Des 21 555 détections animales, 78~\% étaient des mammifères de moyenne taille et 13~\% étaient de la sauvagine. Les autres animaux détectés étaient des oiseaux forestiers (7~\%), des petits mammifères (1~\%), des reptiles (0.2~\%) et des amphibiens (0.6~\%) (Fig. \ref{fig:cam-Prop-2025}. La répartition des observations selon les types de tronçons ne suggère pas de patrons particuliers pour le moment, mis à part les petits mammifères qui semblaient plus fréquents dans les tronçons de catégorie 2 (milieu humide de chaque côté), bien qu'il reste environ 50~\% des images à valider (Fig. \ref{fig:cam-Prop-Type-2025}).
+Différents groupes et espèces ont été observées sur les images, incluant des invertébrés (araignées, odonates, papillons) et plusieurs vertébrés (Tableau \ref{tab:cam-sp-2025}). Des 24 560 détections animales, 79~\% étaient des mammifères de moyenne taille et 11~\% étaient de la sauvagine. Les autres animaux détectés étaient des oiseaux forestiers (7~\%), des petits mammifères (0.9~\%), des reptiles (0.2~\%) et des amphibiens (1.5~\%) (Fig. \ref{fig:cam-Prop-2025}. La répartition des observations selon les types de tronçons ne suggère pas de patrons particuliers pour le moment, mis à part les petits mammifères qui semblaient plus fréquents dans les tronçons de catégorie 2 (milieu humide de chaque côté), bien qu'il reste environ 50~\% des images à valider (Fig. \ref{fig:cam-Prop-Type-2025}).
 
 \begin{table}[H]
-  \caption{Espèces et groupes d'espèces répertoriées sur les images prises par les pièges photographiques dans les ponceaux des tronçons suivis en 2025. Le tableau a été préparé à partir des 21 555 détections animales provenant des 18 tronçons analysés.}
+  \caption{Espèces et groupes d'espèces répertoriées sur les images prises par les pièges photographiques dans les ponceaux des tronçons suivis en 2025. Le tableau a été préparé à partir des 24 560 détections animales provenant des 19 tronçons analysés.}
   \label{tab:cam-sp-2025}
   \begin{tabular}{p{0.3\textwidth}p{0.7\textwidth}}
     \hline
@@ -123,7 +120,7 @@ Différents groupes et espèces ont été observées sur les images, incluant de
 \begin{figure}
   \centering
   \includegraphics[width=0.9\textwidth]{fig/cam-Prop-2025.png}
-\caption{Proportions des images avec détection animales de vertébrés prises par les pièges photographiques dans les ponceaux des tronçons suivis en 2025. La figure a été préparée à partir des 21 555 détections animales provenant des 18 tronçons analysés.}
+\caption{Proportions des images avec détection animales de vertébrés prises par les pièges photographiques dans les ponceaux des tronçons suivis en 2025. La figure a été préparée à partir des 24 560 détections animales provenant des 19 tronçons analysés.}
 \label{fig:cam-Prop-2025}
 \end{figure}
 
@@ -131,7 +128,7 @@ Différents groupes et espèces ont été observées sur les images, incluant de
 \begin{figure}
   \centering
   \includegraphics[width=0.9\textwidth]{fig/cam-Prop-Type-2025.png}
-\caption{Proportions des images avec détection animales de vertébrés prises par les pièges photographiques dans les ponceaux des tronçons suivis en 2025 selon les trois différents types de tronçons échantillonnés. La figure a été préparée à partir des 21 555 détections animales provenant des 18 tronçons analysés.}
+\caption{Proportions des images avec détection animales de vertébrés prises par les pièges photographiques dans les ponceaux des tronçons suivis en 2025 selon les trois différents types de tronçons échantillonnés. La figure a été préparée à partir des 24 560 détections animales provenant des 19 tronçons analysés.}
 \label{fig:cam-Prop-Type-2025}
 \end{figure}
 
