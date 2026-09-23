@@ -7,71 +7,49 @@
 
 En 2025, des inventaires de carcasses ont été réalisés sur 30 tronçons routiers de 1 km. Chaque tronçon faisait l'objet de deux visites, et durant chaque visite nous procédions à deux inventaires réalisés selon deux méthodes d'échantillonnage distinctes. Les inventaires se déroulaient entre 5 h 00 et 10 h 00, de manière à réduire le biais lié au retrait ou le déplacement des carcasses par les charognards et les véhicules circulant sur la chaussée. La méthode d'inventaire par caméra embarquée était utilisée à chaque visite. La seconde méthode de chaque visite (drone ou relevé à pied) dépendait des autorisations et des conditions de vol. Par conséquent, bien qu'une visite impliquait deux méthodes distinctes, un tronçon pouvait cumuler trois méthodes différentes au bout de deux visites (Tableau~\ref{tab:tab_method}).
 
-
+\begingroup\small
 \begin{longtable}{llrrl}
 \caption{Nombre de visites et méthodes utilisées pour les inventaires de carcasses, par tronçon.} \\ 
   \toprule
-Section & Tronçon & Catégorie & Visites & Methodes \\ 
+Section & Type & Catégorie & Visites & Methodes \\ 
   \midrule
-T01\_E & T01 &   2 &   2 & À pied+GoPro \\ 
-  T01\_O & T01 &   2 &   2 & Drone+GoPro \\ 
-  T02 & T02 &   0 &   2 & À pied+GoPro \\ 
-  T03\_E & T03 &   0 &   2 & À pied+Drone+GoPro \\ 
-  T03\_O & T03 &   0 &   2 & GoPro \\ 
-  T09\_E & T09 &   0 &   2 & GoPro \\ 
-  T09\_O & T09 &   0 &   2 & À pied+GoPro \\ 
-  T14\_E & T14 &   0 &   2 & À pied+GoPro \\ 
-  T14\_O & T14 &   0 &   2 & À pied+GoPro \\ 
-  T15\_E & T15 &   0 &   2 & GoPro \\ 
-  T15\_O & T15 &   0 &   2 & À pied+GoPro \\ 
-  T20\_E & T20 &   0 &   2 & Drone+GoPro \\ 
-  T20\_O & T20 &   0 &   2 & Drone+GoPro \\ 
-  T22\_E & T22 &   2 &   2 & À pied+GoPro \\ 
-  T22\_O & T22 &   2 &   2 & GoPro \\ 
-  T25\_E & T25 &   1 &   2 & À pied+Drone+GoPro \\ 
-  T25\_O & T25 &   1 &   2 & GoPro \\ 
-  T26\_E & T26 &   0 &   2 & GoPro \\ 
-  T26\_O & T26 &   0 &   2 & À pied+GoPro \\ 
-  T28 & T28 &   0 &   2 & À pied+Drone+GoPro \\ 
-  T30\_N & T30 &   0 &   2 & GoPro \\ 
-  T30\_S & T30 &   0 &   2 & À pied+Drone+GoPro \\ 
-  T31\_E & T31 &   1 &   2 & À pied+Drone+GoPro \\ 
-  T31\_O & T31 &   1 &   2 & GoPro \\ 
-  T35 & T35 &   1 &   2 & À pied+Drone+GoPro \\ 
-  T36 & T36 &   2 &   2 & À pied+Drone+GoPro \\ 
-  T39\_E & T39 &   1 &   2 & GoPro \\ 
-  T39\_O & T39 &   1 &   2 & À pied+Drone+GoPro \\ 
-  T40\_E & T40 &   2 &   2 & Drone+GoPro \\ 
-  T40\_O & T40 &   2 &   2 & GoPro \\ 
-  T41\_E & T41 &   2 &   2 & GoPro \\ 
-  T41\_O & T41 &   2 &   3 & À pied+Drone+GoPro \\ 
-  T42\_E & T42 &   2 &   2 & GoPro \\ 
-  T42\_O & T42 &   2 &   3 & À pied+Drone+GoPro \\ 
-  T45\_N & T45 &   2 &   2 & À pied+GoPro \\ 
-  T45\_S & T45 &   2 &   2 & GoPro \\ 
-  T47\_E & T47 &   2 &   2 & Drone+GoPro \\ 
-  T47\_O & T47 &   2 &   2 & GoPro \\ 
-  T48\_E & T48 &   1 &   2 & À pied+GoPro \\ 
-  T48\_O & T48 &   1 &   2 & GoPro \\ 
-  T49 & T49 &   2 &   2 & À pied+Drone+GoPro \\ 
-  T52\_E & T52 &   2 &   2 & GoPro \\ 
-  T52\_O & T52 &   2 &   2 & À pied+GoPro \\ 
-  T53\_E & T53 &   1 &   2 & GoPro \\ 
-  T53\_O & T53 &   1 &   2 & À pied+Drone+GoPro \\ 
-  T57\_E & T57 &   2 &   2 & Drone+GoPro \\ 
-  T57\_O & T57 &   2 &   2 & GoPro \\ 
-  T59 & T59 &   1 &   2 & À pied+GoPro \\ 
-  T61\_N & T61 &   2 &   2 & À pied+Drone+GoPro \\ 
-  T61\_S & T61 &   2 &   2 & GoPro \\ 
-  T62\_E & T62 &   1 &   2 & GoPro \\ 
-  T62\_O & T62 &   1 &   2 & À pied+Drone+GoPro \\ 
-  T65\_N & T65 &   1 &   2 & À pied+Drone+GoPro \\ 
-  T65\_S & T65 &   1 &   2 & GoPro \\ 
+T01\_E & Autoroute &   2 &   1 & À pied+GoPro \\ 
+  T01\_O & Autoroute &   2 &   1 & Drone+GoPro \\ 
+  T02 & Secondaire étroite &   0 &   2 & À pied+GoPro \\ 
+  T03\_E & Autoroute &   0 &   2 & À pied+Drone+GoPro \\ 
+  T09\_O & Autoroute &   0 &   2 & À pied+GoPro \\ 
+  T14\_E & Secondaire séparée &   0 &   1 & À pied+GoPro \\ 
+  T14\_O & Secondaire séparée &   0 &   1 & À pied+GoPro \\ 
+  T15\_O & Autoroute &   0 &   2 & À pied+GoPro \\ 
+  T20\_E & Autoroute &   0 &   1 & Drone+GoPro \\ 
+  T20\_O & Autoroute &   0 &   1 & Drone+GoPro \\ 
+  T22\_E & Secondaire séparée &   2 &   2 & À pied+GoPro \\ 
+  T25\_E & Autoroute &   1 &   2 & À pied+Drone+GoPro \\ 
+  T26\_O & Autoroute &   0 &   2 & À pied+GoPro \\ 
+  T28 & Secondaire étroite &   0 &   2 & À pied+Drone+GoPro \\ 
+  T30\_S & Autoroute &   0 &   2 & À pied+Drone+GoPro \\ 
+  T31\_E & Autoroute &   1 &   2 & À pied+Drone+GoPro \\ 
+  T35 & Secondaire étroite &   1 &   2 & À pied+Drone+GoPro \\ 
+  T36 & Secondaire étroite &   2 &   2 & À pied+Drone+GoPro \\ 
+  T39\_O & Secondaire séparée &   1 &   2 & À pied+Drone+GoPro \\ 
+  T40\_E & Autoroute &   2 &   2 & Drone+GoPro \\ 
+  T41\_O & Autoroute &   2 &   2 & À pied+Drone+GoPro \\ 
+  T42\_O & Autoroute &   2 &   2 & À pied+Drone+GoPro \\ 
+  T45\_N & Autoroute &   2 &   2 & À pied+GoPro \\ 
+  T47\_E & Autoroute &   2 &   2 & Drone+GoPro \\ 
+  T48\_E & Autoroute &   1 &   2 & À pied+GoPro \\ 
+  T49 & Secondaire étroite &   2 &   2 & À pied+Drone+GoPro \\ 
+  T52\_O & Autoroute &   2 &   2 & À pied+GoPro \\ 
+  T53\_O & Autoroute &   1 &   2 & À pied+Drone+GoPro \\ 
+  T57\_E & Autoroute &   2 &   2 & Drone+GoPro \\ 
+  T59 & Secondaire étroite &   1 &   2 & À pied+GoPro \\ 
+  T61\_N & Autoroute &   2 &   2 & À pied+Drone+GoPro \\ 
+  T62\_O & Autoroute &   1 &   2 & À pied+Drone+GoPro \\ 
+  T65\_N & Autoroute &   1 &   2 & À pied+Drone+GoPro \\ 
    \bottomrule
 \label{tab:visites}
 \end{longtable}
-
-
+\endgroup
 Les inventaires par caméra embarquée ont été réalisés à l'aide d'une caméra GoPro Hero 11 Black (GoPro, San Mateo, Californie, États-Unis) fixée au centre de la partie avant du capot du véhicule au moyen d'un trépied magnétique 3-Footed Monster. Afin d'enregistrer la chaussée lors du parcours de chaque tronçon, la caméra était configurée en résolution 4K au format 4:3, à une cadence de 30 images par seconde. La caméra était pilotée depuis l'habitacle du véhicule au moyen de l'application Quik (GoPro, San Mateo, Californie, États-Unis) installée sur un téléphone intelligent. Les carcasses ont été dénombrées a posteriori par visionnement des enregistrements vidéo. La caméra étant équipée d'un récepteur GPS intégré, chaque carcasse détectée à l'écran a pu être géolocalisée en croisant le minutage de sa détection avec les données de position contenues dans les métadonnées des fichiers \texttt{.mp4}. Dans le cas des inventaires par caméra embarquée, les deux voies de circulation étaient systématiquement parcourues.
 
 La méthode à pied consistait à parcourir l'accotement en marchant, celui-ci étant constitué de gravel ou enherbé selon le tronçon. Les observateurs y repéraient, identifiaient et dénombraient toutes les carcasses détectées, y compris celles situées hors de la chaussée, sur l'accotement gravillonné ou dans la végétation herbacée en bordure de route. Sur les routes secondaires, les observateurs parcouraient successivement les deux voies en veillant à ne pas compter deux fois une même carcasse. Dans le cas où les observateurs ne pouvaient pas traverser le tronçon de manière sécuritaire, ils inventoriaient les deux voies à partir d'un seul côté de la route. Les observateurs notaient la date, l'heure, le taxon et les coordonnées géographique de chaque carcasse à l'aide d'un GPS GARMIN GPSMAP 79s (Garmin, Schaffhausen, Suisse).

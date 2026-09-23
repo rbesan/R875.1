@@ -1,24 +1,42 @@
 # Fonction : formatage des données de décomptes de carcasses à pied
 
-setwd("/home/robes1/CONTRAT_ULAVAL/R8751/data/raw/mortalite_routiere_2025")
+setwd("/home/robes1/CONTRAT_ULAVAL/R8751/data/raw/mortalite_routiere")
 
 # table d'obs inventaire jumelles
-carca_raw <- read.csv("bino_carcasses.csv", header =  TRUE, sep = ",")
+carca_raw <- read.csv("bino_carcasses_2025.csv", header =  TRUE, sep = ",")
+
+carca_raw_true <- subset(carca_raw, carca_raw$direction_opposee == 0) 
 
 # table d'obs inventaires gopro
 
-gopro_raw_2025 <- read.csv("inv_gopro_2025.csv",
+gopro_raw_2025 <- read.csv("gopro_carcasses_2025.csv",
                            header = TRUE,
                            sep = ",",
                            fileEncoding = "utf-8")
 
-carca_raw_select <- carca_raw[,!names(carca_raw) %in% c("waypoint",
+# table des tronçons 
+
+mort25 <- read.csv("inv_road_2025.csv", 
+                   header = TRUE,
+                   sep = ",",
+                   fileEncoding = "utf-8")
+
+orphelins <- setdiff(unique(gopro_raw_2025$troncon), unique(mort25$troncon))
+gopro_net_2025 <- subset(gopro_raw_2025, !(troncon %in% orphelins))
+
+
+carca_raw_select <- carca_raw_true[,!names(carca_raw) %in% c("waypoint",
                                                         "sens_obs",
                                                         "mortalite",
                                                         "revu",
+                                                        "taille",
+                                                        "direction_opposee",
                                                         "commentaires")]
 
+
 carca_raw_select$classe[is.na(carca_raw_select$classe)] <- "Ind"
+
+unique(carca_raw_select$classe)
 
 carca_raw_select$classe <- factor(carca_raw_select$classe, levels = c("amphibia",
                                                                       "aves",
@@ -59,7 +77,6 @@ names(carca_raw_select) <- c("tr",
                              "species",
                              "condition",
                              "loc",
-                             "size",
                              "date",
                              "hour")
 
@@ -72,7 +89,7 @@ carca_raw_select$tr_id <- paste(format(carca_raw_select$date, "%Y%m%d"),
 
 
 
-gopro_select_2025 <- gopro_raw_2025[,!names(gopro_raw_2025) %in% c("nom_fichier",
+gopro_select_2025 <- gopro_net_2025[,!names(gopro_raw_2025) %in% c("nom_fichier",
                                                                    "minutage_obs",
                                                                    "heure_obs",
                                                                    "emplacement",
@@ -85,6 +102,8 @@ cat_2025 <- read.csv("cat_2025.csv",
                      header = TRUE,
                      sep = ";",
                      fileEncoding = "utf-8")
+
+
 
 gopro_dead_2025 <- gopro_select_2025[gopro_select_2025$etat=="mort",]
 
@@ -106,12 +125,12 @@ gopro_dead_2025$class <- factor(gopro_dead_2025$class,
                                 levels = c("amphibia","aves","mammalia","reptilia","Ind"),
                                 labels = c("Amphibiens","Oiseaux","Mammifères","Reptiles","Indéterminés"))
 
-carca_all <- rbind(carca_raw_select,
-                   gopro_dead_2025[, names(carca_raw_select)])
+carca_all <- rbind(carca_raw_select, gopro_dead_2025[, names(carca_raw_select)])
+
 
 
 write.csv(carca_all, 
-          "/home/robes1/CONTRAT_ULAVAL/R8751/data/clean/mortalite_routiere_2025/clean_obs_deaths_2025.csv",
+          "/home/robes1/CONTRAT_ULAVAL/R8751/data/clean/mortalite_routiere/clean_carcasses_2025.csv",
           row.names = FALSE)
 
 

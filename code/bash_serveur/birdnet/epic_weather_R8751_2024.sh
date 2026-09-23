@@ -6,7 +6,7 @@
 
 in_sounds="/media/md0/MTQ-A10/AUDIOMOTHS/2024"
 links="/home/robes15/Documents/R8751/output/birdnet/2024/links_weather_2024"
-out_weather="/home/robes15/Documents/R8751/output/birdnet/2024/weather"
+out_weather="/home/robes15/Documents/R8751/output/birdnet/2024/csv_weather"
 mod9="/home/robes15/Documents/birdnet_custom/mod_lise_class9.tflite"
 
 source /opt/conda/etc/profile.d/conda.sh

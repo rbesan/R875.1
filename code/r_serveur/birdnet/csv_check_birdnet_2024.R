@@ -1,9 +1,9 @@
 ##################################################################################
 # Script R rapport 3 R875.1
 # Auteur : Robin Besançon
-# Objectif : CSV pour vérifier les clips d'espèces identifiées par birdnet en 2025
+# Objectif : CSV pour vérifier les clips d'espèces identifiées par birdnet en 2024
 #####################################################################################
-path <- "/home/robes15/Documents/R8751/output/birdnet/2025/clips_anura_2025"
+path <- "/home/robes15/Documents/R8751/output/birdnet/2024/clips_anura_2024"
 species <- c(
   "American Toad", "Gray Treefrog", "Spring Peeper", "Striped Chorus Frog",
   "Green Frog", "Pickerel Frog", "American Bullfrog"
@@ -37,6 +37,6 @@ cat("Clips total :", nrow(annot), "\n")
 print(table(annot$site, annot$species))
 print(summary(annot$conf))
 cat("NA dans conf :", sum(is.na(annot$conf)), "\n")
-out <- file.path(path, "validation_birdnet_2025.csv")
+out <- file.path(path, "validation_birdnet_2024.csv")
 write.csv(annot, out, row.names = FALSE)
 cat("Écrit :", out, "\n")

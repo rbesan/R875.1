@@ -1,7 +1,7 @@
 #install.packages("xtable")
 library("xtable")
 
-setwd("/home/robes1/CONTRAT_ULAVAL/R8751/data/clean/mortalite_routiere_2025")
+setwd("/home/robes1/CONTRAT_ULAVAL/R8751/data/clean/mortalite_routiere")
 
 
 effort <- read.csv("inv_road_2025_clean.csv",
@@ -9,11 +9,19 @@ effort <- read.csv("inv_road_2025_clean.csv",
          sep = ",",
          fileEncoding = "utf-8")
 
+
 effort$method <- factor(effort$method, 
        levels = c("P","D","G"),
        labels = c("À pied","Drone","GoPro"))
 
 
+effort$method <- factor(effort$method, 
+                        levels = c("P","D","G"),
+                        labels = c("À pied","Drone","GoPro"))
+
+effort$type <- factor(effort$type, 
+                        levels = c("autoroute","secondaire_etroite","secondaire_separee"),
+                        labels = c("Autoroute","Secondaire étroite","Secondaire séparée"))
 
 
 
@@ -26,7 +34,7 @@ for (s in section) {
   data.inv <- rbind(data.inv,
                     data.frame(
                       Section = s,
-                      Tronçon = lignes$tr_glob[1],
+                      Type = lignes$type[1],
                       Catégorie = lignes$cat[1],
                       Visites = length(unique(lignes$date)),
                       Methodes = paste(sort(unique(lignes$method)), collapse = "+")

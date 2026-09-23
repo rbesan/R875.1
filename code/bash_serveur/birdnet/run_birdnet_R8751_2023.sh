@@ -1,18 +1,19 @@
 #!/bin/bash
 
-#SBATCH --job-name=mod9_2025
+#SBATCH --job-name=anura2023
 #SBATCH --time=06:00:00
 #SBATCH --cpus-per-task=4
 
 ## Données brutes
-in_sounds="/media/md0/MTQ-A10/AUDIOMOTHS/2025" ## chemin pour les données brutes
+in_sounds="/media/md0/MTQ-A10/AUDIOMOTHS/2023" ## chemin pour les données brutes
 ## Output de birdnet
-out_weather="/home/robes15/Documents/R8751/output/birdnet/2025/weather" ## csv filtre météo (mod9)
-out_mod9="/home/robes15/Documents/R8751/output/birdnet/2025/anura_mod9" ## csv birdnet avec les anoures non reconnus par le modèle de base
+out_anura="/home/robes15/Documents/R8751/output/birdnet/2023/anura_2023" ## csv birdnet pour les anoures (modèle de base)
+## Input weather
+in_weather="/home/robes15/Documents/R8751/output/birdnet/2023/csv_weather_2024" ## csv filtre météo (mod9)
 ## Dossier de liens
-links="/home/robes15/Documents/R8751/output/birdnet/2025/links"
-## Modèle 9
-mod9="/home/robes15/Documents/birdNET_custom/mod_lise_class9.tflite"
+links="/home/robes15/Documents/R8751/output/birdnet/2023/links_anura_2023"
+## input liste d'espèces
+list="/home/robes15/Documents/R8751/input/species_list.txt"
 
 
 ## Lancement de conda
@@ -29,12 +30,12 @@ if [ "$station" = "LONGUEUIL" ]; then
 continue
 fi
 rm -rf "$links/$station"
-mkdir -p "$links/$station" "$out_mod9/$station"
+mkdir -p "$links/$station" "$out_anura/$station"
 
 ## Boucle interne pour exclure les fichiers corrompus et faire le filtre 
 for wav in "$path_station"*.[wW][aA][vV]
 do
-    csv="$out_weather/$station/$(basename "${wav%.*}").BirdNET.results.csv"
+    csv="$in_weather/$station/$(basename "${wav%.*}").BirdNET.results.csv"
     if python -c "import soundfile, sys; soundfile.info(sys.argv[1])" "$wav" 2>/dev/null
     then
         grep -q ",WEATHER," "$csv" 2>/dev/null || ln -s "$wav" "$links/$station/"
@@ -43,18 +44,15 @@ done
 
 python -m birdnet_analyzer.analyze \
 "$links/$station" \
--o "$out_mod9/$station" \
--c "$mod9" \
+-o "$out_anura/$station" \
 --rtype csv \
 --min_conf 0.75 \
--t "$SLURM_CPUS_PER_TASK"
+--slist "$list" \
+-t 4
 
 done
 
 conda deactivate
 
 echo "Terminé."
-
-
-
 
