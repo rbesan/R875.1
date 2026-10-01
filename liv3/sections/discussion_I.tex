@@ -1,0 +1,11 @@
+\section{Discussion}
+
+\subsection{Suivi de la petite faune}
+
+\subsubsection{Pièges photographiques}
+
+À l'aide de MegaDetector, nous avons été en mesure d'analyser la totalité des images prises par tous les pièges-photographiques en 2024. Un grand nombre de faux-positifs étaient associés aux entrées de ponceaux dans certaines stations. Ceci souligne l'importance d'entraîner un outil dédié au contexte routier afin d'améliorer la performance d'un tel outil. L'accumulation d'images dans la prochaine année permettra de débuter l'entraînement d'un tel outil dans le laboratoire du professeur Mazerolle.
+
+\subsubsection{Enregistrements acoustiques}
+
+La réanalyse des enregistrements à l'aide d'un modèle BirdNET entraîné spécifiquement pour la grenouille du Nord et la grenouille léopard, deux espèces que nos analyses précédentes ne permettaient pas de prendre en compte, a permis de détecter la grenouille léopard à une station en 2023 et à une station en 2024, toutes deux situées aux abords de l'A10. La grenouille du Nord n'a en revanche été détectée à aucune station. Les tests de validation réalisés après l'entraînement indiquent que le modèle génère un certain nombre de faux positifs. Par ailleurs, le jeu de données d'entraînement était restreint à 2 142 fichiers répartis entre 9 classes. Davantage de fichiers seraint nécessaires pour bénificier d'un modèle personnalisé plus efficace. Ce premier modèle entrainé constitue néanmoins un premier filtre efficace pour repérer ces deux espèces dans le grand volume d'enregistrements accumulés, les détections retenues devant ensuite être confirmées par écoute. Nous prévoyons de réentraîner le modèle avec les nouveaux fichiers annotés issus d'analyses récentes menées sur plusieurs projets, ce qui nous permettra d'actualiser ces résultats pour le dernier livrable.

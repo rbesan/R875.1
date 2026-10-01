@@ -20,42 +20,42 @@ A level-1 auxiliary file: sections/annexe_A.aux
 Database file #1: R875-1.bib
 You've used 30 entries,
             2716 wiz_defined-function locations,
-            811 strings with 11636 characters,
-and the built_in function-call counts, 14728 in all, are:
-= -- 1382
-> -- 975
+            813 strings with 11774 characters,
+and the built_in function-call counts, 14716 in all, are:
+= -- 1387
+> -- 974
 < -- 18
 + -- 330
 - -- 290
-* -- 1250
-:= -- 2835
-add.period$ -- 124
+* -- 1249
+:= -- 2838
+add.period$ -- 125
 call.type$ -- 30
-change.case$ -- 221
+change.case$ -- 222
 chr.to.int$ -- 30
 cite$ -- 30
-duplicate$ -- 512
-empty$ -- 830
+duplicate$ -- 508
+empty$ -- 821
 format.name$ -- 334
-if$ -- 2832
+if$ -- 2826
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 21
-newline$ -- 156
-num.names$ -- 123
-pop$ -- 170
+missing$ -- 20
+newline$ -- 157
+num.names$ -- 122
+pop$ -- 165
 preamble$ -- 1
 purify$ -- 216
 quote$ -- 0
-skip$ -- 364
+skip$ -- 363
 stack$ -- 0
 substring$ -- 794
 swap$ -- 64
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 267
+type$ -- 270
 warning$ -- 0
 while$ -- 124
 width$ -- 0
-write$ -- 401
+write$ -- 404

@@ -30,46 +30,64 @@ mort25_clean <- mort25[, !(names(mort25)) %in% c("sens",
 mort25_clean$technique <- ifelse(mort25_clean$technique == "pied", "P", 
                               ifelse(mort25_clean$technique == "drone", "D", "G"))
 
-mort25_clean$date <- as.Date(mort25_clean$date)
+mort25_camera <- subset(mort25_clean, mort25_clean$orientation_gopro == "route" | is.na(mort25_clean$orientation_gopro))
 
-mort25_clean$tr_id <- paste(format(mort25_clean$date, "%Y%m%d"),
-                            mort25_clean$troncon, 
-                            mort25_clean$technique, 
+mort25_camera$date <- as.Date(mort25_camera$date)
+
+mort25_camera$tr_id <- paste(format(mort25_camera$date, "%Y%m%d"),
+                            mort25_camera$troncon, 
+                            mort25_camera$technique, 
                             sep = "_")
 
 # Conversion format des heures en H:M UTC pour calcul éventuel de l'effort plus tard
 
-mort25_clean$hm1 <- as.POSIXct(paste(mort25_clean$date, 
-                                             mort25_clean$heure_debut), 
+mort25_camera$hm1 <- as.POSIXct(paste(mort25_camera$date, 
+                                      mort25_camera$heure_debut), 
                                              format = "%Y-%m-%d %H:%M", 
                                              tz = "America/Toronto")
-mort25_clean$hm2 <- as.POSIXct(paste(mort25_clean$date, 
-                                     mort25_clean$heure_fin), 
+mort25_camera$hm2 <- as.POSIXct(paste(mort25_camera$date, 
+                                      mort25_camera$heure_fin), 
                                format = "%Y-%m-%d %H:%M", 
                                tz = "America/Toronto")
 
                                        
                                        
-mort25_clean2 <- mort25_clean[, !(names(mort25_clean)) %in% c("heure_debut",
+mort25_hm <- mort25_camera[, !(names(mort25_camera)) %in% c("heure_debut",
                                                  "heure_fin")]
 
-mort25_clean2$effort_min <- as.numeric(difftime(mort25_clean2$hm2,
-                                                mort25_clean2$hm1))
+mort25_hm$effort_min <- as.numeric(difftime(mort25_hm$hm2,
+                                            mort25_hm$hm1))
 
-names(mort25_clean2) <- c("date","tr","type","km","method","orientation","tr_id","hm1","hm2","min")
-
-
-mort25_clean2$tr_glob <- sub("_[EONS]$", "", mort25_clean2$tr)
+names(mort25_hm) <- c("date","tr","type","km","method","orientation","tr_id","hm1","hm2","min")
 
 
+mort25_hm$tr_glob <- sub("_[EONS]$", "", mort25_hm$tr)
 
-mort25_cat <- merge(mort25_clean2, cat_2025, by = "tr_glob")
+
+
+mort25_cat <- merge(mort25_hm, cat_2025, by = "tr_glob")
 
 
 mort25_cat$min[which(is.na(mort25_cat$min) & mort25_cat$method == "G")] <- 1
 
 
-write.csv(mort25_cat, 
+
+nb_method <- tapply(mort25_cat$method, mort25_cat$tr, function(x) length(unique(x)))
+mort25_method <- mort25_cat[mort25_cat$tr %in% names(nb_method)[nb_method > 1], ]
+
+
+mort25_method$method <- factor(mort25_method$method, 
+                        levels = c("P","D","G"),
+                        labels = c("À pied","Drone","GoPro"))
+
+
+mort25_method$type <- factor(mort25_method$type, 
+                      levels = c("autoroute","secondaire_etroite","secondaire_separee"),
+                      labels = c("Autoroute","Secondaire étroite","Secondaire séparée"))
+
+
+
+write.csv(mort25_method, 
           "/home/robes1/CONTRAT_ULAVAL/R8751/data/clean/mortalite_routiere/inv_road_2025_clean.csv",
           row.names = FALSE)
 

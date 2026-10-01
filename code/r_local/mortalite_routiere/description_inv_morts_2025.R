@@ -9,20 +9,18 @@ effort <- read.csv("inv_road_2025_clean.csv",
          sep = ",",
          fileEncoding = "utf-8")
 
+nb_method <- tapply(effort$method, effort$tr, function(x) length(unique(x)))
+effort <- effort[effort$tr %in% names(nb_method)[nb_method > 1], ]
+
 
 effort$method <- factor(effort$method, 
        levels = c("P","D","G"),
        labels = c("À pied","Drone","GoPro"))
 
 
-effort$method <- factor(effort$method, 
-                        levels = c("P","D","G"),
-                        labels = c("À pied","Drone","GoPro"))
-
 effort$type <- factor(effort$type, 
-                        levels = c("autoroute","secondaire_etroite","secondaire_separee"),
+                        levels = c("Autoroute","Secondaire étroite","Secondaire séparée"),
                         labels = c("Autoroute","Secondaire étroite","Secondaire séparée"))
-
 
 
 section <- sort(unique(effort$tr))
@@ -42,7 +40,6 @@ for (s in section) {
 }
 
 data.inv
-
 
 print(xtable(data.inv,
              caption = "Nombre de visites et méthodes utilisées pour les inventaires de carcasses, par tronçon.",
@@ -66,6 +63,7 @@ boxplot(min~method,
 
 points(jitter(as.numeric(effort$method), amount = 0.12),
        effort$min, pch = 16, col = rgb(0, 0, 0, 0.5))
+
 dev.off()
 
 

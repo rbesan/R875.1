@@ -1,5 +1,9 @@
 \section{Résultats}
 
+Seuls les données des pièges-photographiques ainsi qu'une mise à jour des analyses des fichiers accoustiques par BirdNET sont présentées dans la prochaine section. Les résultats des autres suivis réalisés en 2024, notamment les décomptes de mortalité, la recherche par drone et les refuges à reptiles, figuraient dans le rapport d'étape de 2025 et ne sont pas présentés ici.
+
+\subsection{Mortalité et suivis de la petite faune}
+
 \subsection{Suivi de la petite faune}
 
 \subsubsection{Pièges photographiques}
@@ -43,46 +47,14 @@ Différents groupes et espèces ont été observées sur les images, incluant de
 
 \subsubsection{Enregistrements acoustiques}
 
-\begin{table}[H]
-\centering
-\caption{Effort d'enregistrement par site, saison 2023.} 
-\begin{tabular}{lccrrr}
-  \toprule
-site & first & last & n\_wav & n\_jour & n\_bug \\ 
-  \midrule
-AM1 & 2023-03-30 & 2023-09-29 & 730 & 184 &   0 \\ 
-  AM2 & 2023-03-31 & 2023-09-29 & 730 & 183 &   1 \\ 
-  AM3 & 2023-03-30 & 2023-09-29 & 730 & 184 &   0 \\ 
-  AM4 & 2023-03-30 & 2023-09-29 & 730 & 184 &   0 \\ 
-  AM5 & 2023-03-30 & 2023-09-29 & 733 & 184 &   4 \\ 
-  AM6 & 2023-03-31 & 2023-09-29 & 729 & 183 &   0 \\ 
-  AM7 & 2023-03-30 & 2023-09-29 & 730 & 184 &   0 \\ 
-   \bottomrule
-\end{tabular}
-\end{table}
+Les septs enregistreurs déployés entre le 25 et 26 mars 2023 aux abords de l'A10 et récupérés entre le 21 et 22 août 2023, ont produits 5112 fichiers accoustiques. Ces 5112 fichiers issus des enregistreurs autonomes déployés en 2023 ont été réanalysés. Cette révision nous a permis de mettre à contribution une version de BirdNET entraînée au laboratoire pour la détection de deux espèces d'anoures, la grenouille du Nord et la grenouille léopard. Ces deux espèces n'étant pas reconnues par le modèle de base, il n'était pas possible de les détecter lors de la production du livrable précédent. À l'issue de cette réanalyse, la grenouille du Nord n'a été détectée dans aucun des enregistrements, tandis que la grenouille Léopard était détectée dans une seule station. 
 
-
-\begin{table}[H]
-\centering
-\caption{Nombre de détections par enregistrement, par site et par espèce. Une détection correspond à la présence d'au moins un clip de 3 s dans lequel l'espèce a été identifiée. Les espèces non détectées en 2023 ne figurent pas dans le tableau.}
-\begin{tabular}{llllllll}
-  \toprule
-site & P. maculata & H. versicolor & P. crucifer & L. sylvaticus & L. clamitans & A. americanus & L. pipiens \\ 
-  \midrule
-AM1 & - & 9 & 32 & 1 & - & 1 & - \\ 
-  AM2 & - & 1 & - & - & - & - & - \\ 
-  AM3 & - & - & - & - & - & 3 & - \\ 
-  AM4 & - & 4 & 21 & - & 15 & - & 3 \\ 
-  AM6 & - & - & 1 & 11 & 7 & - & - \\ 
-  AM7 & - & - & 38 & - & 1 & - & - \\ 
-   \bottomrule
-\end{tabular}
-\end{table}
-
+Nous avons également réanalysé les enregistrements issus de l'échantillonnage de 2024. Douze enregistreurs autonomes avaient alors été déployés en bordure du réseau routier, soit sept le long de l'A10, un le long de l'A30, deux le long de la R104 et deux le long de la R217 (Tableau \ref{tab:audio_2024}). Les enregistreurs ont été déployé de manière à assurer des enregistrement entre la fin du mois de mars et la fin du mois de septembre 2024 (Fig.~\label{fig:pheno2024}).Ce dispositif avait permis de cumuler un total de 7 354 fichiers (Tableau \ref{tab:audio_2024}). Nous avons utilisé le même modèle  que pour les analyses de 2023 et 2025 afin de reconnaître la grenouille léopard (Lithobates pipiens) et la grenouille du Nord (Lithobates septentrionalis). Comme en 2023, la grenouille léopard a été détectée à une seule station , tandis que la grenouille du Nord n'a été détectée dans aucun enregistrement (Tableau~\ref{tab:birdnet_2024}).
 
 \begin{table}[ht]
 \centering
 \caption{Effort d'enregistrement par site, saison 2024.} 
+\label{tab:audio_2024}
 \begin{tabular}{lccccccc}
   \toprule
 ID & Route & Longitude & Latitude & Début & Fin & Fichiers & Jours  \\ 
@@ -108,6 +80,7 @@ A10\_N1 & A10 & -73.40729 & 45.42858 & 2024-03-26 & 2024-08-21 & 594 & 149  \\
 \begin{table}[H]
 \centering
 \caption{Nombre de détections par enregistrement, par site et par espèce. Une détection correspond à la présence d'au moins un clip de 3 s dans lequel l'espèce a été identifiée. Les espèces non détectées en 2024 ne figurent pas dans le tableau.}
+\label{tab:birdnet_2024}
 \begin{tabular}{lllllll}
   \toprule
 ID &  P. triseriata & D. versicolor & P. crucifer & L. clamitans & A. americanus & L. pipiens \\ 

@@ -1,61 +1,84 @@
-Date_inv,Troncon_ID,Visite_num,Presence,Especes,Position,Heure_debut,Heure_fin,Temp_air,Couv_nuage,Commentaires,,,,
-31/07/2025,1,3,3,THSI,sous_planche,15:08,15:38,22,0,Pas de nuages, mais ciel brumeux,,,
-31/07/2025,1,3,1,THSI,sous_geotextile,15:08,15:38,22,0,,,,,
-24/07/2025,1,2,1,THSI,sous_planche,15:30,15:35,32,5,La plaque avait été défaite en raison du nid de frelons. Nous sommes allées la réinstaller, mais une couleuvre a également pu être aperçue sous une des planches de bois laissée sur place.,,,
-05/06/2025,1,1,1,THSI,sous_geotextile,12:01,12:10,30,25,'Présence d''un nid primaire de frelons. Plaque laissée relevée car frelon à proximité.',,,,
-07/08/2025,2,5,0,NA,NA,16:26,16:31,,,,,,,
-24/07/2025,2,4,0,NA,NA,18:18,18:23,32,5,Encore des travaux à proximité,,,,
-17/07/2025,2,3,0,NA,NA,11:10,11:15,27,80,Mouillé,' montre des signes de montée du niveau de l''eau (sédiments). Travaux à proximité (encore).',,,
-04/06/2025,2,2,0,NA,NA,11:50,11:55,26,0,Pas de nuages, mais ciel légèrement voilé par une sorte de brume.,,,
-29/05/2025,2,1,0,NA,NA,14:00,14:05,19,100,Pluie.,,,,
-11/08/2025,9,2,0,NA,NA,11:55,12:00,29,0,,,,,
-07/07/2025,9,1,0,NA,NA,08:49,08:54,18,100,Installation pancarte.,,,,
-12/08/2025,14,3,0,NA,NA,08:30,08:35,25,0,,,,,
-07/08/2025,14,2,0,NA,NA,17:40,17:45,29,10,,,,,
-10/07/2025,14,1,0,NA,NA,19:52,19:57,26,40,Installation pancarte.,,,,
-13/08/2025,22,3,1,micromam,sous_geotextile,11:35,11:42,27,100,fèces sous la plaque,,,,
-24/07/2025,22,2,0,NA,NA,20:00,20:05,28,0,,,,,
-15/07/2025,22,1,0,NA,NA,09:32,09:37,22,,,,,,
-07/08/2025,25,2,0,NA,NA,15:37,15:42,,30,Micromammifère mort sur le géotextile (genre souris).,,,,
-17/07/2025,25,1,0,NA,NA,10:49,10:54,25,100,Pluie. Installation de pancarte.,,,,
-07/08/2025,26,2,0,NA,NA,14:39,14:44,28,25,,,,,
-29/05/2025,26,1,0,NA,NA,14:55,15:00,19,100,Pluie.,,,,
-11/08/2025,30,2,0,NA,NA,10:41,10:52,28,0,,,,,
-08/07/2025,30,1,0,NA,NA,10:00,10:05,19,20,,,,,
-11/08/2025,31,2,0,NA,NA,09:58,10:06,26,0,Traces de pattes de mammifères de taille moyenne sur les plaques,,,,
-08/07/2025,31,1,0,NA,NA,09:12,09:25,19,10,,,,,
-13/08/2025,35,2,1,THSI,sous_geotextile,13:37,13:45,23,100,,,,,
-25/06/2025,35,1,1,THSI,sous_geotextile,07:59,08:01,23,75,Beaucoup de fourmis et larves sur petits blocs de bois. Trous par fourmis sous petits blocs de bois.,,,,
-22/07/2025,36,2,0,NA,NA,20:12,20:32,20,0,Fouille active au site près de la plaque qui a été volée.,,,,
-07/08/2025,39,3,0,NA,NA,18:03,18:08,29,5,,,,,
-10/07/2025,39,2,0,NA,NA,20:26,20:31,26,25,Installation pancarte.,,,,
-03/06/2025,39,1,0,NA,NA,08:20,08:24,11,10,,,,,
-14/08/2025,40,2,0,NA,NA,20:12,20:17,20,0,,,,,
-02/07/2025,40,1,1,THSI,sous_planche,11:24,11:40,25,2,,,,,
-04/08/2025,41,2,1,THSI,a_proximite,09:42,09:47,21,95,,,,,
-12/06/2025,41,1,1,THSI,a_proximite,14:10,14:19,19,50,Un individu particulièrement gros. deux des individus retrouvés à proximité sont potentiellement les mêmes individus trouvés plus tard,' s''étant sauvés (donc', max 5 ind. min 3 ind., dont un sous le geotextile, un sous une planche et un à proximité). Installation pancarte
-12/06/2025,41,1,1,THSI,sous_planche,14:10,14:19,19,50,,,,,
-12/06/2025,41,1,1,THSI,sous_geotextile,14:10,14:19,19,50,,,,,
-07/08/2025,42,3,1,THSI,sous_planche,19:22,19:27,27,5,,,,,
-18/07/2025,42,2,0,NA,NA,09:03,09:08,19,0,,,,,
-12/06/2025,42,1,0,NA,NA,19:39,19:44,17,50,Installation pancarte.,,,,
-13/08/2025,45,3,0,NA,NA,10:52,10:56,27,90,,,,,
-24/07/2025,45,2,0,NA,NA,19:24,19:29,30,0,2 rats musqués dans le ruisseau à proximité.,,,,
-14/07/2025,45,1,0,NA,NA,11:15,11:20,25,95,,,,,
-07/08/2025,48,3,0,NA,NA,15:08,15:13,28,30,,,,,
-17/07/2025,48,2,0,NA,NA,09:59,10:04,25,100,Recouverte de plantes coupées. Nettoyée.,,,,
-29/05/2025,48,1,0,NA,NA,11:20,11:25,21,100,Heures de la journée approximatives. Inventaires faits par opportunité,' mais conditions climatiques peu optimales (peu d''ensoleillement', légère pluie en après-midi),,
-14/08/2025,57,4,0,NA,NA,14:17,14:22,25,25,,,,,
-06/08/2025,57,3,0,NA,NA,06:53,06:58,14,0,,,,,
-21/07/2025,57,2,0,NA,NA,10:35,10:38,18,45,Trou dans géotextile.,,,,
-16/06/2025,57,1,0,NA,NA,09:33,09:38,20,0,Trou dans géotextile.,,,,
-13/08/2025,59,3,0,NA,NA,12:03,12:08,25,100,,,,,
-24/07/2025,59,2,0,NA,NA,20:29,20:34,28,10,,,,,
-15/07/2025,59,1,0,NA,NA,10:54,10:59,26,,'Pas d''affiche installée', plaque déjà bien cachée.,,,
-12/08/2025,61,3,0,NA,NA,14:20,14:25,,,,,,,
-29/07/2025,61,2,0,NA,NA,08:05,08:10,25,0,,,,,
-01/07/2025,61,1,0,NA,NA,09:28,09:33,23,100,,,,,
-12/08/2025,65,4,1,LICL,sur_geotextile,13:35,13:40,33,15,,,,,
-28/07/2025,65,3,0,NA,NA,12:10,12:15,28,,,,,,
-01/07/2025,65,2,0,NA,NA,10:34,10:39,24,95,,,,,
-05/06/2025,65,1,0,NA,NA,16:51,16:56,32,60,,,,,
+date,troncon,visite_num,abondance,especes,position,heure_debut,heure_fin,temp_air,couv_nuag,commentaires
+2025-06-05,T01,1,1,thamnophis_sirtalis,sous_geotextile,12:01,12:10,30,25,Présence d'un nid primaire de frelons. Plaque laissée relevée car frelon à proximité.
+2025-07-24,T01,2,1,thamnophis_sirtalis,sous_planche,15:30,15:35,32,5,La plaque avait été défaite en raison du nid de frelons. Nous sommes allées la réinstaller. mais une couleuvre a également pu être aperçue sous une des planches de bois laissée sur place.
+2025-07-31,T01,3,3,thamnophis_sirtalis,sous_planche,15:08,15:38,22,0,Pas de nuages. mais ciel brumeux
+2025-07-31,T01,3,1,thamnophis_sirtalis,sous_geotextile,15:08,15:38,22,0,
+2025-10-26,T01,4,0,NA,NA,11:04,11:09,NA,50,
+2025-05-29,T02,1,0,NA,NA,14:00,14:05,19,100,Pluie.
+2025-06-04,T02,2,0,NA,NA,11:50,11:55,26,0,Pas de nuages. mais ciel légèrement voilé par une sorte de brume.
+2025-07-17,T02,3,0,NA,NA,11:10,11:15,27,80,Mouillé. montre des signes de montée du niveau de l'eau (sédiments). Travaux à proximité (encore).
+2025-07-24,T02,4,0,NA,NA,18:18,18:23,32,5,Encore des travaux à proximité
+2025-08-07,T02,5,0,NA,NA,16:26,16:31,,,
+2025-10-19,T02,6,0,NA,NA,16:16,16:21,NA,100,
+2025-07-07,T09,1,0,NA,NA,8:49,8:54,18,100,Installation pancarte.
+2025-08-11,T09,2,0,NA,NA,11:55,12:00,29,0,
+2025-10-19,T09,3,1,eulipotyphla,sous_geotextile,9:51,9:56,14,0,grande musaraigne ou taupe à queue velue
+2025-07-10,T14,1,0,NA,NA,19:52,19:57,26,40,Installation pancarte.
+2025-08-07,T14,2,0,NA,NA,17:40,17:45,29,10,
+2025-10-19,T14,3,0,NA,NA,14:20,14:25,NA,NA,
+2025-07-07,T15,1,0,NA,NA,10:31,10:36,20,100,
+2025-08-12,T15,2,0,NA,NA,8:35,8:40,25,0,
+2025-10-19,T15,3,0,NA,NA,11:46,11:51,19,0,
+2025-07-15,T22,1,0,NA,NA,9:32,9:37,22,,
+2025-07-24,T22,2,0,NA,NA,20:00,20:05,28,0,
+2025-08-13,T22,3,1,eulipotyphla,sous_geotextile,11:35,11:42,27,100,grande musaraigne ou taupe à queue velue. fèces sous la plaque
+2025-10-18,T22,4,0,NA,NA,11:25,11:30,8,100,
+2025-07-17,T25,1,0,NA,NA,10:49,10:54,25,100,Pluie. Installation de pancarte.
+2025-08-07,T25,2,1,rodentia,sous_geotextile,15:37,15:42,,30,Micromammifère mort sur le géotextile (genre souris).
+2025-10-19,T25,3,0,NA,NA,14:03,14:08,NA,80,
+2025-05-29,T26,1,0,NA,NA,14:55,15:00,19,100,Pluie.
+2025-08-07,T26,2,0,NA,NA,14:39,14:44,28,25,
+2025-10-18,T26,3,0,NA,NA,16:36,16:41,15,15,
+2025-07-08,T30,1,0,NA,NA,10:00,10:05,19,20,
+2025-08-11,T30,2,0,NA,NA,10:41,10:52,28,0,
+2025-10-19,T30,3,0,NA,NA,11:20,11:25,19,0,
+2025-07-08,T31,1,0,NA,NA,9:12,9:25,19,10,
+2025-08-11,T31,2,0,NA,NA,9:58,10:06,26,0,Traces de pattes de mammifères de taille moyenne sur les plaques
+2025-10-19,T31,3,0,NA,NA,10:52,10:57,15,0,
+2025-06-25,T35,1,1,thamnophis_sirtalis,sous_geotextile,7:59,8:01,23,75,Beaucoup de fourmis et larves sur petits blocs de bois. Trous par fourmis sous petits blocs de bois.
+2025-08-13,T35,2,1,thamnophis_sirtalis,sous_geotextile,13:37,13:45,23,100,
+2025-10-18,T35,3,0,NA,NA,13:20,13:25,14,75,
+2025-06-25,T36,NA,NA,NA,NA,8:38,NA,NA,NA,Plaque disparue. a probablement été volée.
+2025-07-22,T36,2,0,NA,NA,20:12,20:32,20,0,Fouille active au site près de la plaque qui a été volée.
+2025-06-03,T39,1,0,NA,NA,8:20,8:24,11,10,
+2025-07-10,T39,2,0,NA,NA,20:26,20:31,26,25,Installation pancarte.
+2025-08-07,T39,3,0,NA,NA,18:03,18:08,29,5,
+2025-10-19,T39,4,0,NA,NA,13:30,13:35,,60,
+2025-07-02,T40,1,1,thamnophis_sirtalis,sous_planche,11:24,11:40,25,2,
+2025-08-14,T40,2,0,NA,NA,20:12,20:17,20,0,
+2025-10-26,T40,3,0,NA,NA,16:20,16:25,NA,100,
+2025-06-12,T41,1,1,thamnophis_sirtalis,a_proximite,14:10,14:19,19,50,Un individu particulièrement gros. deux des individus retrouvés à proximité sont potentiellement les mêmes individus trouvés plus tard. s'étant sauvés (donc. max 5 ind. min 3 ind.. dont un sous le geotextile. un sous une planche et un à proximité). Installation pancarte
+2025-06-12,T41,1,1,thamnophis_sirtalis,sous_planche,14:10,14:19,19,50,
+2025-06-12,T41,1,1,thamnophis_sirtalis,sous_geotextile,14:10,14:19,19,50,
+2025-08-04,T41,2,1,thamnophis_sirtalis,a_proximite,9:42,9:47,21,95,
+2025-10-27,T41,3,0,NA,NA,13:30,13:35,NA,40,
+2025-06-12,T42,1,0,NA,NA,19:39,19:44,17,50,Installation pancarte.
+2025-07-18,T42,2,0,NA,NA,9:03,9:08,19,0,
+2025-08-07,T42,3,1,thamnophis_sirtalis,sous_planche,19:22,19:27,27,5,
+2025-10-27,T42,4,0,NA,NA,12:45,12:50,NA,30,
+2025-07-14,T45,1,0,NA,NA,11:15,11:20,25,95,
+2025-07-24,T45,2,0,NA,NA,19:24,19:29,30,0,2 rats musqués dans le ruisseau à proximité.
+2025-08-13,T45,3,0,NA,NA,10:52,10:56,27,90,
+2025-10-18,T45,4,0,NA,NA,10:48,10:53,8,100,
+2025-05-29,T48,1,0,NA,NA,11:20,11:25,21,100,Heures de la journée approximatives. Inventaires faits par opportunité. mais conditions climatiques peu optimales (peu d'ensoleillement. légère pluie en après-midi)
+2025-07-17,T48,2,0,NA,NA,9:59,10:04,25,100,Recouverte de plantes coupées. Nettoyée.
+2025-08-07,T48,3,0,NA,NA,15:08,15:13,28,30,
+2025-10-19,T48,4,0,NA,NA,15:20,15:25,NA,75,
+2025-06-16,T57,1,0,NA,NA,9:33,9:38,20,0,Trou dans géotextile.
+2025-07-21,T57,2,0,NA,NA,10:35,10:38,18,45,Trou dans géotextile.
+2025-08-06,T57,3,0,NA,NA,6:53,6:58,14,0,
+2025-08-14,T57,4,0,NA,NA,14:17,14:22,25,25,
+2025-10-18,T57,5,0,NA,NA,14:55,15:00,NA,75,
+2025-07-15,T59,1,0,NA,NA,10:54,10:59,26,,Pas d'affiche installée. plaque déjà bien cachée.
+2025-07-24,T59,2,0,NA,NA,20:29,20:34,28,10,
+2025-08-13,T59,3,0,NA,NA,12:03,12:08,25,100,
+2025-10-18,T59,4,0,NA,NA,12:05,12:10,NA,NA,
+2025-07-01,T61,1,0,NA,NA,9:28,9:33,23,100,
+2025-07-29,T61,2,0,NA,NA,8:05,8:10,25,0,
+2025-08-12,T61,3,0,NA,NA,14:20,14:25,NA,NA,
+2025-10-26,T61,4,0,NA,NA,13:50,13:55,NA,100,
+2025-06-05,T65,1,0,NA,NA,16:51,16:56,32,60,
+2025-07-01,T65,2,0,NA,NA,10:34,10:39,24,95,
+2025-07-28,T65,3,0,NA,NA,12:10,12:15,28,0,
+2025-08-12,T65,4,1,lithobates_clamitans,sur_geotextile,13:35,13:40,33,15,
+2025-10-26,T65,5,0,NA,NA,13:30,13:35,NA,50,

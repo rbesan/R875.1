@@ -4,47 +4,39 @@ library("xtable")
 
 # Objectif : analyse descriptive des inventaires de mortalité
 
-setwd("/home/robes1/CONTRAT_ULAVAL/R8751/data/raw/suivi_petite_faune_2025")
+setwd("/home/robes1/CONTRAT_ULAVAL/R8751/data/raw/suivi_petite_faune")
 
 reptile25_brut25 <- read.csv("plaques_2025.csv", 
                             header = TRUE, 
-                            sep = ",", 
-                            na.strings = c("", "-", " ", "NA", "N/A"))
+                            sep = ",")
 
-reptile25_clean <- reptile25_brut25[, !names(reptile25_brut25) %in% c("Visite_num",
-                                                                      "Couv_nuage",
-                                                                      "Commentaires",
+reptile25_clean <- reptile25_brut25[, !names(reptile25_brut25) %in% c("visite_num",
+                                                                      "couv_nuag",
+                                                                      "commentaires",
                                                                       "X",
                                                                       "X.1",
                                                                       "X.2",
                                                                       "X.3")]
 
-reptile25_clean$Presence <- ifelse(reptile25_clean$Presence >= 1, 1,0)
 
-length(unique(reptile25_clean$Troncon_ID))
+reptile25_clean$date <- as.Date(reptile25_clean$date)
 
-reptile25_clean$Date_inv <- as.Date(reptile25_clean$Date_inv, format = "%d/%m/%Y")
+reptile25_clean$troncon <- factor(reptile25_clean$troncon,
+                                     levels = sort(unique(reptile25_clean$troncon)))
 
-reptile25_clean$Heure_debut <- hms::as_hms(paste0(reptile25_clean$Heure_debut, ":00"))
-reptile25_clean$Heure_fin <- hms::as_hms(paste0(reptile25_clean$Heure_fin, ":00"))
-
-reptile25_clean$Troncon_ID <- factor(reptile25_clean$Troncon_ID,
-                                     levels = sort(unique(reptile25_clean$Troncon_ID)), 
-                                     labels = paste0("T", sort(unique(reptile25_clean$Troncon_ID))))
-
-reptile25_clean$Position <- factor(reptile25_clean$Position, levels = c("sous_planche",
+reptile25_clean$position <- factor(reptile25_clean$position, levels = c("sous_planche",
                                                                         "sous_geotextile",
                                                                         "sur_geotextile",
                                                                         "a_proximite"), 
                                    labels = c("Sous la planche","Sous géotextile","Sur géotextile","À proximité"))
 
-thsi <- subset(reptile25_clean, Especes=="THSI")
+thsi <- subset(reptile25_clean, especes=="thamnophis_sirtalis")
 
-mat_thsi <- xtabs(Presence ~ Position + Troncon_ID, data = thsi)
+mat_thsi <- xtabs(abondance ~ position + troncon, data = thsi)
 
 sum_thsi <- colSums(mat_thsi)
 
-png("/home/robes1/CONTRAT_ULAVAL/R8751/output/graphique/resultats/suivi_petite_faune_2025/plaques25.png", 
+png("/home/robes1/CONTRAT_ULAVAL/R8751/liv3/figs_monteregie_liv3/plaques25.png", 
     width = 8, height = 5, units = "in", res = 600)
 
 bar_thsi <- barplot(mat_thsi,
