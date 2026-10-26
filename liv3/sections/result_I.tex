@@ -49,7 +49,7 @@ Différents groupes et espèces ont été observées sur les images, incluant de
 
 Les septs enregistreurs déployés entre le 25 et 26 mars 2023 aux abords de l'A10 et récupérés entre le 21 et 22 août 2023, ont produits 5112 fichiers accoustiques. Ces 5112 fichiers issus des enregistreurs autonomes déployés en 2023 ont été réanalysés. Cette révision nous a permis de mettre à contribution une version de BirdNET entraînée au laboratoire pour la détection de deux espèces d'anoures, la grenouille du Nord et la grenouille léopard. Ces deux espèces n'étant pas reconnues par le modèle de base, il n'était pas possible de les détecter lors de la production du livrable précédent. À l'issue de cette réanalyse, la grenouille du Nord n'a été détectée dans aucun des enregistrements, tandis que la grenouille Léopard était détectée dans une seule station. 
 
-Nous avons également réanalysé les enregistrements issus de l'échantillonnage de 2024. Douze enregistreurs autonomes avaient alors été déployés en bordure du réseau routier, soit sept le long de l'A10, un le long de l'A30, deux le long de la R104 et deux le long de la R217 (Tableau \ref{tab:audio_2024}). Les enregistreurs ont été \addM{déployés} \delM{de manière à assurer des enregistrement entre} \addM{de la fin du mois de mars à la fin du mois de septembre 2024} (Fig.~\label{fig:pheno2024}). Ce dispositif avait permis de cumuler un total de 7 354 fichiers (Tableau \ref{tab:audio_2024}). Nous avons utilisé le même modèle que \addM{nous avions entraîné} pour les analyses de 2023 et 2025 afin de reconnaître la grenouille léopard \addM{(\emph{Lithobates pipiens})} et la grenouille du Nord \addM{(\emph{Lithobates septentrionalis})}. Comme en 2023, la grenouille léopard a été détectée à une seule station, tandis que la grenouille du Nord n'a été détectée dans aucun enregistrement (Tableau~\ref{tab:birdnet_2024}).
+Nous avons également réanalysé les enregistrements issus de l'échantillonnage de 2024. Douze enregistreurs autonomes avaient alors été déployés en bordure du réseau routier, soit sept le long de l'A10, un le long de l'A30, deux le long de la R104 et deux le long de la R217 (Tableau \ref{tab:audio_2024}). Les enregistreurs ont été \addM{déployés} \delM{de manière à assurer des enregistrement entre} \addM{de la fin du mois de mars à la fin du mois de septembre 2024} (Fig.~\ref{fig:pheno2024}). Ce dispositif avait permis de cumuler un total de 7 354 fichiers (Tableau \ref{tab:audio_2024}). Nous avons \addM{soumis les enregistrements de 2024 au même modèle que nous avions entraîné} pour les analyses de 2023 et 2025 afin de \delM{reconnaître}\addM{détecter} la grenouille léopard \addM{(\emph{Lithobates pipiens})} et la grenouille du Nord \addM{(\emph{Lithobates septentrionalis})}. Comme en 2023, la grenouille léopard a été détectée à une seule station, tandis que la grenouille du Nord n'a été détectée dans aucun enregistrement (Tableau~\ref{tab:birdnet_2024}).
 
 \begin{table}[ht]
 \centering
@@ -83,7 +83,7 @@ A10\_N1 & A10 & -73.40729 & 45.42858 & 2024-03-26 & 2024-08-21 & 594 & 149  \\
 \label{tab:birdnet_2024}
 \begin{tabular}{lllllll}
   \toprule
-ID &  P. triseriata & D. versicolor & P. crucifer & L. clamitans & A. americanus & L. pipiens \\ 
+ID &  \emph{P. triseriata} & \emph{D. versicolor} & \emph{P. crucifer} & \emph{L. clamitans} & \emph{A. americanus} & \emph{L. pipiens} \\ 
   \midrule
 A10\_N1 & - & - & 4 & - & - & - \\ 
   A10\_N2 & - & 5 & - & - & - & - \\ 
@@ -105,7 +105,7 @@ A10\_N1 & - & - & 4 & - & - & - \\
 \begin{figure}
   \centering
   \includegraphics[width=0.9\textwidth]{figs_monteregie_liv3/pheno_24.png}
-\caption{Répartition temporelle de l'activité de chant des quatre espèces d'anoures détectées en 2024. Les courbes représentent des estimations par densité de probabilité par noyau calculées à partir des dates détection à l'aide de la fonction \texttt{density} de R, exprimées en densité de probabilité journalière (jour$^{-1}$). L'aire sous la courbe est égale à 1.}
+\caption{Répartition temporelle de l'activité de chant des quatre espèces d'anoures détectées en 2024. Les courbes représentent des estimations par densité de probabilité par noyau calculées à partir des dates détection à l'aide de la fonction \texttt{density} du logiciel R, exprimées en densité de probabilité journalière (jour$^{-1}$). L'aire sous la courbe est égale à 1.}
 \label{fig:pheno2024}
 \end{figure}
 
