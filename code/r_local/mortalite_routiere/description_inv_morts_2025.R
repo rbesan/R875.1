@@ -14,8 +14,10 @@ effort <- effort[effort$tr %in% names(nb_method)[nb_method > 1], ]
 
 
 effort$method <- factor(effort$method, 
-       levels = c("P","D","G"),
+       levels = c("À pied","Drone","GoPro"),
        labels = c("À pied","Drone","GoPro"))
+
+length(unique(effort$tr_id))
 
 
 effort$type <- factor(effort$type, 

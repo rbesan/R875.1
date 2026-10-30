@@ -1,0 +1,143 @@
+troncon,id,x,y,date,operation,responsable,commentaires
+T01,GT01,-73.77926,45.33731,2025-05-13,installation,labo,
+T01,GT01,-73.77926,45.33731,2025-06-09,changement_sd,labo,piles 100%. 9k photos
+T01,GT01,-73.77926,45.33731,2025-07-29,changement_sdpiles,labo,piles mortes. 54k photos
+T01,GT01,-73.77926,45.33731,2025-08-12,changement_sdpiles,labo,piles 100%. 11k photos
+T01,GT01,-73.77926,45.33731,2025-10-26,retrait,labo,piles 0%
+T02,GT02,-73.39161,45.63249,2025-05-09,installation,labo,
+T02,GT02,-73.39161,45.63249,2025-05-29,changement_camera,labo,Lentille embu�e. cam�ra a �t� chang�e et plac�e plus haut sur le piquet. 7k photos. piles 100%
+T02,GT02,-73.39161,45.63249,2025-07-17,verification,labo,cam�ra inond�e. mais non chang�e en raison du niveau d'eau tr�s �lev�.
+T02,GT02,-73.39161,45.63249,2025-07-24,changement_camera,labo,cam�ra inond�e et donc remplac�e. piles mortes. 58k photos
+T02,GT02,-73.39161,45.63249,2025-07-24,changement_camera,labo,cam�ra avait �t� inond�e.
+T02,GT02,-73.39161,45.63249,2025-08-07,changement_sdpiles,labo,piles 75%. 17k photos
+T02,GT02,-73.39161,45.63249,2025-10-25,retrait,labo,
+T03,GT03,-74.04887,45.40408,2025-05-26,installation,labo,
+T03,GT03,-74.04887,45.40408,2025-07-07,changement_sd,labo,38k photos. piles 100%
+T03,GT03,-74.04887,45.40408,2025-08-11,changement_sdpiles,labo,piles mortes. 20k photos
+T03,GT03,-74.04887,45.40408,2025-10-19,retrait,labo,piles 0%
+T09,GT09,-73.87313,45.42865,2025-05-26,installation,labo,
+T09,GT09,-73.87313,45.42865,2025-07-07,changement_sdpiles,labo,piles 50%. 15k photos
+T09,GT09,-73.87313,45.42865,2025-08-11,verification,labo,camera vol�e
+T14,GT14,-73.2776,45.44446,2025-05-28,installation,labo,
+T14,GT14,-73.2776,45.44446,2025-07-10,changement_sdpiles,labo,piles 50%. 18k photos
+T14,GT14,-73.2776,45.44446,2025-08-07,changement_sdpiles,labo,piles 100%. 11k photos
+T14,GT14,-73.2776,45.44446,2025-10-25,retrait,labo,
+T15,GT15,-74.13578,45.43229,2025-05-14,installation,labo,
+T15,GT15,-74.13578,45.43229,2025-07-07,retrait,labo,Cam�ra vandalis�e avec peinture en spray + coup de masse sur le bo�tier. 7k photos
+T20,GT20,-73.50517,45.72034,2025-05-12,installation,labo,
+T20,GT20,-73.50517,45.72034,2025-06-16,changement_camera,labo,Cam�ra rouill�e. ne s'allumait pas. � suivre. Derni�re photo 3 jours avant changement piles et carte SD. 63k photos
+T20,GT20,-73.50517,45.72034,2025-07-21,changement_sdpiles,labo,piles mortes. 52k photos
+T20,GT20,-73.50517,45.72034,2025-08-14,retrait,mtmd,8k photos. Cam�ra retir�e par technicienne du MTMD en raison de travaux dans le secteur.
+T22,GT22,-74.09586,45.70248,2025-05-21,installation,labo,
+T22,GT22,-74.09586,45.70248,2025-07-15,changement_sdpiles,labo,Piles 50%. 28k photos
+T22,GT22,-74.09586,45.70248,2025-08-13,changement_sdpiles,labo,piles 100%. 11k photos. derni�re photo en date du 12/08/2025 alors qu'elle devrait �tre dat�e du 11/08/2025
+T22,GT22,-74.09586,45.70248,2025-10-18,verification,labo,Cam�ra engloutie : le ponceau �tait bouch� et l'eau avait mont�. La cam�ra n'a pas pu �tre retrouv�e.
+T25,GT25,-73.37289,45.69826,2025-05-09,installation,labo,
+T25,GT25,-73.37289,45.69826,2025-05-29,changement_sd,labo,piles 100%. 6k photos
+T25,GT25,-73.37289,45.69826,2025-07-17,changement_camera,labo,piles 100%. mais cam�ra embu�e donc remplac�e. 17k photos
+T25,GT25,-73.37289,45.69826,2025-08-07,changement_sdpiles,labo,pilees 100%. 7k photos
+T25,GT25,-73.37289,45.69826,2025-10-25,retrait,labo,
+T26,GT26,-73.38341,45.57263,2025-05-12,installation,labo,
+T26,GT26,-73.38341,45.57263,2025-05-29,changement_camera,labo,Cam�ra sale et mouill�e. lentille embu�e. A �t� chang�e. Les fichiers photos du dernier dossier sont endommag�s � partir de 102 et ne peuvent �tre lus ou transf�r�s. 8k photos.
+T26,GT26,-73.38341,45.57263,2025-06-26,changement_sd,labo,piles 100%. 40k photos
+T26,GT26,-73.38341,45.57263,2025-07-22,changement_sd,labo,piles mortes. 21k photos
+T26,GT26,-73.38341,45.57263,2025-08-07,changement_sdpiles,labo,piles 100%. 5k photos
+T26,GT26,-73.38341,45.57263,2025-10-18,retrait,labo,piles 0%
+T28,GT28,-73.84726,45.2978,2025-05-13,installation,labo,
+T28,GT28,-73.84726,45.2978,2025-06-10,changement_sd,labo,piles 100%. 21k photos.
+T28,GT28,-73.84726,45.2978,2025-07-24,changement_sdpiles,labo,piles mortes. 41k photos
+T28,GT28,-73.84726,45.2978,2025-08-12,changement_sdpiles,labo,piles 100%. 15k photos.
+T28,GT28,-73.84726,45.2978,2025-10-26,retrait,labo,piles 0%
+T30,GT30,-74.05575,45.38117,2025-05-14,installation,labo,
+T30,GT30,-74.05575,45.38117,2025-07-08,changement_sd,labo,piles 100%. 39k photos
+T30,GT30,-74.05575,45.38117,2025-08-11,changement_sdpiles,labo,piles mortes. 12k photos
+T30,GT30,-74.05575,45.38117,2025-10-19,retrait,labo,25%. 31k photos
+T31,GT31,-74.12239,45.32593,2025-05-14,installation,labo,
+T31,GT31,-74.12239,45.32593,2025-07-08,changement_sd,labo,piles 100%. 20k photos
+T31,GT31,-74.12239,45.32593,2025-08-11,changement_sdpiles,labo,piles 100%. 34k photos
+T31,GT31,-74.12239,45.32593,2025-10-19,retrait,labo,piles 50%. 24k photos
+T35,GT35,-74.05992,45.47627,2025-05-16,installation,labo,
+T35,GT35,-74.05992,45.47627,2025-06-25,changement_sdpiles,labo,21 jours se sont �coul�s entre la fin des piles et leur changement. 22k photos
+T35,GT35,-74.05992,45.47627,2025-07-22,changement_sd,labo,piles 100%. 37k photos
+T35,GT35,-74.05992,45.47627,2025-08-13,changement_sdpiles,labo,19k photos
+T35,GT35,-74.05992,45.47627,2025-10-18,retrait,labo,piles mortes
+T36,GT36,-74.13079,45.48791,2025-05-16,installation,labo,
+T36,GT36,-74.13079,45.48791,2025-06-25,changement_sd,labo,12k photos
+T36,GT36,-74.13079,45.48791,2025-07-22,changement_sd,labo,piles 100%. 16k photos
+T36,GT36,-74.13079,45.48791,2025-08-13,changement_sdpiles,labo,piles 100%. 6k photos
+T36,GT36,-74.13079,45.48791,2025-10-18,retrait,labo,50%batteries. 20k photos
+T39,GT39,-73.23358,45.43959,2025-05-28,installation,labo,
+T39,GT39,-73.23358,45.43959,2025-07-10,changement_sd,labo,piles 100%. 21k photos.
+T39,GT39,-73.23358,45.43959,2025-08-07,changement_sdpiles,labo,piles 100%. 10k photos
+T39,GT39,-73.23358,45.43959,2025-10-25,retrait,labo,
+T40,GT40,-73.4818,45.38245,2025-05-19,installation,labo,
+T40,GT40,-73.4818,45.38245,2025-07-02,changement_sdpiles,labo,Cam�ra d�plac�e de l'arbre � un poteau dans l'eau. Trop d'�lagage serait n�cessaire depuis l'arbre. Le niveau d'eau est plus bas qu'en mai: s�diments accessibles. piles 0%. 58k photos
+T40,GT40,-73.4818,45.38245,2025-10-26,retrait,labo,piles 0%
+T45,GT45,-74.01507,45.75352,2025-05-21,installation,labo,
+T45,GT45,-74.01507,45.75352,2025-07-14,verification,labo,Cam�ra vol�e.
+T45,GT45_2,-74.0152,45.75314,2025-07-23,installation,labo,r�installation de la cam�ra apr�s son vol. cette fois-ci de l'autre c�t� du cours d'eau pour diminuer son accessibilit�
+T45,GT45_2,-74.0152,45.75314,2025-08-13,changement_sdpiles,labo,piles 100%. 6k photos
+T45,GT45_2,-74.0152,45.75314,2025-10-18,retrait,labo,50% piles. 23k photos. Le pivot �tait d�tach� de l'arbre et la cam�ra. au sol
+T47,GT47,-73.46697,45.39358,2025-05-20,installation,labo,
+T47,GT47,-73.46697,45.39358,2025-06-11,changement_sd,labo,piles 100%. 7k photos
+T47,GT47,-73.46697,45.39358,2025-07-09,changement_sd,labo,piles 100%. 12k photos
+T47,GT47,-73.46697,45.39358,2025-08-14,changement_sdpiles,labo,piles 100%. 13k photos. photos des derniers jours embu�es
+T47,GT47,-73.46697,45.39358,2025-10-26,retrait,labo,Piles 25%. 36k photos
+T48,GT48,-73.37611,45.60904,2025-05-09,installation,labo,
+T48,GT48,-73.37611,45.60904,2025-05-29,changement_sd,labo,piles 100%. 38k photos
+T48,GT48,-73.37611,45.60904,2025-07-17,changement_sdpiles,labo,piles mortes. 24k photos
+T48,GT48,-73.37611,45.60904,2025-08-07,changement_sdpiles,labo,piles 50%. 27k photos
+T48,GT48,-73.37611,45.60904,2025-10-25,retrait,labo,
+T49,GT49,-73.44932,45.39787,2025-05-20,installation,labo,
+T49,GT49,-73.44932,45.39787,2025-06-17,changement_camera,labo,piles 0%. 20k photos. Ancienne cam�ra ne s'allumait plus
+T49,GT49,-73.44932,45.39787,2025-07-24,changement_sd,labo,piles 100%. 39k photos
+T49,GT49,-73.44932,45.39787,2025-07-31,verification,labo,piles 100%. 2k photos. aucun changement
+T49,GT49,-73.44932,45.39787,2025-08-14,changement_sdpiles,labo,piles 100%. 8k photos
+T49,GT49,-73.44932,45.39787,2025-10-19,retrait,labo,piles 0%
+T52,GT52,-73.61801,45.37777,2025-05-13,installation,labo,
+T52,GT52,-73.61801,45.37777,2025-06-05,changement_sd,labo,piles 100%. 15k photos.
+T52,GT52,-73.61801,45.37777,2025-07-29,changement_sdpiles,labo,piles mortes
+T52,GT52,-73.61801,45.37777,2025-08-12,changement_sdpiles,labo,piles 100%. 4k photos
+T52,GT52,-73.61801,45.37777,2025-10-26,retrait,labo,piles 0%
+T53,GT53,-73.65216,45.35052,2025-05-27,installation,labo,
+T53,GT53,-73.65216,45.35052,2025-07-29,changement_sdpiles,labo,Piles 0% (mortes sur le coup). 31k photos
+T53,GT53,-73.65216,45.35052,2025-07-29,changement_sdpiles,labo,piles mortes. 31k photos
+T53,GT53,-73.65216,45.35052,2025-08-12,changement_sdpiles,labo,piles 100%. 11k photos
+T53,GT53,-73.65216,45.35052,2025-10-26,retrait,labo,piles 0%
+T57,GT57,-73.50752,45.73108,2025-05-12,installation,labo,
+T57,GT57,-73.50752,45.73108,2025-06-16,changement_sd,labo,piles 100%. 14k photos
+T57,GT57,-73.50752,45.73108,2025-07-21,changement_sd,labo,piles 100%. 14k photos
+T57,GT57,-73.50752,45.73108,2025-08-14,changement_sdpiles,labo,pil;es 100%. 9k photos
+T57,GT57,-73.50752,45.73108,2025-10-18,retrait,labo,piles 50%. 26k photos
+T59,GT59,-74.15393,45.6898,2025-05-21,installation,labo,
+T59,GT59,-74.15393,45.6898,2025-07-15,changement_camera,labo,piles 0%. 55k photos. beaucoup de sable dans le bo�tier et lentille qui �tait floue.
+T59,GT59,-74.15393,45.6898,2025-08-13,changement_sdpiles,labo,piles mortes. 40k photos
+T59,GT59,-74.15393,45.6898,2025-10-18,retrait,labo,25% piles. 25k photos
+T61,GT61,-73.51929,45.36997,2025-05-19,installation,labo,
+T61,GT61,-73.51929,45.36997,2025-07-01,changement_sdpiles,labo,piles 0%. 65k photos
+T61,GT61,-73.51929,45.36997,2025-07-29,changement_sdpiles,labo,piles mortes. 51k photos
+T61,GT61,-73.51929,45.36997,2025-08-12,changement_sdpiles,labo,piles 50%. 23k photos
+T61,GT61,-73.51929,45.36997,2025-10-26,retrait,labo,piles 0%
+T62,GT62,-73.6998,45.3421,2025-05-27,installation,labo,
+T62,GT62,-73.6998,45.3421,2025-06-09,changement_sd,labo,piles 100%. 8k photos
+T62,GT62,-73.6998,45.3421,2025-07-29,changement_sdpiles,labo,piles mortes
+T62,GT62,-73.6998,45.3421,2025-08-12,changement_sdpiles,labo,piles 100%. 6k photos
+T62,GT62,-73.6998,45.3421,2025-10-26,retrait,labo,piles 25%. 28k photos
+T65,GT65,-73.48415,45.29333,2025-05-19,installation,labo,
+T65,GT65,-73.48415,45.29333,2025-07-01,changement_sdpiles,labo,piles 0%. 55k photos
+T65,GT65,-73.48415,45.29333,2025-07-28,changement_sd,labo,piles 100%. 17k photos
+T65,GT65,-73.48415,45.29333,2025-08-12,changement_sdpiles,labo,piles 100%. 6k photos
+T65,GT65,-73.48415,45.29333,2025-10-26,retrait,labo,piles 25%. 32k photos
+T41,T411,-73.40867,45.42857,2025-05-22,installation,labo,
+T41,T411,-73.40867,45.42857,2025-07-03,changement_sdpiles,labo,14k photos
+T41,T411,-73.40867,45.42857,2025-07-31,changement_sd,labo,piles 100%. 17k photos
+T41,T411,-73.40867,45.42857,2025-08-11,changement_sdpiles,labo,piles 100%. 4k photos
+T42,T421,-73.38994,45.41582,2025-05-22,installation,labo,Nomenclature diff�rente comme plusieurs cam�ras sont pr�vues sur ce tron�on.
+T42,T421,-73.38994,45.41582,2025-06-12,changement_sdpiles,labo, piles 75%. 6k photos.
+T42,T421,-73.38994,45.41582,2025-07-03,changement_sdpiles,labo,piles 75%. 7k photos
+T42,T421,-73.38994,45.41582,2025-08-07,changement_sdpiles,labo,piles 100%. 15k photos.
+T42,T421,-73.38994,45.41582,2025-08-07,changement_sdpiles,labo,piles100%. 15k photod
+T42,T421,-73.38994,45.41582,2025-10-26,retrait,labo,
+T42,T422,-73.381,45.40873,2025-07-10,installation,labo,Nomenclature diff�rente comme plusieurs cam�ras sont pr�vues sur ce tron�on.
+T42,T422,-73.381,45.40873,2025-08-11,changement_sdpiles,labo,piles 100%. 11k photos
+T42,T422,-73.381,45.40873,2025-10-26,retrait,labo,

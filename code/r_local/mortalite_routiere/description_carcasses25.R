@@ -41,20 +41,7 @@ effort$tr_id        <- trimws(effort$tr_id)
 code_meth <- c(P = "À pied", G = "GoPro", D = "Drone")
 all_obs_clean$method <- unname(code_meth[all_obs_clean$method])
 
-# 2c. Passages GoPro sans heures : vidéo analysée ou non ?
-#     TRUE  = on les retire (vidéo non analysée)
-#     FALSE = on les garde (vrais zéros, heures simplement non saisies)
-retirer_gopro_sans_heure <- TRUE
-
-sans_heure <- is.na(effort$hm1) | effort$hm1 == ""
-gopro_sans_heure <- effort$method == "GoPro" & sans_heure
-cat("Passages GoPro sans heures :", effort$tr_id[gopro_sans_heure], "\n")
-
-if (retirer_gopro_sans_heure) {
-  effort <- effort[!gopro_sans_heure, ]
-}
-
-# 2d. Garder seulement les obs rattachées à un inventaire retenu
+# 2c. Garder seulement les obs rattachées à un inventaire retenu
 #     (retire les transects non retenus, ex. T01_E et T20_O)
 obs_TF    <- all_obs_clean$tr_id %in% effort$tr_id
 obs_id_ok <- all_obs_clean[obs_TF, ]
