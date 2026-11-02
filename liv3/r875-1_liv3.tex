@@ -54,33 +54,6 @@ Septembre 2026
 
 
 
-%%%%%%%%%% the following macros are necessary to track changes in document
-%%%%%%%%%%%%%%%%BEGIN code added to track changes%%%%%%%%%%%%%%%%%%
-\usepackage{soulutf8}
-\usepackage[normalem]{ulem}
-%adding comments in margins
-\usepackage[textwidth=2cm, colorinlistoftodos]{todonotes}
-
-% just adding text in blue
-\newcommand{\add}{\textcolor{blue}}
-
-% adding and underlining text - MJM in blue
-\newcommand{\addM}{\textcolor{blue}{\bgroup}\markoverwith{\textcolor{blue}{\rule[-0.5ex]{2pt}{0.4pt}}}\ULon}
-
-% deleting text and underlining - MJM in red
-\newcommand\delM{\textcolor{red}{\bgroup}\markoverwith{\textcolor{red}{\rule[0.5ex]{2pt}{0.4pt}}}\ULon}
-
-% deleting text - MJM in red
-\newcommand\underM{\textcolor{red}{\bgroup}\markoverwith{\textcolor{red}{\rule[-0.5ex]{2pt}{0.4pt}}}\ULon}
-
-
-%modify color, add counter, author name, and size - MJM in blue
-\newcounter{todocounter}
-\newcommand{\comM}[2][]
-{\stepcounter{todocounter}\todo[color=orange, size=\footnotesize, author=MJM, #1]{\thetodocounter: #2}}
-
-%%%%%%%%%%%%%%%%END code added to track changes%%%%%%%%%%%%%%%%%%%modify color
-
 
 \begin{document}
 
@@ -139,10 +112,9 @@ Septembre 2026
 
 \appendix
 
-\include{sections/annexe_A}
+\include{sections/annexe_a}
 
 
-% print all comments at the end
-\listoftodos
+
 
 \end{document}

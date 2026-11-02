@@ -185,3 +185,49 @@ dev.off()
 cat(sprintf("Figure 6 : %d visites appariées, %.1f km à pied, %.1f km GoPro, %d carcasses à pied, %d GoPro\n",
             n_visites_app, km_P, km_G,
             sum(lamb_group_method[, "À pied"]), sum(lamb_group_method[, "GoPro"])))
+
+
+## ---------------------------------------------------------------------
+## 8. Composition des carcasses par groupe et par méthode (%)
+## ---------------------------------------------------------------------
+
+ordre <- c("Amphibiens", "Mammifères", "Oiseaux", "Reptiles", "Indéterminés")
+
+# Choisir le jeu d'observations : visites appariées (G_P_obs)
+# ou toutes les obs à pied et GoPro (obs_id_ok)
+obs_fig <- G_P_obs
+
+tab <- table(factor(obs_fig$class,  levels = ordre),
+             factor(obs_fig$method, levels = c("À pied", "GoPro")))
+n_meth <- colSums(tab)
+print(n_meth)   # doit donner 218 et 4 pour retrouver votre figure
+
+# Pourcentages par méthode (chaque méthode somme à 100)
+pct <- t(prop.table(tab, margin = 2) * 100)
+
+couleurs <- c("grey85", "grey30")
+# Figure composition
+
+png("/home/robes1/CONTRAT_ULAVAL/R8751/liv3/figs_monteregie_liv3/compo_carcasses.png",
+    width = 16.5, height = 12, units = "cm", res = 600, pointsize = 10)
+
+par(mar = c(3, 4.5, 1, 1))
+
+bp <- barplot(pct,
+              beside = TRUE,
+              col    = couleurs,
+              ylim   = c(0, 110),
+              las    = 1,
+              ylab   = "Pourcentage")
+
+etiq <- ifelse(pct > 0,
+               paste0(formatC(pct, format = "f", digits = 1, decimal.mark = ","), " %"),
+               "")
+text(bp, pct, labels = etiq, pos = 3, cex = 0.8)
+
+legend("topright",
+       legend = paste0(rownames(pct), " (n = ", n_meth, ")"),
+       fill   = couleurs,
+       bty    = "n")
+
+dev.off()
